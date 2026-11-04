@@ -1,0 +1,6096 @@
+{
+  "meta": {
+    "updatedAt": "2026-11-04",
+    "count": 55
+  },
+  "products": [
+    {
+      "id": "agv-1001406700106",
+      "name": "莎莎亞椰奶",
+      "brand": "agv",
+      "category": "drink.juice",
+      "variants": [
+        {
+          "size": "250ml",
+          "sku": "1001406700106",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "水、糖、椰漿【椰奶、水、關華豆膠、黏稠劑(玉米糖膠、鹿角菜膠) 】、",
+        "items": [
+          {
+            "text": "水"
+          },
+          {
+            "text": "糖"
+          },
+          {
+            "text": "椰漿",
+            "children": [
+              {
+                "text": "椰奶"
+              },
+              {
+                "text": "水"
+              },
+              {
+                "text": "關華豆膠",
+                "substance": "guar"
+              },
+              {
+                "text": "黏稠劑",
+                "children": [
+                  {
+                    "text": "玉米糖膠",
+                    "substance": "xanthan"
+                  },
+                  {
+                    "text": "鹿角菜膠",
+                    "substance": "carrageenan"
+                  }
+                ],
+                "function": "黏稠劑"
+              }
+            ]
+          }
+        ]
+      },
+      "nutrition": {
+        "basis": "liquid",
+        "serving": {
+          "size": 250,
+          "unit": "ml"
+        },
+        "servingsPerPack": 1,
+        "perServing": {
+          "kcal": 106.4,
+          "fat": 4,
+          "transFat": 0,
+          "sugar": 16.2
+        },
+        "per100": {
+          "kcal": 42.6,
+          "fat": 1.6,
+          "transFat": 0,
+          "sugar": 6.5
+        },
+        "per100Computed": true
+      },
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw25701e0d/images/large/0013012_t250ml.jpeg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E6%84%9B%E4%B9%8B%E5%91%B3/1001406700106.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E6%84%9B%E4%B9%8B%E5%91%B3/1001406700106.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E6%84%9B%E4%B9%8B%E5%91%B3/1001406700124.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": []
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "agv-1002303500104",
+      "name": "愛健萬丹紅紅豆水",
+      "brand": "agv",
+      "category": "drink.juice",
+      "variants": [
+        {
+          "size": "530ml",
+          "sku": "1002303500104",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "4.無糖、無色素、防腐劑",
+        "items": [
+          {
+            "text": "4.無糖"
+          },
+          {
+            "text": "無色素"
+          },
+          {
+            "text": "防腐劑"
+          }
+        ]
+      },
+      "nutrition": {
+        "basis": "solid",
+        "serving": {
+          "size": 295,
+          "unit": "ml"
+        },
+        "servingsPerPack": 2,
+        "perServing": {
+          "kcal": 4,
+          "protein": 0,
+          "fat": 0,
+          "satFat": 0,
+          "transFat": 0,
+          "carb": 1.9,
+          "sugar": 0,
+          "sodium": 14,
+          "fiber": 1.6
+        },
+        "per100": {
+          "kcal": 12,
+          "protein": 0,
+          "fat": 0,
+          "satFat": 0,
+          "transFat": 0,
+          "carb": 5,
+          "sugar": 0,
+          "sodium": 38,
+          "fiber": 4.1
+        }
+      },
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw26fd6c15/images/large/1002303500104_NR_00.jpg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E6%84%9B%E4%B9%8B%E5%91%B3/1002303500104.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E6%84%9B%E4%B9%8B%E5%91%B3/1002303500104.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E6%84%9B%E4%B9%8B%E5%91%B3/1002303500124.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": []
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "agv-1001601800104",
+      "name": "鮮采蕃茄汁(OLIGO保健)",
+      "brand": "agv",
+      "category": "drink.juice",
+      "variants": [
+        {
+          "size": "530ml",
+          "sku": "1001601800104",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "水、蕃茄濃縮汁、異麥芽寡醣糖漿、冰糖、蜂蜜",
+        "items": [
+          {
+            "text": "水"
+          },
+          {
+            "text": "蕃茄濃縮汁"
+          },
+          {
+            "text": "異麥芽寡醣糖漿"
+          },
+          {
+            "text": "冰糖"
+          },
+          {
+            "text": "蜂蜜"
+          }
+        ]
+      },
+      "nutrition": {
+        "basis": "liquid",
+        "serving": {
+          "size": 100,
+          "unit": "ml"
+        },
+        "servingsPerPack": 5.3,
+        "perServing": {
+          "kcal": 23.2,
+          "protein": 0.4,
+          "fat": 0,
+          "satFat": 0,
+          "transFat": 0,
+          "carb": 5.4,
+          "sodium": 58.8
+        },
+        "per100": {
+          "kcal": 23.2,
+          "protein": 0.4,
+          "fat": 0,
+          "satFat": 0,
+          "transFat": 0,
+          "carb": 5.4,
+          "sodium": 58.8
+        },
+        "per100Computed": true
+      },
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw6a5ab459/images/large/0118663_-oligo-530ml.jpeg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E6%84%9B%E4%B9%8B%E5%91%B3/1001601800104.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E6%84%9B%E4%B9%8B%E5%91%B3/1001601800104.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": []
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "agv-1001602000104",
+      "name": "鮮采蕃茄綜合蔬菜汁",
+      "brand": "agv",
+      "category": "drink.juice",
+      "variants": [
+        {
+          "size": "530ml",
+          "sku": "1001602000104",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "水、蕃茄濃縮汁、糖、糊精纖維、蜂蜜、鹽、檸檬酸、",
+        "items": [
+          {
+            "text": "水"
+          },
+          {
+            "text": "蕃茄濃縮汁"
+          },
+          {
+            "text": "糖"
+          },
+          {
+            "text": "糊精纖維",
+            "substance": "maltodextrin"
+          },
+          {
+            "text": "蜂蜜"
+          },
+          {
+            "text": "鹽"
+          },
+          {
+            "text": "檸檬酸",
+            "substance": "citric-acid"
+          }
+        ]
+      },
+      "nutrition": null,
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw7a0f9e57/images/large/0118658_-530ml.jpeg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E6%84%9B%E4%B9%8B%E5%91%B3/1001602000104.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E6%84%9B%E4%B9%8B%E5%91%B3/1001602000104.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": [
+          {
+            "field": "nutrition",
+            "type": "missing",
+            "note": "找不到營養標示"
+          }
+        ]
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "agv-1001600600106",
+      "name": "鮮採蕃茄汁 Oligo保健",
+      "brand": "agv",
+      "category": "drink.juice",
+      "variants": [
+        {
+          "size": "250ml",
+          "sku": "1001600600106",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "水、蕃茄濃縮汁、異麥芽寡醣糖漿、冰糖、蜂蜜",
+        "items": [
+          {
+            "text": "水"
+          },
+          {
+            "text": "蕃茄濃縮汁"
+          },
+          {
+            "text": "異麥芽寡醣糖漿"
+          },
+          {
+            "text": "冰糖"
+          },
+          {
+            "text": "蜂蜜"
+          }
+        ]
+      },
+      "nutrition": {
+        "basis": "liquid",
+        "serving": {
+          "size": 265,
+          "unit": "ml"
+        },
+        "servingsPerPack": 2,
+        "perServing": {
+          "kcal": 92.8,
+          "protein": 1.1,
+          "fat": 0,
+          "satFat": 0,
+          "transFat": 0,
+          "carb": 23.3,
+          "sugar": 12.7,
+          "fiber": 2.4,
+          "sodium": 135
+        },
+        "per100": {
+          "kcal": 35,
+          "protein": 0.4,
+          "fat": 0,
+          "satFat": 0,
+          "transFat": 0,
+          "carb": 8.8,
+          "sugar": 4.8,
+          "fiber": 0.9,
+          "sodium": 51
+        }
+      },
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw0256e447/images/large/0112194_-oligo-250ml.jpeg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E6%84%9B%E4%B9%8B%E5%91%B3/1001600600106.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E6%84%9B%E4%B9%8B%E5%91%B3/1001600600106.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E6%84%9B%E4%B9%8B%E5%91%B3/1001600600124.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": []
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "heysong-1000200300104",
+      "name": "加鹽沙士",
+      "brand": "heysong",
+      "category": "drink.soda",
+      "variants": [
+        {
+          "size": "600ml",
+          "sku": "1000200300104",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "碳酸水、砂糖、高果糖糖漿、焦糖色素(純砂糖熬煮而成)、",
+        "items": [
+          {
+            "text": "碳酸水"
+          },
+          {
+            "text": "砂糖"
+          },
+          {
+            "text": "高果糖糖漿",
+            "substance": "hfcs"
+          },
+          {
+            "text": "焦糖色素",
+            "children": [
+              {
+                "text": "純砂糖熬煮而成"
+              }
+            ],
+            "substance": "caramel"
+          }
+        ]
+      },
+      "nutrition": {
+        "basis": "liquid",
+        "serving": {
+          "size": 300,
+          "unit": "ml"
+        },
+        "servingsPerPack": 2,
+        "perServing": {
+          "kcal": 122,
+          "satFat": 0,
+          "sugar": 30.4
+        },
+        "per100": {
+          "kcal": 40.7,
+          "satFat": 0,
+          "sugar": 10.1
+        },
+        "per100Computed": true
+      },
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw5f6df198/images/large/1000200300104_NR_00.jpg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE%E6%B2%99%E5%A3%AB/1000200300104.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE%E6%B2%99%E5%A3%AB/1000200300104.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE%E6%B2%99%E5%A3%AB/1000200300124.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": []
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "heysong-1001403200106",
+      "name": "百香果C",
+      "brand": "heysong",
+      "category": "drink.juice",
+      "variants": [
+        {
+          "size": "300ml",
+          "sku": "1001403200106",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "水、砂糖、濃縮綜合果汁、檸檬酸、檸檬酸鈉、維生素C(L-抗壞血酸)、香料、",
+        "items": [
+          {
+            "text": "水"
+          },
+          {
+            "text": "砂糖"
+          },
+          {
+            "text": "濃縮綜合果汁"
+          },
+          {
+            "text": "檸檬酸",
+            "substance": "citric-acid"
+          },
+          {
+            "text": "檸檬酸鈉",
+            "substance": "sodium-citrate"
+          },
+          {
+            "text": "維生素C",
+            "children": [
+              {
+                "text": "L-抗壞血酸",
+                "substance": "vitamin-c"
+              }
+            ],
+            "substance": "vitamin-c"
+          },
+          {
+            "text": "香料",
+            "substance": "flavor"
+          }
+        ]
+      },
+      "nutrition": {
+        "basis": "liquid",
+        "serving": {
+          "size": 300,
+          "unit": "ml"
+        },
+        "servingsPerPack": 1,
+        "perServing": {},
+        "per100": {
+          "kcal": 121,
+          "fat": 0,
+          "transFat": 0,
+          "sugar": 28.5
+        }
+      },
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw9d85aa92/images/large/1001403200106_NR_00.jpg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE/1001403200106.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE/1001403200106.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE/1001403200124.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": []
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "heysong-1000100800101",
+      "name": "汽水",
+      "brand": "heysong",
+      "category": "drink.soda",
+      "variants": [
+        {
+          "size": "2L",
+          "sku": "1000100800101",
+          "barcodes": []
+        },
+        {
+          "size": "245ml",
+          "sku": "1000102500124",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "碳酸水、高果糖糖漿、砂糖、香料(含乙醇、水)、檸檬酸、維生素C(抗氧化劑)",
+        "items": [
+          {
+            "text": "碳酸水"
+          },
+          {
+            "text": "高果糖糖漿",
+            "substance": "hfcs"
+          },
+          {
+            "text": "砂糖"
+          },
+          {
+            "text": "香料",
+            "children": [
+              {
+                "text": "含乙醇"
+              },
+              {
+                "text": "水"
+              }
+            ],
+            "function": "香料"
+          },
+          {
+            "text": "檸檬酸",
+            "substance": "citric-acid"
+          },
+          {
+            "text": "維生素C",
+            "children": [
+              {
+                "text": "抗氧化劑"
+              }
+            ],
+            "substance": "vitamin-c"
+          }
+        ]
+      },
+      "nutrition": {
+        "basis": "liquid",
+        "serving": {
+          "size": 100,
+          "unit": "ml"
+        },
+        "servingsPerPack": 20,
+        "perServing": {
+          "kcal": 36,
+          "carb": 9,
+          "sodium": 6
+        },
+        "per100": {
+          "kcal": 36,
+          "carb": 9,
+          "sodium": 6
+        },
+        "per100Computed": true
+      },
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw00440eeb/images/large/1000100800101_NR_00.jpg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE%E6%B1%BD%E6%B0%B4/1000100800101.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE%E6%B1%BD%E6%B0%B4/1000100800101.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE%E6%B1%BD%E6%B0%B4/1000100800106.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE%E6%B1%BD%E6%B0%B4/1000102500124.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": [
+          {
+            "field": "substances",
+            "type": "unmatched",
+            "note": "下列添加物沒有對應到成分資料庫",
+            "candidates": [
+              "香料：含乙醇",
+              "香料：水"
+            ]
+          }
+        ]
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "heysong-1000200900104",
+      "name": "沙士",
+      "brand": "heysong",
+      "category": "drink.soda",
+      "variants": [
+        {
+          "size": "600ml",
+          "sku": "1000200900104",
+          "barcodes": []
+        },
+        {
+          "size": "330ml×6",
+          "sku": "1000201800106",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "碳酸水、果糖、砂糖、蘋果香料、天然濃縮蘋果汁、焦糖色素、檸檬酸、天然蘋果香料、蘋果汁",
+        "items": [
+          {
+            "text": "碳酸水"
+          },
+          {
+            "text": "果糖",
+            "substance": "hfcs"
+          },
+          {
+            "text": "砂糖"
+          },
+          {
+            "text": "蘋果香料",
+            "substance": "flavor"
+          },
+          {
+            "text": "天然濃縮蘋果汁"
+          },
+          {
+            "text": "焦糖色素",
+            "substance": "caramel"
+          },
+          {
+            "text": "檸檬酸",
+            "substance": "citric-acid"
+          },
+          {
+            "text": "天然蘋果香料",
+            "substance": "flavor"
+          },
+          {
+            "text": "蘋果汁"
+          }
+        ]
+      },
+      "nutrition": {
+        "basis": "liquid",
+        "serving": {
+          "size": 300,
+          "unit": "ml"
+        },
+        "servingsPerPack": 2,
+        "perServing": {
+          "kcal": 122,
+          "satFat": 0,
+          "carb": 30.4
+        },
+        "per100": {
+          "kcal": 40.7,
+          "satFat": 0,
+          "carb": 10.1
+        },
+        "per100Computed": true
+      },
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw270e8094/images/large/1000200900104_NR_00.jpg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE%E6%B2%99%E5%A3%AB/1000200900104.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE%E6%B2%99%E5%A3%AB/1000200900104.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE%E6%B2%99%E5%A3%AB/1000201800106.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": []
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "heysong-1001300300106",
+      "name": "葡萄汁",
+      "brand": "heysong",
+      "category": "drink.juice",
+      "variants": [
+        {
+          "size": "300ml",
+          "sku": "1001300300106",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "水、高果糖糖漿、砂糖、濃縮葡萄汁、酒石酸、DL-蘋果酸、香料(含乙醇、水)、維生素C(L-抗壞血酸)、",
+        "items": [
+          {
+            "text": "水"
+          },
+          {
+            "text": "高果糖糖漿",
+            "substance": "hfcs"
+          },
+          {
+            "text": "砂糖"
+          },
+          {
+            "text": "濃縮葡萄汁"
+          },
+          {
+            "text": "酒石酸",
+            "substance": "tartaric-acid"
+          },
+          {
+            "text": "DL-蘋果酸",
+            "substance": "malic-acid"
+          },
+          {
+            "text": "香料",
+            "children": [
+              {
+                "text": "含乙醇"
+              },
+              {
+                "text": "水"
+              }
+            ],
+            "function": "香料"
+          },
+          {
+            "text": "維生素C",
+            "children": [
+              {
+                "text": "L-抗壞血酸",
+                "substance": "vitamin-c"
+              }
+            ],
+            "substance": "vitamin-c"
+          }
+        ]
+      },
+      "nutrition": {
+        "basis": "liquid",
+        "serving": {
+          "size": 300,
+          "unit": "ml"
+        },
+        "servingsPerPack": 1,
+        "perServing": {
+          "kcal": 127,
+          "satFat": 0,
+          "sugar": 30.3
+        },
+        "per100": {
+          "kcal": 42.3,
+          "satFat": 0,
+          "sugar": 10.1
+        },
+        "per100Computed": true
+      },
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw888c5bb0/images/large/1001300300106_NR_00.jpg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE/1001300300106.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE/1001300300106.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE/1001300300124.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": [
+          {
+            "field": "substances",
+            "type": "unmatched",
+            "note": "下列添加物沒有對應到成分資料庫",
+            "candidates": [
+              "香料：含乙醇",
+              "香料：水"
+            ]
+          }
+        ]
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "heysong-1001101600106",
+      "name": "蘋果汁",
+      "brand": "heysong",
+      "category": "drink.juice",
+      "variants": [
+        {
+          "size": "300ml",
+          "sku": "1001101600106",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "水、高果糖糖漿、砂糖、濃縮蘋果汁、DL-蘋果酸、香料、焦糖色素(純焦糖熬煮而成)、檸檬酸鈉、羧甲基纖維素鈉、",
+        "items": [
+          {
+            "text": "水"
+          },
+          {
+            "text": "高果糖糖漿",
+            "substance": "hfcs"
+          },
+          {
+            "text": "砂糖"
+          },
+          {
+            "text": "濃縮蘋果汁"
+          },
+          {
+            "text": "DL-蘋果酸",
+            "substance": "malic-acid"
+          },
+          {
+            "text": "香料",
+            "substance": "flavor"
+          },
+          {
+            "text": "焦糖色素",
+            "children": [
+              {
+                "text": "純焦糖熬煮而成",
+                "substance": "caramel"
+              }
+            ],
+            "substance": "caramel"
+          },
+          {
+            "text": "檸檬酸鈉",
+            "substance": "sodium-citrate"
+          },
+          {
+            "text": "羧甲基纖維素鈉",
+            "substance": "cmc"
+          }
+        ]
+      },
+      "nutrition": null,
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw953616b3/images/large/1001101600106_NR_01.jpg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE/1001101600106.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE/1001101600106.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE/1001101600124.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": [
+          {
+            "field": "nutrition",
+            "type": "missing",
+            "note": "找不到營養標示"
+          }
+        ]
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "heysong-1002001600104",
+      "name": "Flash Brew閃萃黑咖啡",
+      "brand": "heysong",
+      "category": "drink.coffee",
+      "variants": [
+        {
+          "size": "500ml",
+          "sku": "1002001600104",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "水、研磨咖啡粉、碳酸氫鈉(小蘇打)",
+        "items": [
+          {
+            "text": "水"
+          },
+          {
+            "text": "研磨咖啡粉"
+          },
+          {
+            "text": "碳酸氫鈉",
+            "children": [
+              {
+                "text": "小蘇打",
+                "substance": "sodium-bicarbonate"
+              }
+            ],
+            "substance": "sodium-bicarbonate"
+          }
+        ]
+      },
+      "nutrition": null,
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw68efc87c/images/large/1002001600104_NR_00.jpg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE%E9%9F%8B%E6%81%A9/1002001600104.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE%E9%9F%8B%E6%81%A9/1002001600104.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE%E9%9F%8B%E6%81%A9/1002001600124.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": [
+          {
+            "field": "nutrition",
+            "type": "missing",
+            "note": "找不到營養標示"
+          }
+        ]
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "imei-1003103100124",
+      "name": "錫蘭紅茶",
+      "brand": "imei",
+      "category": "drink.coffee",
+      "variants": [
+        {
+          "size": "250ml",
+          "sku": "1003103100124",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "有著獨特醇厚的茶香、圓潤的順口感，入口後，溫潤舒暢、唇舌留香，讓人難以忘懷",
+        "items": [
+          {
+            "text": "有著獨特醇厚的茶香"
+          },
+          {
+            "text": "圓潤的順口感"
+          },
+          {
+            "text": "入口後"
+          },
+          {
+            "text": "溫潤舒暢"
+          },
+          {
+            "text": "唇舌留香"
+          },
+          {
+            "text": "讓人難以忘懷"
+          }
+        ]
+      },
+      "nutrition": null,
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw9c7c635c/images/large/0093335_t250ml.jpeg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1003103100124.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1003103100124.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": [
+          {
+            "field": "nutrition",
+            "type": "missing",
+            "note": "找不到營養標示"
+          }
+        ]
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "imei-1001301200106",
+      "name": "寶吉純果汁葡萄",
+      "brand": "imei",
+      "category": "drink.juice",
+      "variants": [
+        {
+          "size": "125ml",
+          "sku": "1001301200106",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "水、濃縮葡萄汁、濃縮蘋果汁",
+        "items": [
+          {
+            "text": "水"
+          },
+          {
+            "text": "濃縮葡萄汁"
+          },
+          {
+            "text": "濃縮蘋果汁"
+          }
+        ]
+      },
+      "nutrition": null,
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwce6b73ce/images/large/0007833_t125ml.jpeg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1001301200106.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1001301200106.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1001301200124.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": [
+          {
+            "field": "nutrition",
+            "type": "missing",
+            "note": "找不到營養標示"
+          }
+        ]
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "imei-1001004200106",
+      "name": "寶吉蔬果汁葡萄莓果",
+      "brand": "imei",
+      "category": "drink.juice",
+      "variants": [
+        {
+          "size": "125ml",
+          "sku": "1001004200106",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "水、濃縮蘋果汁、濃縮葡萄汁、濃縮胡蘿蔔汁(含檸檬酸)、濃縮草莓汁、濃縮鳳梨汁、濃縮芹菜汁(含檸檬酸)、濃縮白葡萄汁、濃縮蘆薈汁、濃縮奇異果汁、濃縮蘆筍汁、青花菜汁、高麗菜汁、濃縮木瓜汁、濃縮甘蔗汁、黃瓜汁、百香果汁、濃縮檸檬汁",
+        "items": [
+          {
+            "text": "水"
+          },
+          {
+            "text": "濃縮蘋果汁"
+          },
+          {
+            "text": "濃縮葡萄汁"
+          },
+          {
+            "text": "濃縮胡蘿蔔汁",
+            "children": [
+              {
+                "text": "含檸檬酸",
+                "substance": "citric-acid"
+              }
+            ]
+          },
+          {
+            "text": "濃縮草莓汁"
+          },
+          {
+            "text": "濃縮鳳梨汁"
+          },
+          {
+            "text": "濃縮芹菜汁",
+            "children": [
+              {
+                "text": "含檸檬酸",
+                "substance": "citric-acid"
+              }
+            ]
+          },
+          {
+            "text": "濃縮白葡萄汁"
+          },
+          {
+            "text": "濃縮蘆薈汁"
+          },
+          {
+            "text": "濃縮奇異果汁"
+          },
+          {
+            "text": "濃縮蘆筍汁"
+          },
+          {
+            "text": "青花菜汁"
+          },
+          {
+            "text": "高麗菜汁"
+          },
+          {
+            "text": "濃縮木瓜汁"
+          },
+          {
+            "text": "濃縮甘蔗汁"
+          },
+          {
+            "text": "黃瓜汁"
+          },
+          {
+            "text": "百香果汁"
+          },
+          {
+            "text": "濃縮檸檬汁"
+          }
+        ]
+      },
+      "nutrition": {
+        "basis": "liquid",
+        "serving": {
+          "size": 125,
+          "unit": "ml"
+        },
+        "servingsPerPack": null,
+        "perServing": {},
+        "per100": {
+          "kcal": 52.4,
+          "protein": 0.5,
+          "fat": 0,
+          "satFat": 0,
+          "transFat": 0,
+          "carb": 12.6,
+          "sugar": 11.9,
+          "sodium": 28
+        }
+      },
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw0d2c1e31/images/large/0151219_125ml.jpeg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1001004200106.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1001004200106.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1001004200124.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": []
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "kuangchuan-1003206400106",
+      "name": "午后時光伯爵奶茶",
+      "brand": "kuangchuan",
+      "category": "drink.coffee",
+      "variants": [
+        {
+          "size": "250ml",
+          "sku": "1003206400106",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "水、蔗糖、奶粉、茶葉、鮮乳、脂肪酸甘油酯、鹿角菜膠（含蔗糖）、香料",
+        "items": [
+          {
+            "text": "水"
+          },
+          {
+            "text": "蔗糖"
+          },
+          {
+            "text": "奶粉"
+          },
+          {
+            "text": "茶葉"
+          },
+          {
+            "text": "鮮乳"
+          },
+          {
+            "text": "脂肪酸甘油酯",
+            "substance": "mono-diglycerides"
+          },
+          {
+            "text": "鹿角菜膠",
+            "children": [
+              {
+                "text": "含蔗糖"
+              }
+            ],
+            "substance": "carrageenan"
+          },
+          {
+            "text": "香料",
+            "substance": "flavor"
+          }
+        ]
+      },
+      "nutrition": null,
+      "allergens": {
+        "contains": [
+          "milk"
+        ],
+        "sharedLine": [],
+        "raw": "過敏原資訊 本產品含牛奶，對其過敏者不宜食用。"
+      },
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw963d8b7b/images/large/1003206400124.jpg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003206400106.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003206400106.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003206400124.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": [
+          {
+            "field": "nutrition",
+            "type": "missing",
+            "note": "找不到營養標示"
+          }
+        ]
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "kuangchuan-1003201900106",
+      "name": "午后時光阿薩姆奶茶",
+      "brand": "kuangchuan",
+      "category": "drink.coffee",
+      "variants": [
+        {
+          "size": "250ml",
+          "sku": "1003201900106",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "水、蔗糖、奶粉、茶葉、鮮乳、香料（含維生素C、鹽、中鏈三酸甘油酯、玉米糖膠、檸檬酸）、脂肪酸甘油酯、鹿角菜膠",
+        "items": [
+          {
+            "text": "水"
+          },
+          {
+            "text": "蔗糖"
+          },
+          {
+            "text": "奶粉"
+          },
+          {
+            "text": "茶葉"
+          },
+          {
+            "text": "鮮乳"
+          },
+          {
+            "text": "香料",
+            "children": [
+              {
+                "text": "含維生素C",
+                "substance": "vitamin-c"
+              },
+              {
+                "text": "鹽"
+              },
+              {
+                "text": "中鏈三酸甘油酯"
+              },
+              {
+                "text": "玉米糖膠",
+                "substance": "xanthan"
+              },
+              {
+                "text": "檸檬酸",
+                "substance": "citric-acid"
+              }
+            ],
+            "function": "香料"
+          },
+          {
+            "text": "脂肪酸甘油酯",
+            "substance": "mono-diglycerides"
+          },
+          {
+            "text": "鹿角菜膠",
+            "substance": "carrageenan"
+          }
+        ]
+      },
+      "nutrition": null,
+      "allergens": {
+        "contains": [
+          "milk"
+        ],
+        "sharedLine": [],
+        "raw": "* 過敏原與注意事項： * 本產品含牛奶，對其過敏者不宜食用"
+      },
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwb6d30fa3/images/large/1003201900124.jpg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003201900106.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003201900106.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003201900124.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": [
+          {
+            "field": "substances",
+            "type": "unmatched",
+            "note": "下列添加物沒有對應到成分資料庫",
+            "candidates": [
+              "香料：鹽",
+              "香料：中鏈三酸甘油酯"
+            ]
+          },
+          {
+            "field": "nutrition",
+            "type": "missing",
+            "note": "找不到營養標示"
+          }
+        ]
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "kuangchuan-1002003400106",
+      "name": "午后時光重乳咖啡拿鐵",
+      "brand": "kuangchuan",
+      "category": "drink.coffee",
+      "variants": [
+        {
+          "size": "330ml",
+          "sku": "1002003400106",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "水、奶粉、蔗糖、咖啡粉(含菊苣)、鮮奶、脂肪酸甘油脂、小蘇打、食鹽",
+        "items": [
+          {
+            "text": "水"
+          },
+          {
+            "text": "奶粉"
+          },
+          {
+            "text": "蔗糖"
+          },
+          {
+            "text": "咖啡粉",
+            "children": [
+              {
+                "text": "含菊苣"
+              }
+            ]
+          },
+          {
+            "text": "鮮奶"
+          },
+          {
+            "text": "脂肪酸甘油脂"
+          },
+          {
+            "text": "小蘇打",
+            "substance": "sodium-bicarbonate"
+          },
+          {
+            "text": "食鹽"
+          }
+        ]
+      },
+      "nutrition": null,
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwe30a5766/images/large/0213125_t330ml.jpeg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1002003400106.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1002003400106.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1002003400124.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": [
+          {
+            "field": "nutrition",
+            "type": "missing",
+            "note": "找不到營養標示"
+          }
+        ]
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "kuangchuan-1003191100106",
+      "name": "午后時光錫蘭紅茶",
+      "brand": "kuangchuan",
+      "category": "drink.coffee",
+      "variants": [
+        {
+          "size": "250ml",
+          "sku": "1003191100106",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "水、蔗糖、茶葉、香料",
+        "items": [
+          {
+            "text": "水"
+          },
+          {
+            "text": "蔗糖"
+          },
+          {
+            "text": "茶葉"
+          },
+          {
+            "text": "香料",
+            "substance": "flavor"
+          }
+        ]
+      },
+      "nutrition": null,
+      "allergens": {
+        "contains": [],
+        "sharedLine": [
+          "mango",
+          "peanut",
+          "milk",
+          "egg",
+          "nuts",
+          "sesame",
+          "gluten",
+          "soy"
+        ],
+        "raw": "* 過敏原資訊：該產線亦生產含芒果、花生、芝麻、牛奶、蛋、堅果類、含麩質之穀物及大豆製品"
+      },
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw94122a5b/images/large/0273475_-250ml.jpeg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003191100106.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003191100106.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003191100124.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": [
+          {
+            "field": "nutrition",
+            "type": "missing",
+            "note": "找不到營養標示"
+          }
+        ]
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "kuangchuan-1001501100124",
+      "name": "正庄蘆筍汁",
+      "brand": "kuangchuan",
+      "category": "meat.canned",
+      "variants": [
+        {
+          "size": "250ml",
+          "sku": "1001501100124",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "水、砂糖、蘆筍濃縮汁、蘆筍原汁、香料、胺基乙酸、檸檬酸",
+        "items": [
+          {
+            "text": "水"
+          },
+          {
+            "text": "砂糖"
+          },
+          {
+            "text": "蘆筍濃縮汁"
+          },
+          {
+            "text": "蘆筍原汁"
+          },
+          {
+            "text": "香料",
+            "substance": "flavor"
+          },
+          {
+            "text": "胺基乙酸"
+          },
+          {
+            "text": "檸檬酸",
+            "substance": "citric-acid"
+          }
+        ]
+      },
+      "nutrition": {
+        "basis": "liquid",
+        "serving": {
+          "size": 250,
+          "unit": "ml"
+        },
+        "servingsPerPack": 1,
+        "perServing": {},
+        "per100": {
+          "satFat": 0,
+          "transFat": 0,
+          "protein": 0,
+          "fat": 0,
+          "carb": 27.6,
+          "sugar": 27.6,
+          "sodium": 21
+        }
+      },
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw85e20da6/images/large/0238953_t250ml.png?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1001501100124.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1001501100124.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1001501100106.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": []
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "kuangchuan-1003003000101",
+      "name": "冷泡茶冰釀烏龍(無糖)",
+      "brand": "kuangchuan",
+      "category": "drink.coffee",
+      "variants": [
+        {
+          "size": "1235ml",
+          "sku": "1003003000101",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "由於沖泡方式的不同，光泉冷泡茶是以上等茶葉進行冷泡，不論浸泡時間、溫度控制、或是茶葉品種的選擇，都經過無數次的實驗、研究、測試及調整才得以呈現出最完美的茶湯、茶味，少了苦澀，多了甘甜，讓茶更好喝了！",
+        "items": [
+          {
+            "text": "由於沖泡方式的不同"
+          },
+          {
+            "text": "光泉冷泡茶是以上等茶葉進行冷泡"
+          },
+          {
+            "text": "不論浸泡時間"
+          },
+          {
+            "text": "溫度控制"
+          },
+          {
+            "text": "或是茶葉品種的選擇"
+          },
+          {
+            "text": "都經過無數次的實驗"
+          },
+          {
+            "text": "研究"
+          },
+          {
+            "text": "測試及調整才得以呈現出最完美的茶湯"
+          },
+          {
+            "text": "茶味"
+          },
+          {
+            "text": "少了苦澀"
+          },
+          {
+            "text": "多了甘甜"
+          },
+          {
+            "text": "讓茶更好喝了！"
+          }
+        ]
+      },
+      "nutrition": {
+        "basis": "liquid",
+        "serving": {
+          "size": 247,
+          "unit": "ml"
+        },
+        "servingsPerPack": 5,
+        "perServing": {},
+        "per100": {
+          "kcal": 0,
+          "protein": 0,
+          "fat": 0,
+          "satFat": 0,
+          "transFat": 0,
+          "carb": 0,
+          "sugar": 0,
+          "sodium": 37
+        }
+      },
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw0978532d/images/large/1003003000101new.jpg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003003000101.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003003000101.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": []
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "kuangchuan-1003001700101",
+      "name": "冷泡茶茶王烏龍",
+      "brand": "kuangchuan",
+      "category": "drink.coffee",
+      "variants": [
+        {
+          "size": null,
+          "sku": "1003001700101",
+          "barcodes": []
+        },
+        {
+          "size": "1235ml",
+          "sku": "1003001700112",
+          "barcodes": []
+        },
+        {
+          "size": "585ml",
+          "sku": "1003004600104",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "名稱",
+        "items": [
+          {
+            "text": "名稱"
+          }
+        ]
+      },
+      "nutrition": null,
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwa848edfc/images/large/1003001700112new.jpg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003001700101.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003001700101.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003001700112.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003004600104.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003004600124.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": [
+          {
+            "field": "nutrition",
+            "type": "missing",
+            "note": "找不到營養標示"
+          }
+        ]
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "kuangchuan-1003301100104",
+      "name": "冷泡綠茶無糖",
+      "brand": "kuangchuan",
+      "category": "drink.coffee",
+      "variants": [
+        {
+          "size": "585ml",
+          "sku": "1003301100104",
+          "barcodes": []
+        }
+      ],
+      "ingredients": null,
+      "nutrition": {
+        "basis": "liquid",
+        "serving": null,
+        "servingsPerPack": null,
+        "perServing": {
+          "kcal": 0,
+          "protein": 0,
+          "fat": 0,
+          "satFat": 0,
+          "transFat": 0,
+          "carb": 0,
+          "sugar": 0,
+          "sodium": 8
+        },
+        "per100": {
+          "kcal": 0,
+          "protein": 0,
+          "fat": 0,
+          "satFat": 0,
+          "transFat": 0,
+          "carb": 0,
+          "sugar": 0,
+          "sodium": 23
+        }
+      },
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw1b641c51/images/large/1003301100104.jpg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003301100104.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003301100104.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": [
+          {
+            "field": "ingredients",
+            "type": "missing",
+            "note": "找不到成分"
+          }
+        ]
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "kuangchuan-1001102100106",
+      "name": "果汁時刻100%蘋果綜合果汁200ml",
+      "brand": "kuangchuan",
+      "category": "drink.juice",
+      "variants": [
+        {
+          "size": null,
+          "sku": "1001102100106",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "★無加糖、無香料、無防腐劑",
+        "items": [
+          {
+            "text": "★無加糖"
+          },
+          {
+            "text": "無香料",
+            "substance": "flavor"
+          },
+          {
+            "text": "無防腐劑"
+          }
+        ]
+      },
+      "nutrition": null,
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw501a4255/images/large/1001102100106.jpg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1001102100106.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1001102100106.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1001102100124.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": [
+          {
+            "field": "nutrition",
+            "type": "missing",
+            "note": "找不到營養標示"
+          }
+        ]
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "kuangchuan-1001402800106",
+      "name": "果汁時刻芭芒柳汁",
+      "brand": "kuangchuan",
+      "category": "drink.juice",
+      "variants": [
+        {
+          "size": "250ml",
+          "sku": "1001402800106",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "水、蔗糖、天然芭樂原汁、天然芒果原汁、柳橙濃縮汁、蘋果濃縮汁、羧甲基纖維素鈉、香料、檸檬酸、蘋果酸",
+        "items": [
+          {
+            "text": "水"
+          },
+          {
+            "text": "蔗糖"
+          },
+          {
+            "text": "天然芭樂原汁"
+          },
+          {
+            "text": "天然芒果原汁"
+          },
+          {
+            "text": "柳橙濃縮汁"
+          },
+          {
+            "text": "蘋果濃縮汁"
+          },
+          {
+            "text": "羧甲基纖維素鈉",
+            "substance": "cmc"
+          },
+          {
+            "text": "香料",
+            "substance": "flavor"
+          },
+          {
+            "text": "檸檬酸",
+            "substance": "citric-acid"
+          },
+          {
+            "text": "蘋果酸",
+            "substance": "malic-acid"
+          }
+        ]
+      },
+      "nutrition": null,
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw95c8b206/images/large/1001402800124.jpg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1001402800106.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1001402800106.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1001402800124.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": [
+          {
+            "field": "nutrition",
+            "type": "missing",
+            "note": "找不到營養標示"
+          }
+        ]
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "kuangchuan-1001300500124",
+      "name": "果汁時刻葡萄汁",
+      "brand": "kuangchuan",
+      "category": "drink.juice",
+      "variants": [
+        {
+          "size": "250ml",
+          "sku": "1001300500124",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "水、果糖、砂糖、紅葡萄濃縮汁、檸檬酸、香料、葡萄皮色素",
+        "items": [
+          {
+            "text": "水"
+          },
+          {
+            "text": "果糖",
+            "substance": "hfcs"
+          },
+          {
+            "text": "砂糖"
+          },
+          {
+            "text": "紅葡萄濃縮汁"
+          },
+          {
+            "text": "檸檬酸",
+            "substance": "citric-acid"
+          },
+          {
+            "text": "香料",
+            "substance": "flavor"
+          },
+          {
+            "text": "葡萄皮色素",
+            "substance": "anthocyanin"
+          }
+        ]
+      },
+      "nutrition": {
+        "basis": "liquid",
+        "serving": {
+          "size": 250,
+          "unit": "ml"
+        },
+        "servingsPerPack": 1,
+        "perServing": {},
+        "per100": {
+          "satFat": 0,
+          "transFat": 0,
+          "kcal": 110,
+          "carb": 27.5
+        }
+      },
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw3621f1e2/images/large/1001300500124.jpg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1001300500124.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1001300500124.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": []
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "kuangchuan-1001100100106",
+      "name": "果汁時刻蘋果汁",
+      "brand": "kuangchuan",
+      "category": "drink.juice",
+      "variants": [
+        {
+          "size": "250ml",
+          "sku": "1001100100106",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "水、果糖、砂糖、蘋果濃縮汁、香料、維生素C、羧甲基纖維 素鈉、焦糖糖漿、蘋果酸",
+        "items": [
+          {
+            "text": "水"
+          },
+          {
+            "text": "果糖",
+            "substance": "hfcs"
+          },
+          {
+            "text": "砂糖"
+          },
+          {
+            "text": "蘋果濃縮汁"
+          },
+          {
+            "text": "香料",
+            "substance": "flavor"
+          },
+          {
+            "text": "維生素C",
+            "substance": "vitamin-c"
+          },
+          {
+            "text": "羧甲基纖維 素鈉",
+            "substance": "cmc"
+          },
+          {
+            "text": "焦糖糖漿",
+            "substance": "caramel"
+          },
+          {
+            "text": "蘋果酸",
+            "substance": "malic-acid"
+          }
+        ]
+      },
+      "nutrition": null,
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw4451d6b3/images/large/1001100100124.jpg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1001100100106.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1001100100106.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1001100100124.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": [
+          {
+            "field": "nutrition",
+            "type": "missing",
+            "note": "找不到營養標示"
+          }
+        ]
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "quaker-1002307500101",
+      "name": "5X人蔘濃縮精華飲",
+      "brand": "quaker",
+      "category": "drink.juice",
+      "variants": [
+        {
+          "size": "15ml×18",
+          "sku": "1002307500101",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "人蔘濃縮液(水、西洋蔘、人蔘、蓮子、百合)、冰糖",
+        "items": [
+          {
+            "text": "人蔘濃縮液",
+            "children": [
+              {
+                "text": "水"
+              },
+              {
+                "text": "西洋蔘"
+              },
+              {
+                "text": "人蔘"
+              },
+              {
+                "text": "蓮子"
+              },
+              {
+                "text": "百合"
+              }
+            ]
+          },
+          {
+            "text": "冰糖"
+          }
+        ]
+      },
+      "nutrition": null,
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw66eca518/images/large/0229144_5x15ml18.jpeg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002307500101.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002307500101.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002307500106.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": [
+          {
+            "field": "nutrition",
+            "type": "missing",
+            "note": "找不到營養標示"
+          }
+        ]
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "quaker-1002301800101",
+      "name": "人蔘蜆精68ml",
+      "brand": "quaker",
+      "category": "drink.juice",
+      "variants": [
+        {
+          "size": null,
+          "sku": "1002301800101",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "人蔘萃取液(水、西洋蔘、紅棗、蓮子、百合、高麗紅蔘、白蔘)、蜆精、香料",
+        "items": [
+          {
+            "text": "人蔘萃取液",
+            "children": [
+              {
+                "text": "水"
+              },
+              {
+                "text": "西洋蔘"
+              },
+              {
+                "text": "紅棗"
+              },
+              {
+                "text": "蓮子"
+              },
+              {
+                "text": "百合"
+              },
+              {
+                "text": "高麗紅蔘"
+              },
+              {
+                "text": "白蔘"
+              }
+            ]
+          },
+          {
+            "text": "蜆精"
+          },
+          {
+            "text": "香料",
+            "substance": "flavor"
+          }
+        ]
+      },
+      "nutrition": {
+        "basis": "solid",
+        "serving": null,
+        "servingsPerPack": null,
+        "perServing": {},
+        "per100": {
+          "kcal": 6,
+          "protein": 0.25,
+          "fat": 0,
+          "satFat": 0,
+          "transFat": 0,
+          "cholesterol": 0,
+          "carb": 1.3,
+          "sodium": 12
+        }
+      },
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwbe880572/images/large/0051633_68mlx15.jpeg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002301800101.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002301800101.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": []
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "quaker-1002311000101",
+      "name": "天地合補含鐵玫瑰四物",
+      "brand": "quaker",
+      "category": "drink.juice",
+      "variants": [
+        {
+          "size": "120ml×6",
+          "sku": "1002311000101",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "◆ 添加天然玫瑰果、紅棗、黑棗、桂圓、枸杞等滋補素材，更順口好喝",
+        "items": [
+          {
+            "text": "◆ 添加天然玫瑰果"
+          },
+          {
+            "text": "紅棗"
+          },
+          {
+            "text": "黑棗"
+          },
+          {
+            "text": "桂圓"
+          },
+          {
+            "text": "枸杞等滋補素材"
+          },
+          {
+            "text": "更順口好喝"
+          }
+        ]
+      },
+      "nutrition": {
+        "basis": "liquid",
+        "serving": {
+          "size": 120,
+          "unit": "ml"
+        },
+        "servingsPerPack": null,
+        "perServing": {},
+        "per100": {
+          "kcal": 64.8,
+          "fat": 0,
+          "carb": 14.8
+        }
+      },
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw4e073a5f/images/large/0120578_120ml-x6.jpeg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002311000101.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002311000101.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": []
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "quaker-1002306900101",
+      "name": "天地合補官燕窩42克",
+      "brand": "quaker",
+      "category": "drink.juice",
+      "variants": [
+        {
+          "size": null,
+          "sku": "1002306900101",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "水、冰糖、燕窩、結蘭膠",
+        "items": [
+          {
+            "text": "水"
+          },
+          {
+            "text": "冰糖"
+          },
+          {
+            "text": "燕窩"
+          },
+          {
+            "text": "結蘭膠",
+            "substance": "gellan"
+          }
+        ]
+      },
+      "nutrition": null,
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw3c91a78e/images/large/0201278_42x5.jpeg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002306900101.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002306900101.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": [
+          {
+            "field": "nutrition",
+            "type": "missing",
+            "note": "找不到營養標示"
+          }
+        ]
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "quaker-1002399800101",
+      "name": "天地合補金盞花葉黃素濃縮飲15ml",
+      "brand": "quaker",
+      "category": "drink.juice",
+      "variants": [
+        {
+          "size": null,
+          "sku": "1002399800101",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "100%藍莓汁(水、藍莓濃縮汁)、枸杞萃取濃縮液(水、枸杞、黑豆)、冰糖、金盞花萃取物(含葉黃素)(麥芽寡醣、阿拉伯膠、葉黃素)、金盞花萃取物(含玉米黃素)(麥芽寡醣、阿拉伯膠、玉米黃素)、香料、雞冠萃取物(含透明質酸鈉)、維生素E、胡椒鹼",
+        "items": [
+          {
+            "text": "100%藍莓汁",
+            "children": [
+              {
+                "text": "水"
+              },
+              {
+                "text": "藍莓濃縮汁"
+              }
+            ]
+          },
+          {
+            "text": "枸杞萃取濃縮液",
+            "children": [
+              {
+                "text": "水"
+              },
+              {
+                "text": "枸杞"
+              },
+              {
+                "text": "黑豆"
+              }
+            ]
+          },
+          {
+            "text": "冰糖"
+          },
+          {
+            "text": "金盞花萃取物",
+            "children": [
+              {
+                "text": "含葉黃素",
+                "children": [
+                  {
+                    "text": "麥芽寡醣"
+                  },
+                  {
+                    "text": "阿拉伯膠"
+                  },
+                  {
+                    "text": "葉黃素"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "金盞花萃取物",
+            "children": [
+              {
+                "text": "含玉米黃素",
+                "children": [
+                  {
+                    "text": "麥芽寡醣"
+                  },
+                  {
+                    "text": "阿拉伯膠"
+                  },
+                  {
+                    "text": "玉米黃素"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "text": "香料",
+            "substance": "flavor"
+          },
+          {
+            "text": "雞冠萃取物",
+            "children": [
+              {
+                "text": "含透明質酸鈉"
+              }
+            ]
+          },
+          {
+            "text": "維生素E",
+            "substance": "vitamin-e"
+          },
+          {
+            "text": "胡椒鹼"
+          }
+        ]
+      },
+      "nutrition": null,
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwde446c93/images/large/1002399800101_NR_00.jpg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002399800101.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002399800101.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": [
+          {
+            "field": "nutrition",
+            "type": "missing",
+            "note": "找不到營養標示"
+          }
+        ]
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "quaker-1002306700101",
+      "name": "冬蟲夏草活靈芝60ml",
+      "brand": "quaker",
+      "category": "drink.juice",
+      "variants": [
+        {
+          "size": null,
+          "sku": "1002306700101",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "冬蟲夏草靈芝液(水、赤芝靈芝液、冬蟲夏草)、冰糖、蜂蜜、玉米糖膠、檸檬酸、DL-蘋果酸",
+        "items": [
+          {
+            "text": "冬蟲夏草靈芝液",
+            "children": [
+              {
+                "text": "水"
+              },
+              {
+                "text": "赤芝靈芝液"
+              },
+              {
+                "text": "冬蟲夏草"
+              }
+            ]
+          },
+          {
+            "text": "冰糖"
+          },
+          {
+            "text": "蜂蜜"
+          },
+          {
+            "text": "玉米糖膠",
+            "substance": "xanthan"
+          },
+          {
+            "text": "檸檬酸",
+            "substance": "citric-acid"
+          },
+          {
+            "text": "DL-蘋果酸",
+            "substance": "malic-acid"
+          }
+        ]
+      },
+      "nutrition": {
+        "basis": "solid",
+        "serving": {
+          "size": 60,
+          "unit": "g"
+        },
+        "servingsPerPack": 6,
+        "perServing": {
+          "kcal": 17.6,
+          "protein": 0.3,
+          "fat": 0,
+          "satFat": 0,
+          "transFat": 0,
+          "carb": 4.4,
+          "sugar": 4,
+          "sodium": 13
+        },
+        "per100": {
+          "satFat": 0,
+          "transFat": 0
+        }
+      },
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwc9ae9a1a/images/large/0241891_60mlx16.jpeg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002306700101.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002306700101.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": []
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "quaker-1002306800101",
+      "name": "冬蟲夏草養氣人蔘60ml",
+      "brand": "quaker",
+      "category": "drink.juice",
+      "variants": [
+        {
+          "size": null,
+          "sku": "1002306800101",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "冬蟲夏草人蔘萃取液(水、西洋蔘、人蔘、蓮子、百合、冬蟲夏草)、冬蟲夏草菌絲體(中華被毛孢Hirsutella sinensis)萃取液、冰糖",
+        "items": [
+          {
+            "text": "冬蟲夏草人蔘萃取液",
+            "children": [
+              {
+                "text": "水"
+              },
+              {
+                "text": "西洋蔘"
+              },
+              {
+                "text": "人蔘"
+              },
+              {
+                "text": "蓮子"
+              },
+              {
+                "text": "百合"
+              },
+              {
+                "text": "冬蟲夏草"
+              }
+            ]
+          },
+          {
+            "text": "冬蟲夏草菌絲體萃取液",
+            "children": [
+              {
+                "text": "中華被毛孢Hirsutella sinensis"
+              }
+            ]
+          },
+          {
+            "text": "冰糖"
+          }
+        ]
+      },
+      "nutrition": {
+        "basis": "solid",
+        "serving": {
+          "size": 60,
+          "unit": "g"
+        },
+        "servingsPerPack": 6,
+        "perServing": {
+          "kcal": 24,
+          "protein": 0,
+          "fat": 0,
+          "satFat": 0,
+          "transFat": 0,
+          "carb": 6,
+          "sugar": 5.6,
+          "sodium": 8
+        },
+        "per100": {
+          "satFat": 0,
+          "transFat": 0
+        }
+      },
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw9c0dd556/images/large/0241892_60mlx16.jpeg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002306800101.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002306800101.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": []
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "quaker-1002301600101",
+      "name": "原味水解雞精",
+      "brand": "quaker",
+      "category": "drink.juice",
+      "variants": [
+        {
+          "size": "68ml×18",
+          "sku": "1002301600101",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "雞精",
+        "items": [
+          {
+            "text": "雞精"
+          }
+        ]
+      },
+      "nutrition": null,
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwb663ae42/images/large/0278759_18.jpeg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002301600101.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002301600101.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": [
+          {
+            "field": "nutrition",
+            "type": "missing",
+            "note": "找不到營養標示"
+          }
+        ]
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "quaker-1002309600101",
+      "name": "高麗人蔘滋補液",
+      "brand": "quaker",
+      "category": "drink.juice",
+      "variants": [
+        {
+          "size": "60ml×6",
+          "sku": "1002309600101",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "高麗人蔘萃取液[水、紅蔘(紅蔘、高麗蔘)、人蔘、西洋蔘、紅棗、蓮子、百合]、冰糖、蜂蜜、檸檬汁",
+        "items": [
+          {
+            "text": "高麗人蔘萃取液",
+            "children": [
+              {
+                "text": "水"
+              },
+              {
+                "text": "紅蔘",
+                "children": [
+                  {
+                    "text": "紅蔘"
+                  },
+                  {
+                    "text": "高麗蔘"
+                  }
+                ]
+              },
+              {
+                "text": "人蔘"
+              },
+              {
+                "text": "西洋蔘"
+              },
+              {
+                "text": "紅棗"
+              },
+              {
+                "text": "蓮子"
+              },
+              {
+                "text": "百合"
+              }
+            ]
+          },
+          {
+            "text": "冰糖"
+          },
+          {
+            "text": "蜂蜜"
+          },
+          {
+            "text": "檸檬汁"
+          }
+        ]
+      },
+      "nutrition": null,
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw18cded8a/images/large/1002309600101_NR_00.jpg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002309600101.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002309600101.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": [
+          {
+            "field": "nutrition",
+            "type": "missing",
+            "note": "找不到營養標示"
+          }
+        ]
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "quaker-1002302100104",
+      "name": "蜜人蔘",
+      "brand": "quaker",
+      "category": "drink.juice",
+      "variants": [
+        {
+          "size": "60ml×19",
+          "sku": "1002302100104",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "養氣蜜人蔘萃取液(水、西洋蔘、紅蔘、紅棗)、冰糖、蜂蜜、DL-蘋果酸、檸檬酸、玉米糖膠",
+        "items": [
+          {
+            "text": "養氣蜜人蔘萃取液",
+            "children": [
+              {
+                "text": "水"
+              },
+              {
+                "text": "西洋蔘"
+              },
+              {
+                "text": "紅蔘"
+              },
+              {
+                "text": "紅棗"
+              }
+            ]
+          },
+          {
+            "text": "冰糖"
+          },
+          {
+            "text": "蜂蜜"
+          },
+          {
+            "text": "DL-蘋果酸",
+            "substance": "malic-acid"
+          },
+          {
+            "text": "檸檬酸",
+            "substance": "citric-acid"
+          },
+          {
+            "text": "玉米糖膠",
+            "substance": "xanthan"
+          }
+        ]
+      },
+      "nutrition": null,
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwc9d696e2/images/large/0241886_60mlx19.jpeg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002302100104.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002302100104.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": [
+          {
+            "field": "nutrition",
+            "type": "missing",
+            "note": "找不到營養標示"
+          }
+        ]
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "quaker-1002302100101",
+      "name": "蜜人蔘60ml",
+      "brand": "quaker",
+      "category": "drink.juice",
+      "variants": [
+        {
+          "size": null,
+          "sku": "1002302100101",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "養氣蜜人蔘萃取液(水、西洋蔘、紅蔘、紅棗)、冰糖、蜂蜜、DL-蘋果酸、檸檬酸、玉米糖膠",
+        "items": [
+          {
+            "text": "養氣蜜人蔘萃取液",
+            "children": [
+              {
+                "text": "水"
+              },
+              {
+                "text": "西洋蔘"
+              },
+              {
+                "text": "紅蔘"
+              },
+              {
+                "text": "紅棗"
+              }
+            ]
+          },
+          {
+            "text": "冰糖"
+          },
+          {
+            "text": "蜂蜜"
+          },
+          {
+            "text": "DL-蘋果酸",
+            "substance": "malic-acid"
+          },
+          {
+            "text": "檸檬酸",
+            "substance": "citric-acid"
+          },
+          {
+            "text": "玉米糖膠",
+            "substance": "xanthan"
+          }
+        ]
+      },
+      "nutrition": {
+        "basis": "solid",
+        "serving": {
+          "size": 60,
+          "unit": "g"
+        },
+        "servingsPerPack": 19,
+        "perServing": {
+          "kcal": 33.2,
+          "fat": 0,
+          "satFat": 0,
+          "sugar": 7.4,
+          "sodium": 8
+        },
+        "per100": {
+          "satFat": 0,
+          "transFat": 0
+        }
+      },
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwc9d696e2/images/large/0241886_60mlx19.jpeg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002302100101.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002302100101.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": []
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "quaker-1002309300101",
+      "name": "養氣人蔘",
+      "brand": "quaker",
+      "category": "drink.juice",
+      "variants": [
+        {
+          "size": "60ml×6",
+          "sku": "1002309300101",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "水、冰糖、西洋蔘(粉光蔘)、白蔘片、蓮子、百合、DL-蘋果酸、檸檬酸、玉米糖膠",
+        "items": [
+          {
+            "text": "水"
+          },
+          {
+            "text": "冰糖"
+          },
+          {
+            "text": "西洋蔘",
+            "children": [
+              {
+                "text": "粉光蔘"
+              }
+            ]
+          },
+          {
+            "text": "白蔘片"
+          },
+          {
+            "text": "蓮子"
+          },
+          {
+            "text": "百合"
+          },
+          {
+            "text": "DL-蘋果酸",
+            "substance": "malic-acid"
+          },
+          {
+            "text": "檸檬酸",
+            "substance": "citric-acid"
+          },
+          {
+            "text": "玉米糖膠",
+            "substance": "xanthan"
+          }
+        ]
+      },
+      "nutrition": {
+        "basis": "liquid",
+        "serving": {
+          "size": 60,
+          "unit": "ml"
+        },
+        "servingsPerPack": 6,
+        "perServing": {},
+        "per100": {
+          "satFat": 0,
+          "transFat": 0,
+          "kcal": 22.8,
+          "sugar": 5.7
+        }
+      },
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw5c6c2da7/images/large/0241893_60mlx6.jpeg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002309300101.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002309300101.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": []
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "quaker-1002311200101",
+      "name": "養氣人蔘無糖配方",
+      "brand": "quaker",
+      "category": "drink.juice",
+      "variants": [
+        {
+          "size": null,
+          "sku": "1002311200101",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "★ 健康、無添加糖、溫和，適合長期食用",
+        "items": [
+          {
+            "text": "★ 健康"
+          },
+          {
+            "text": "無添加糖"
+          },
+          {
+            "text": "溫和"
+          },
+          {
+            "text": "適合長期食用"
+          }
+        ]
+      },
+      "nutrition": null,
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw2f758c61/images/large/0241894_6.jpeg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002311200101.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002311200101.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": [
+          {
+            "field": "nutrition",
+            "type": "missing",
+            "note": "找不到營養標示"
+          }
+        ]
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "quaker-1002303400101",
+      "name": "養氣人蔘雞精6瓶",
+      "brand": "quaker",
+      "category": "drink.juice",
+      "variants": [
+        {
+          "size": null,
+          "sku": "1002303400101",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "雞精、萃取液(水、西洋蔘、白蔘、蓮子、百合)",
+        "items": [
+          {
+            "text": "雞精"
+          },
+          {
+            "text": "萃取液",
+            "children": [
+              {
+                "text": "水"
+              },
+              {
+                "text": "西洋蔘"
+              },
+              {
+                "text": "白蔘"
+              },
+              {
+                "text": "蓮子"
+              },
+              {
+                "text": "百合"
+              }
+            ]
+          }
+        ]
+      },
+      "nutrition": {
+        "basis": "liquid",
+        "serving": {
+          "size": 34,
+          "unit": "ml"
+        },
+        "servingsPerPack": 6,
+        "perServing": {},
+        "per100": {
+          "satFat": 0,
+          "transFat": 0,
+          "kcal": 11.2,
+          "fat": 0,
+          "carb": 0.1
+        }
+      },
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw8a1a9970/images/large/0072665_6.jpeg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002303400101.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002303400101.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": []
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "taisun-1003101200104",
+      "name": "冰鎮檸檬紅茶",
+      "brand": "taisun",
+      "category": "drink.coffee",
+      "variants": [
+        {
+          "size": "535ml",
+          "sku": "1003101200104",
+          "barcodes": []
+        },
+        {
+          "size": "250ml",
+          "sku": "1003100100106",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "成份",
+        "items": [
+          {
+            "text": "成份"
+          }
+        ]
+      },
+      "nutrition": {
+        "basis": "liquid",
+        "serving": {
+          "size": 267.5,
+          "unit": "ml"
+        },
+        "servingsPerPack": 2,
+        "perServing": {
+          "kcal": 99.6,
+          "protein": 0,
+          "fat": 0,
+          "satFat": 0,
+          "transFat": 0,
+          "carb": 24.9,
+          "sugar": 23.3,
+          "sodium": 29
+        },
+        "per100": {
+          "kcal": 37.2,
+          "protein": 0,
+          "fat": 0,
+          "satFat": 0,
+          "transFat": 0,
+          "carb": 9.3,
+          "sugar": 8.7,
+          "sodium": 10.8
+        },
+        "per100Computed": true
+      },
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw0a6c8ba2/images/large/1003101200104_NR_00.png?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E6%B3%B0%E5%B1%B1/1003101200104.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E6%B3%B0%E5%B1%B1/1003101200104.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E6%B3%B0%E5%B1%B1/1003101200124.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E6%B3%B0%E5%B1%B1/1003100100106.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": []
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "uni-1003001400104",
+      "name": "白毫烏龍茶",
+      "brand": "uni",
+      "category": "drink.coffee",
+      "variants": [
+        {
+          "size": "600ml",
+          "sku": "1003001400104",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "◎應用高溫萃取茶香、低溫萃取茶感的兩段式工法，完整表現出多元的茶味芳香與烏龍茶之甘味、韻味，呈現純真的東方美人茶風味",
+        "items": [
+          {
+            "text": "◎應用高溫萃取茶香"
+          },
+          {
+            "text": "低溫萃取茶感的兩段式工法"
+          },
+          {
+            "text": "完整表現出多元的茶味芳香與烏龍茶之甘味"
+          },
+          {
+            "text": "韻味"
+          },
+          {
+            "text": "呈現純真的東方美人茶風味"
+          }
+        ]
+      },
+      "nutrition": null,
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw437510e6/images/large/1003001400104_NR_00.png?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003001400104.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003001400104.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": [
+          {
+            "field": "nutrition",
+            "type": "missing",
+            "note": "找不到營養標示"
+          }
+        ]
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "uni-1003001400124",
+      "name": "白毫烏龍茶微甜",
+      "brand": "uni",
+      "category": "drink.coffee",
+      "variants": [
+        {
+          "size": "600ml",
+          "sku": "1003001400124",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "◎應用高溫萃取茶香、低溫萃取茶感的兩段式工法，完整表現出多元的茶味芳香與烏龍茶之甘味、韻味，呈現純真的東方美人茶風味",
+        "items": [
+          {
+            "text": "◎應用高溫萃取茶香"
+          },
+          {
+            "text": "低溫萃取茶感的兩段式工法"
+          },
+          {
+            "text": "完整表現出多元的茶味芳香與烏龍茶之甘味"
+          },
+          {
+            "text": "韻味"
+          },
+          {
+            "text": "呈現純真的東方美人茶風味"
+          }
+        ]
+      },
+      "nutrition": null,
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw6e9cfaa9/images/large/1003001400124_NR_00.png?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003001400124.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003001400124.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": [
+          {
+            "field": "nutrition",
+            "type": "missing",
+            "note": "找不到營養標示"
+          }
+        ]
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "uni-1002001100106",
+      "name": "咖啡廣場",
+      "brand": "uni",
+      "category": "drink.coffee",
+      "variants": [
+        {
+          "size": "300ml",
+          "sku": "1002001100106",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "水、蔗糖、乳粉、氧化羥丙基澱粉、咖啡粉、乾酪素鈉、小蘇打、香料、乳化劑(脂肪酸蔗糖酯)、食鹽",
+        "items": [
+          {
+            "text": "水"
+          },
+          {
+            "text": "蔗糖"
+          },
+          {
+            "text": "乳粉"
+          },
+          {
+            "text": "氧化羥丙基澱粉",
+            "substance": "modified-starch"
+          },
+          {
+            "text": "咖啡粉"
+          },
+          {
+            "text": "乾酪素鈉"
+          },
+          {
+            "text": "小蘇打",
+            "substance": "sodium-bicarbonate"
+          },
+          {
+            "text": "香料",
+            "substance": "flavor"
+          },
+          {
+            "text": "乳化劑",
+            "children": [
+              {
+                "text": "脂肪酸蔗糖酯",
+                "substance": "sucrose-esters"
+              }
+            ],
+            "function": "乳化劑"
+          },
+          {
+            "text": "食鹽"
+          }
+        ]
+      },
+      "nutrition": {
+        "basis": "liquid",
+        "serving": {
+          "size": 300,
+          "unit": "ml"
+        },
+        "servingsPerPack": 1,
+        "perServing": {
+          "kcal": 126,
+          "protein": 1.5,
+          "fat": 0.6,
+          "satFat": 0.6,
+          "transFat": 0,
+          "carb": 28.5,
+          "sugar": 27.3,
+          "sodium": 144
+        },
+        "per100": {
+          "kcal": 42,
+          "protein": 0.5,
+          "fat": 0.2,
+          "satFat": 0.2,
+          "transFat": 0,
+          "carb": 9.5,
+          "sugar": 9.1,
+          "sodium": 48
+        }
+      },
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw8d30be7f/images/large/1002001100101_NR_00.png?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1002001100106.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1002001100106.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1002001100124.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": []
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "uni-1002003600104",
+      "name": "咖啡廣場奶香特調咖啡",
+      "brand": "uni",
+      "category": "drink.coffee",
+      "variants": [
+        {
+          "size": "600ml",
+          "sku": "1002003600104",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "水、蔗糖、乳粉、咖啡粉、奶精(葡萄糖漿、氫化椰子油、乾酪素鈉、磷酸氫二鉀、多磷酸鈉、脂肪酸甘油酯、二氧化矽、&beta;-胡蘿蔔素)、乳化劑(乳酸硬脂酸鈉、脂肪酸甘油酯、脂肪酸蔗糖酯)、小蘇打、香料、關華豆膠",
+        "items": [
+          {
+            "text": "水"
+          },
+          {
+            "text": "蔗糖"
+          },
+          {
+            "text": "乳粉"
+          },
+          {
+            "text": "咖啡粉"
+          },
+          {
+            "text": "奶精",
+            "children": [
+              {
+                "text": "葡萄糖漿"
+              },
+              {
+                "text": "氫化椰子油",
+                "substance": "hydrogenated-oil"
+              },
+              {
+                "text": "乾酪素鈉"
+              },
+              {
+                "text": "磷酸氫二鉀",
+                "substance": "phosphates"
+              },
+              {
+                "text": "多磷酸鈉",
+                "substance": "phosphates"
+              },
+              {
+                "text": "脂肪酸甘油酯",
+                "substance": "mono-diglycerides"
+              },
+              {
+                "text": "二氧化矽",
+                "substance": "silicon-dioxide"
+              },
+              {
+                "text": "&beta"
+              },
+              {
+                "text": "-胡蘿蔔素",
+                "substance": "beta-carotene"
+              }
+            ],
+            "substance": "creamer"
+          },
+          {
+            "text": "乳化劑",
+            "children": [
+              {
+                "text": "乳酸硬脂酸鈉",
+                "substance": "lactic-acid"
+              },
+              {
+                "text": "脂肪酸甘油酯",
+                "substance": "mono-diglycerides"
+              },
+              {
+                "text": "脂肪酸蔗糖酯",
+                "substance": "sucrose-esters"
+              }
+            ],
+            "function": "乳化劑"
+          },
+          {
+            "text": "小蘇打",
+            "substance": "sodium-bicarbonate"
+          },
+          {
+            "text": "香料",
+            "substance": "flavor"
+          },
+          {
+            "text": "關華豆膠",
+            "substance": "guar"
+          }
+        ]
+      },
+      "nutrition": {
+        "basis": "liquid",
+        "serving": {
+          "size": 300,
+          "unit": "ml"
+        },
+        "servingsPerPack": 2,
+        "perServing": {
+          "kcal": 138,
+          "protein": 2.4,
+          "fat": 2.1,
+          "satFat": 1.8,
+          "transFat": 0,
+          "carb": 27.3,
+          "sugar": 22.8,
+          "sodium": 120
+        },
+        "per100": {
+          "kcal": 46,
+          "protein": 0.8,
+          "fat": 0.7,
+          "satFat": 0.6,
+          "transFat": 0,
+          "carb": 9.1,
+          "sugar": 7.6,
+          "sodium": 40
+        }
+      },
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwb930890a/images/large/1002003600104_NR_00.png?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1002003600104.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1002003600104.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1002003600124.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": []
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "uni-1002004200104",
+      "name": "咖啡廣場調和式冰咖啡",
+      "brand": "uni",
+      "category": "drink.coffee",
+      "variants": [
+        {
+          "size": "600ml",
+          "sku": "1002004200104",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "水、蔗糖、乳粉、咖啡粉、乳化劑(脂肪酸甘油酯、乳酸硬脂酸鈉)、小蘇打、香料、關華豆膠",
+        "items": [
+          {
+            "text": "水"
+          },
+          {
+            "text": "蔗糖"
+          },
+          {
+            "text": "乳粉"
+          },
+          {
+            "text": "咖啡粉"
+          },
+          {
+            "text": "乳化劑",
+            "children": [
+              {
+                "text": "脂肪酸甘油酯",
+                "substance": "mono-diglycerides"
+              },
+              {
+                "text": "乳酸硬脂酸鈉",
+                "substance": "lactic-acid"
+              }
+            ],
+            "function": "乳化劑"
+          },
+          {
+            "text": "小蘇打",
+            "substance": "sodium-bicarbonate"
+          },
+          {
+            "text": "香料",
+            "substance": "flavor"
+          },
+          {
+            "text": "關華豆膠",
+            "substance": "guar"
+          }
+        ]
+      },
+      "nutrition": {
+        "basis": "liquid",
+        "serving": {
+          "size": 300,
+          "unit": "ml"
+        },
+        "servingsPerPack": 2,
+        "perServing": {
+          "kcal": 117,
+          "protein": 1.8,
+          "fat": 1.5,
+          "satFat": 1.2,
+          "transFat": 0,
+          "carb": 24,
+          "sugar": 21.6,
+          "sodium": 90
+        },
+        "per100": {
+          "kcal": 39,
+          "protein": 0.6,
+          "fat": 0.5,
+          "satFat": 0.4,
+          "transFat": 0,
+          "carb": 8,
+          "sugar": 7.2,
+          "sodium": 30
+        }
+      },
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwfafa5704/images/large/1002004200104_NR_00.png?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1002004200104.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1002004200104.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1002004200124.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": []
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "uni-1003001500104",
+      "name": "青心烏龍無糖Pet 600ml",
+      "brand": "uni",
+      "category": "drink.coffee",
+      "variants": [
+        {
+          "size": null,
+          "sku": "1003001500104",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "水、烏龍茶、茶萃取液、香料、抗氧化劑(L-抗壞血酸鈉)、小蘇打",
+        "items": [
+          {
+            "text": "水"
+          },
+          {
+            "text": "烏龍茶"
+          },
+          {
+            "text": "茶萃取液"
+          },
+          {
+            "text": "香料",
+            "substance": "flavor"
+          },
+          {
+            "text": "抗氧化劑",
+            "children": [
+              {
+                "text": "L-抗壞血酸鈉",
+                "substance": "vitamin-c"
+              }
+            ],
+            "function": "抗氧化劑"
+          },
+          {
+            "text": "小蘇打",
+            "substance": "sodium-bicarbonate"
+          }
+        ]
+      },
+      "nutrition": null,
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw82002e9b/images/large/0099018_et600ml.jpeg?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003001500104.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003001500104.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003001500124.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": [
+          {
+            "field": "nutrition",
+            "type": "missing",
+            "note": "找不到營養標示"
+          }
+        ]
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "uni-1003100700104",
+      "name": "英式紅茶",
+      "brand": "uni",
+      "category": "drink.coffee",
+      "variants": [
+        {
+          "size": "600ml",
+          "sku": "1003100700104",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "水、蔗糖、紅茶、茶萃取液、蒸餾紅茶萃取液、小蘇打、維生素C(抗氧化劑)、香料、茶抽出物",
+        "items": [
+          {
+            "text": "水"
+          },
+          {
+            "text": "蔗糖"
+          },
+          {
+            "text": "紅茶"
+          },
+          {
+            "text": "茶萃取液"
+          },
+          {
+            "text": "蒸餾紅茶萃取液"
+          },
+          {
+            "text": "小蘇打",
+            "substance": "sodium-bicarbonate"
+          },
+          {
+            "text": "維生素C",
+            "children": [
+              {
+                "text": "抗氧化劑"
+              }
+            ],
+            "substance": "vitamin-c"
+          },
+          {
+            "text": "香料",
+            "substance": "flavor"
+          },
+          {
+            "text": "茶抽出物"
+          }
+        ]
+      },
+      "nutrition": null,
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw0441d21e/images/large/1003100700104_NR_00.png?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003100700104.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003100700104.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003100700124.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": [
+          {
+            "field": "nutrition",
+            "type": "missing",
+            "note": "找不到營養標示"
+          }
+        ]
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "uni-1003200100112",
+      "name": "麥香阿薩姆奶茶",
+      "brand": "uni",
+      "category": "drink.coffee",
+      "variants": [
+        {
+          "size": "1250ml",
+          "sku": "1003200100112",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "水、蔗糖、全脂乳粉、煉乳、紅茶、大麥萃取液、香料、脂肪酸甘油酯、單及雙脂肪酸甘油二乙醯酒石酸酯、脂肪酸蔗糖酯、碳酸氫鈉",
+        "items": [
+          {
+            "text": "水"
+          },
+          {
+            "text": "蔗糖"
+          },
+          {
+            "text": "全脂乳粉"
+          },
+          {
+            "text": "煉乳"
+          },
+          {
+            "text": "紅茶"
+          },
+          {
+            "text": "大麥萃取液"
+          },
+          {
+            "text": "香料",
+            "substance": "flavor"
+          },
+          {
+            "text": "脂肪酸甘油酯",
+            "substance": "mono-diglycerides"
+          },
+          {
+            "text": "單及雙脂肪酸甘油二乙醯酒石酸酯",
+            "substance": "tartaric-acid"
+          },
+          {
+            "text": "脂肪酸蔗糖酯",
+            "substance": "sucrose-esters"
+          },
+          {
+            "text": "碳酸氫鈉",
+            "substance": "sodium-bicarbonate"
+          }
+        ]
+      },
+      "nutrition": {
+        "basis": "liquid",
+        "serving": {
+          "size": 300,
+          "unit": "ml"
+        },
+        "servingsPerPack": 2,
+        "perServing": {},
+        "per100": {
+          "kcal": 111,
+          "protein": 1.5,
+          "fat": 1.8,
+          "satFat": 1.5,
+          "transFat": 0,
+          "carb": 22.2,
+          "sugar": 21,
+          "sodium": 30
+        }
+      },
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw34aa9e43/images/large/1003200100112_NR_00.png?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003200100112.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003200100112.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": []
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "uni-1003101900124",
+      "name": "麥香阿薩姆紅茶",
+      "brand": "uni",
+      "category": "drink.coffee",
+      "variants": [
+        {
+          "size": "600ml",
+          "sku": "1003101900124",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "水、蔗糖、全脂乳粉、煉乳、紅茶、香料(含水、酒 精)、脂肪酸甘油酯、單及雙脂肪酸甘油二乙醯酒石酸酯、碳酸氫鈉、大麥抽出物(含麥芽、寡醣、環狀糊精)",
+        "items": [
+          {
+            "text": "水"
+          },
+          {
+            "text": "蔗糖"
+          },
+          {
+            "text": "全脂乳粉"
+          },
+          {
+            "text": "煉乳"
+          },
+          {
+            "text": "紅茶"
+          },
+          {
+            "text": "香料",
+            "children": [
+              {
+                "text": "含水"
+              },
+              {
+                "text": "酒 精"
+              }
+            ],
+            "function": "香料"
+          },
+          {
+            "text": "脂肪酸甘油酯",
+            "substance": "mono-diglycerides"
+          },
+          {
+            "text": "單及雙脂肪酸甘油二乙醯酒石酸酯",
+            "substance": "tartaric-acid"
+          },
+          {
+            "text": "碳酸氫鈉",
+            "substance": "sodium-bicarbonate"
+          },
+          {
+            "text": "大麥抽出物",
+            "children": [
+              {
+                "text": "含麥芽"
+              },
+              {
+                "text": "寡醣"
+              },
+              {
+                "text": "環狀糊精",
+                "substance": "maltodextrin"
+              }
+            ]
+          }
+        ]
+      },
+      "nutrition": {
+        "basis": "liquid",
+        "serving": {
+          "size": 300,
+          "unit": "ml"
+        },
+        "servingsPerPack": 2,
+        "perServing": {},
+        "per100": {
+          "kcal": 90,
+          "protein": 0,
+          "fat": 0,
+          "satFat": 0,
+          "transFat": 0,
+          "carb": 22.5,
+          "sugar": 21.9,
+          "sodium": 21
+        }
+      },
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw0fc11a3d/images/large/1003101900124_NR_00.png?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003101900124.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003101900124.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": [
+          {
+            "field": "substances",
+            "type": "unmatched",
+            "note": "下列添加物沒有對應到成分資料庫",
+            "candidates": [
+              "香料：含水",
+              "香料：酒 精"
+            ]
+          }
+        ]
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "uni-1003000100101",
+      "name": "開喜凍頂烏龍茶(無糖)",
+      "brand": "uni",
+      "category": "drink.coffee",
+      "variants": [
+        {
+          "size": "1.5L",
+          "sku": "1003000100101",
+          "barcodes": []
+        },
+        {
+          "size": "575ml",
+          "sku": "1003002100104",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "水、烏龍茶、抗氧化劑(維生素C)",
+        "items": [
+          {
+            "text": "水"
+          },
+          {
+            "text": "烏龍茶"
+          },
+          {
+            "text": "抗氧化劑",
+            "children": [
+              {
+                "text": "維生素C",
+                "substance": "vitamin-c"
+              }
+            ],
+            "function": "抗氧化劑"
+          }
+        ]
+      },
+      "nutrition": null,
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwbf3db5a9/images/large/1003000100101_NR_00.png?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003000100101.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003000100101.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003000100112.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003002100104.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003002100124.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": [
+          {
+            "field": "nutrition",
+            "type": "missing",
+            "note": "找不到營養標示"
+          }
+        ]
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "uni-1003000500101",
+      "name": "開喜凍頂烏龍茶有糖",
+      "brand": "uni",
+      "category": "drink.coffee",
+      "variants": [
+        {
+          "size": "1500ml",
+          "sku": "1003000500101",
+          "barcodes": []
+        },
+        {
+          "size": "575ml",
+          "sku": "1003002200124",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "水、蔗糖、烏龍茶、抗氧化劑(維生素C)",
+        "items": [
+          {
+            "text": "水"
+          },
+          {
+            "text": "蔗糖"
+          },
+          {
+            "text": "烏龍茶"
+          },
+          {
+            "text": "抗氧化劑",
+            "children": [
+              {
+                "text": "維生素C",
+                "substance": "vitamin-c"
+              }
+            ],
+            "function": "抗氧化劑"
+          }
+        ]
+      },
+      "nutrition": null,
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw5990a55e/images/large/1003000500101_NR_00.png?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003000500101.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003000500101.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003000500112.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003002200124.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": [
+          {
+            "field": "nutrition",
+            "type": "missing",
+            "note": "找不到營養標示"
+          }
+        ]
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "uni-1003002200104",
+      "name": "開喜凍頂烏龍茶清甜",
+      "brand": "uni",
+      "category": "drink.coffee",
+      "variants": [
+        {
+          "size": "575ml",
+          "sku": "1003002200104",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "水、蔗糖、烏龍茶、抗氧化劑(維生素C)",
+        "items": [
+          {
+            "text": "水"
+          },
+          {
+            "text": "蔗糖"
+          },
+          {
+            "text": "烏龍茶"
+          },
+          {
+            "text": "抗氧化劑",
+            "children": [
+              {
+                "text": "維生素C",
+                "substance": "vitamin-c"
+              }
+            ],
+            "function": "抗氧化劑"
+          }
+        ]
+      },
+      "nutrition": null,
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw4a55168b/images/large/1003002200104_NR_00.png?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003002200104.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003002200104.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": [
+          {
+            "field": "nutrition",
+            "type": "missing",
+            "note": "找不到營養標示"
+          }
+        ]
+      },
+      "updatedAt": "2026-11-04"
+    },
+    {
+      "id": "uni-1001601400106",
+      "name": "嚴選素材番茄汁",
+      "brand": "uni",
+      "category": "drink.juice",
+      "variants": [
+        {
+          "size": "340ml",
+          "sku": "1001601400106",
+          "barcodes": []
+        }
+      ],
+      "ingredients": {
+        "raw": "●無添加糖、防腐劑、色素、黏稠劑人工香料等",
+        "items": [
+          {
+            "text": "●無添加糖"
+          },
+          {
+            "text": "防腐劑"
+          },
+          {
+            "text": "色素"
+          },
+          {
+            "text": "黏稠劑人工香料等",
+            "substance": "flavor"
+          }
+        ]
+      },
+      "nutrition": null,
+      "allergens": null,
+      "gmo": {
+        "status": "unknown",
+        "raw": null
+      },
+      "origin": {
+        "country": "台灣"
+      },
+      "diet": null,
+      "labels": [],
+      "stores": {
+        "pxmart": {
+          "status": "unknown",
+          "verified": false
+        },
+        "seven": {
+          "status": "unknown",
+          "verified": false
+        },
+        "family": {
+          "status": "unknown",
+          "verified": false
+        }
+      },
+      "images": [
+        {
+          "kind": "front",
+          "file": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw139c942c/images/large/1001601400106_NR_00.png?sw=480&sh=480",
+          "sourceUrl": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1001601400106.html",
+          "credit": "萬家福線上購物"
+        }
+      ],
+      "sources": [
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1001601400106.html",
+          "fetchedAt": "2026-11-04"
+        },
+        {
+          "type": "uni-prosperity",
+          "label": "萬家福線上購物",
+          "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1001601400124.html",
+          "fetchedAt": "2026-11-04"
+        }
+      ],
+      "review": {
+        "status": "needs-review",
+        "issues": [
+          {
+            "field": "nutrition",
+            "type": "missing",
+            "note": "找不到營養標示"
+          }
+        ]
+      },
+      "updatedAt": "2026-11-04"
+    }
+  ]
+}

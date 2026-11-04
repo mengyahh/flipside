@@ -1,0 +1,8 @@
+[
+  { "id": "organic", "short": "有機", "name": "有機認證（台灣有機農產品標章或國外有機認證）" },
+  { "id": "rainforest", "short": "雨林友善", "name": "雨林聯盟認證（Rainforest Alliance）" },
+  { "id": "animal-welfare", "short": "動物福利", "name": "動物福利或人道飼養認證" },
+  { "id": "non-gmo", "short": "非基改", "name": "標示使用非基因改造原料" },
+  { "id": "cas", "short": "CAS", "name": "CAS 台灣優良農產品標章" },
+  { "id": "tap", "short": "產銷履歷", "name": "產銷履歷農產品標章（TAP）" }
+]

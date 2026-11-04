@@ -1,0 +1,658 @@
+{
+  "generatedAt": "2026-11-04",
+  "items": [
+    {
+      "id": "heysong-1000100800101",
+      "title": "黑松 汽水",
+      "category": "drink.soda",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw00440eeb/images/large/1000100800101_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE%E6%B1%BD%E6%B0%B4/1000100800101.html",
+      "issues": [
+        {
+          "field": "substances",
+          "type": "unmatched",
+          "note": "下列添加物沒有對應到成分資料庫",
+          "candidates": [
+            "香料：含乙醇",
+            "香料：水"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "heysong-1000200300104",
+      "title": "黑松 加鹽沙士",
+      "category": "drink.soda",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw5f6df198/images/large/1000200300104_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE%E6%B2%99%E5%A3%AB/1000200300104.html",
+      "issues": []
+    },
+    {
+      "id": "heysong-1000200900104",
+      "title": "黑松 沙士",
+      "category": "drink.soda",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw270e8094/images/large/1000200900104_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE%E6%B2%99%E5%A3%AB/1000200900104.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1001004200106",
+      "title": "義美 寶吉蔬果汁葡萄莓果",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw0d2c1e31/images/large/0151219_125ml.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1001004200106.html",
+      "issues": []
+    },
+    {
+      "id": "kuangchuan-1001100100106",
+      "title": "光泉 果汁時刻蘋果汁",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw4451d6b3/images/large/1001100100124.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1001100100106.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "heysong-1001101600106",
+      "title": "黑松 蘋果汁",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw953616b3/images/large/1001101600106_NR_01.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE/1001101600106.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "kuangchuan-1001102100106",
+      "title": "光泉 果汁時刻100%蘋果綜合果汁200ml",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw501a4255/images/large/1001102100106.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1001102100106.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "heysong-1001300300106",
+      "title": "黑松 葡萄汁",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw888c5bb0/images/large/1001300300106_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE/1001300300106.html",
+      "issues": [
+        {
+          "field": "substances",
+          "type": "unmatched",
+          "note": "下列添加物沒有對應到成分資料庫",
+          "candidates": [
+            "香料：含乙醇",
+            "香料：水"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kuangchuan-1001300500124",
+      "title": "光泉 果汁時刻葡萄汁",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw3621f1e2/images/large/1001300500124.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1001300500124.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1001301200106",
+      "title": "義美 寶吉純果汁葡萄",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwce6b73ce/images/large/0007833_t125ml.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1001301200106.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "kuangchuan-1001402800106",
+      "title": "光泉 果汁時刻芭芒柳汁",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw95c8b206/images/large/1001402800124.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1001402800106.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "heysong-1001403200106",
+      "title": "黑松 百香果C",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw9d85aa92/images/large/1001403200106_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE/1001403200106.html",
+      "issues": []
+    },
+    {
+      "id": "agv-1001406700106",
+      "title": "愛之味 莎莎亞椰奶",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw25701e0d/images/large/0013012_t250ml.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%84%9B%E4%B9%8B%E5%91%B3/1001406700106.html",
+      "issues": []
+    },
+    {
+      "id": "kuangchuan-1001501100124",
+      "title": "光泉 正庄蘆筍汁",
+      "category": "meat.canned",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw85e20da6/images/large/0238953_t250ml.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1001501100124.html",
+      "issues": []
+    },
+    {
+      "id": "agv-1001600600106",
+      "title": "愛之味 鮮採蕃茄汁 Oligo保健",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw0256e447/images/large/0112194_-oligo-250ml.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%84%9B%E4%B9%8B%E5%91%B3/1001600600106.html",
+      "issues": []
+    },
+    {
+      "id": "uni-1001601400106",
+      "title": "統一 嚴選素材番茄汁",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw139c942c/images/large/1001601400106_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1001601400106.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "agv-1001601800104",
+      "title": "愛之味 鮮采蕃茄汁(OLIGO保健)",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw6a5ab459/images/large/0118663_-oligo-530ml.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%84%9B%E4%B9%8B%E5%91%B3/1001601800104.html",
+      "issues": []
+    },
+    {
+      "id": "agv-1001602000104",
+      "title": "愛之味 鮮采蕃茄綜合蔬菜汁",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw7a0f9e57/images/large/0118658_-530ml.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%84%9B%E4%B9%8B%E5%91%B3/1001602000104.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "uni-1002001100106",
+      "title": "統一 咖啡廣場",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw8d30be7f/images/large/1002001100101_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1002001100106.html",
+      "issues": []
+    },
+    {
+      "id": "heysong-1002001600104",
+      "title": "黑松 Flash Brew閃萃黑咖啡",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw68efc87c/images/large/1002001600104_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE%E9%9F%8B%E6%81%A9/1002001600104.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "kuangchuan-1002003400106",
+      "title": "光泉 午后時光重乳咖啡拿鐵",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwe30a5766/images/large/0213125_t330ml.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1002003400106.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "uni-1002003600104",
+      "title": "統一 咖啡廣場奶香特調咖啡",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwb930890a/images/large/1002003600104_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1002003600104.html",
+      "issues": []
+    },
+    {
+      "id": "uni-1002004200104",
+      "title": "統一 咖啡廣場調和式冰咖啡",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwfafa5704/images/large/1002004200104_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1002004200104.html",
+      "issues": []
+    },
+    {
+      "id": "quaker-1002301600101",
+      "title": "桂格 原味水解雞精",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwb663ae42/images/large/0278759_18.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002301600101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "quaker-1002301800101",
+      "title": "桂格 人蔘蜆精68ml",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwbe880572/images/large/0051633_68mlx15.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002301800101.html",
+      "issues": []
+    },
+    {
+      "id": "quaker-1002302100101",
+      "title": "桂格 蜜人蔘60ml",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwc9d696e2/images/large/0241886_60mlx19.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002302100101.html",
+      "issues": []
+    },
+    {
+      "id": "quaker-1002302100104",
+      "title": "桂格 蜜人蔘",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwc9d696e2/images/large/0241886_60mlx19.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002302100104.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "quaker-1002303400101",
+      "title": "桂格 養氣人蔘雞精6瓶",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw8a1a9970/images/large/0072665_6.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002303400101.html",
+      "issues": []
+    },
+    {
+      "id": "agv-1002303500104",
+      "title": "愛之味 愛健萬丹紅紅豆水",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw26fd6c15/images/large/1002303500104_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%84%9B%E4%B9%8B%E5%91%B3/1002303500104.html",
+      "issues": []
+    },
+    {
+      "id": "quaker-1002306700101",
+      "title": "桂格 冬蟲夏草活靈芝60ml",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwc9ae9a1a/images/large/0241891_60mlx16.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002306700101.html",
+      "issues": []
+    },
+    {
+      "id": "quaker-1002306800101",
+      "title": "桂格 冬蟲夏草養氣人蔘60ml",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw9c0dd556/images/large/0241892_60mlx16.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002306800101.html",
+      "issues": []
+    },
+    {
+      "id": "quaker-1002306900101",
+      "title": "桂格 天地合補官燕窩42克",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw3c91a78e/images/large/0201278_42x5.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002306900101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "quaker-1002307500101",
+      "title": "桂格 5X人蔘濃縮精華飲",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw66eca518/images/large/0229144_5x15ml18.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002307500101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "quaker-1002309300101",
+      "title": "桂格 養氣人蔘",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw5c6c2da7/images/large/0241893_60mlx6.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002309300101.html",
+      "issues": []
+    },
+    {
+      "id": "quaker-1002309600101",
+      "title": "桂格 高麗人蔘滋補液",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw18cded8a/images/large/1002309600101_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002309600101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "quaker-1002311000101",
+      "title": "桂格 天地合補含鐵玫瑰四物",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw4e073a5f/images/large/0120578_120ml-x6.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002311000101.html",
+      "issues": []
+    },
+    {
+      "id": "quaker-1002311200101",
+      "title": "桂格 養氣人蔘無糖配方",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw2f758c61/images/large/0241894_6.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002311200101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "quaker-1002399800101",
+      "title": "桂格 天地合補金盞花葉黃素濃縮飲15ml",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwde446c93/images/large/1002399800101_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002399800101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "uni-1003000100101",
+      "title": "統一 開喜凍頂烏龍茶(無糖)",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwbf3db5a9/images/large/1003000100101_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003000100101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "uni-1003000500101",
+      "title": "統一 開喜凍頂烏龍茶有糖",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw5990a55e/images/large/1003000500101_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003000500101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "uni-1003001400104",
+      "title": "統一 白毫烏龍茶",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw437510e6/images/large/1003001400104_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003001400104.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "uni-1003001400124",
+      "title": "統一 白毫烏龍茶微甜",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw6e9cfaa9/images/large/1003001400124_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003001400124.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "uni-1003001500104",
+      "title": "統一 青心烏龍無糖Pet 600ml",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw82002e9b/images/large/0099018_et600ml.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003001500104.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "kuangchuan-1003001700101",
+      "title": "光泉 冷泡茶茶王烏龍",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwa848edfc/images/large/1003001700112new.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003001700101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "uni-1003002200104",
+      "title": "統一 開喜凍頂烏龍茶清甜",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw4a55168b/images/large/1003002200104_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003002200104.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "kuangchuan-1003003000101",
+      "title": "光泉 冷泡茶冰釀烏龍(無糖)",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw0978532d/images/large/1003003000101new.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003003000101.html",
+      "issues": []
+    },
+    {
+      "id": "taisun-1003101200104",
+      "title": "泰山 冰鎮檸檬紅茶",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw0a6c8ba2/images/large/1003101200104_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%B3%B0%E5%B1%B1/1003101200104.html",
+      "issues": []
+    },
+    {
+      "id": "uni-1003100700104",
+      "title": "統一 英式紅茶",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw0441d21e/images/large/1003100700104_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003100700104.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "uni-1003101900124",
+      "title": "統一 麥香阿薩姆紅茶",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw0fc11a3d/images/large/1003101900124_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003101900124.html",
+      "issues": [
+        {
+          "field": "substances",
+          "type": "unmatched",
+          "note": "下列添加物沒有對應到成分資料庫",
+          "candidates": [
+            "香料：含水",
+            "香料：酒 精"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imei-1003103100124",
+      "title": "義美 錫蘭紅茶",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw9c7c635c/images/large/0093335_t250ml.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1003103100124.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "kuangchuan-1003191100106",
+      "title": "光泉 午后時光錫蘭紅茶",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw94122a5b/images/large/0273475_-250ml.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003191100106.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "uni-1003200100112",
+      "title": "統一 麥香阿薩姆奶茶",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw34aa9e43/images/large/1003200100112_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003200100112.html",
+      "issues": []
+    },
+    {
+      "id": "kuangchuan-1003201900106",
+      "title": "光泉 午后時光阿薩姆奶茶",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwb6d30fa3/images/large/1003201900124.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003201900106.html",
+      "issues": [
+        {
+          "field": "substances",
+          "type": "unmatched",
+          "note": "下列添加物沒有對應到成分資料庫",
+          "candidates": [
+            "香料：鹽",
+            "香料：中鏈三酸甘油酯"
+          ]
+        },
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "kuangchuan-1003206400106",
+      "title": "光泉 午后時光伯爵奶茶",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw963d8b7b/images/large/1003206400124.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003206400106.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "kuangchuan-1003301100104",
+      "title": "光泉 冷泡綠茶無糖",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw1b641c51/images/large/1003301100104.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003301100104.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    }
+  ]
+}

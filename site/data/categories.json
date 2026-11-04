@@ -1,0 +1,51 @@
+[
+  { "id": "drink", "name": "飲料", "emoji": "🥤", "children": [
+    { "id": "drink.tea", "name": "茶飲" },
+    { "id": "drink.coffee", "name": "咖啡" },
+    { "id": "drink.juice", "name": "果汁蔬菜汁" },
+    { "id": "drink.milk", "name": "乳品飲料" },
+    { "id": "drink.soda", "name": "碳酸飲料" },
+    { "id": "drink.sport", "name": "運動機能飲料" },
+    { "id": "drink.plant", "name": "豆漿植物奶" },
+    { "id": "drink.water", "name": "水" },
+    { "id": "drink.other", "name": "其他飲料" }
+  ]},
+  { "id": "snack", "name": "零食", "emoji": "🍿", "children": [
+    { "id": "snack.chips", "name": "洋芋片薯條" },
+    { "id": "snack.puffed", "name": "膨化零食" },
+    { "id": "snack.nuts", "name": "堅果豆類" },
+    { "id": "snack.candy", "name": "糖果果凍" },
+    { "id": "snack.chocolate", "name": "巧克力" },
+    { "id": "snack.dried", "name": "果乾蜜餞" },
+    { "id": "snack.seaweed", "name": "海苔" },
+    { "id": "snack.other", "name": "其他零食" }
+  ]},
+  { "id": "biscuit", "name": "餅乾糕點", "emoji": "🍪", "children": [
+    { "id": "biscuit.cookie", "name": "餅乾" },
+    { "id": "biscuit.sandwich", "name": "夾心餅乾" },
+    { "id": "biscuit.eggroll", "name": "蛋捲" },
+    { "id": "biscuit.cake", "name": "蛋糕麵包" }
+  ]},
+  { "id": "ice", "name": "冰品", "emoji": "🍦", "children": [
+    { "id": "ice.cream", "name": "冰淇淋" },
+    { "id": "ice.bar", "name": "冰棒雪糕" }
+  ]},
+  { "id": "meat", "name": "加工肉品", "emoji": "🥓", "children": [
+    { "id": "meat.sausage", "name": "香腸熱狗" },
+    { "id": "meat.ham", "name": "火腿培根" },
+    { "id": "meat.jerky", "name": "肉乾" },
+    { "id": "meat.floss", "name": "肉鬆肉酥" },
+    { "id": "meat.canned", "name": "肉品罐頭肉醬" },
+    { "id": "meat.other", "name": "其他肉品" }
+  ]},
+  { "id": "noodle", "name": "泡麵即食", "emoji": "🍜", "children": [
+    { "id": "noodle.instant", "name": "泡麵" },
+    { "id": "noodle.ready", "name": "即食調理" },
+    { "id": "noodle.cereal", "name": "麥片沖泡" }
+  ]},
+  { "id": "dairy", "name": "乳製品甜點", "emoji": "🥛", "children": [
+    { "id": "dairy.milk", "name": "鮮乳保久乳" },
+    { "id": "dairy.yogurt", "name": "優格優酪乳" },
+    { "id": "dairy.pudding", "name": "布丁甜點" }
+  ]}
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "id": "lianhwa",
+    "name": "聯華食品",
+    "aliases": [
+      "聯華",
+      "卡迪那",
+      "卡廸那",
+      "可樂果",
+      "元本山",
+      "萬歲牌"
+    ]
+  },
+  {
+    "id": "serena",
+    "name": "喜年來",
+    "aliases": [
+      "Serena"
+    ]
+  },
+  {
+    "id": "imei",
+    "name": "義美",
+    "aliases": [
+      "I-Mei"
+    ]
+  },
+  {
+    "id": "uni",
+    "name": "統一",
+    "aliases": [
+      "統一企業",
+      "純喫茶",
+      "茶裏王",
+      "麥香",
+      "瑞穗",
+      "統一陽光"
+    ]
+  },
+  {
+    "id": "weichuan",
+    "name": "味全",
+    "aliases": [
+      "林鳳營",
+      "貝納頌"
+    ]
+  },
+  {
+    "id": "heysong",
+    "name": "黑松",
+    "aliases": [
+      "黑松沙士",
+      "韋恩",
+      "茶花"
+    ]
+  },
+  {
+    "id": "kuangchuan",
+    "name": "光泉",
+    "aliases": []
+  },
+  {
+    "id": "kuaikuai",
+    "name": "乖乖",
+    "aliases": []
+  },
+  {
+    "id": "quaker",
+    "name": "桂格",
+    "aliases": [
+      "Quaker"
+    ]
+  },
+  {
+    "id": "hwayuan",
+    "name": "華元",
+    "aliases": []
+  },
+  {
+    "id": "taisun",
+    "name": "泰山",
+    "aliases": []
+  },
+  {
+    "id": "agv",
+    "name": "愛之味",
+    "aliases": [
+      "AGV"
+    ]
+  },
+  {
+    "id": "hty",
+    "name": "新東陽",
+    "aliases": []
+  },
+  {
+    "id": "tfc",
+    "name": "台畜",
+    "aliases": []
+  }
+]

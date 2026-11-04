@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>翻背面｜資料審核（本機）</title>
+<style>
+:root { --bg:#f6f5f1; --s:#fff; --t:#1d1d1b; --t2:#5c5c55; --b:#dcdad2; --a:#1f6f5c; --as:#e2f1ec; --ok:#1f7a3a; --no:#a12d2d; --mark:#fde9a6; }
+* { box-sizing: border-box; }
+body { margin:0; font:15px/1.5 system-ui, "Microsoft JhengHei", sans-serif; background:var(--bg); color:var(--t); }
+header { position:sticky; top:0; z-index:5; background:var(--bg); border-bottom:1px solid var(--b); padding:10px 16px; display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
+header h1 { font-size:16px; margin:0 8px 0 0; }
+nav button { border:1px solid var(--b); background:var(--s); border-radius:999px; padding:6px 12px; cursor:pointer; font:inherit; }
+nav button[aria-pressed="true"] { background:var(--as); border-color:var(--a); color:#175546; font-weight:600; }
+.right { margin-left:auto; display:flex; gap:8px; align-items:center; }
+.btn { border:1px solid var(--b); background:var(--s); border-radius:8px; padding:6px 12px; cursor:pointer; font:inherit; }
+.btn.primary { background:var(--a); color:#fff; border-color:var(--a); }
+main { padding:12px 16px 80px; max-width:1200px; margin:0 auto; }
+.bar { display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-bottom:10px; }
+.bar input, .bar select { font:inherit; padding:6px 10px; border:1px solid var(--b); border-radius:8px; background:var(--s); }
+table { width:100%; border-collapse:collapse; background:var(--s); }
+th, td { border-bottom:1px solid var(--b); padding:6px 8px; text-align:left; vertical-align:middle; }
+th { position:sticky; top:52px; background:#efeee8; font-weight:600; font-size:13px; z-index:2; }
+td.c, th.c { width:72px; text-align:center; }
+td.cell { cursor:pointer; user-select:none; font-size:18px; font-weight:700; }
+td.cell[data-v="yes"] { color:var(--ok); background:#e8f5ec; }
+td.cell[data-v="no"] { color:var(--no); background:#fbeaea; }
+td.cell[data-v="unknown"] { color:#aaa; }
+td.cell.changed { outline:2px solid var(--a); outline-offset:-2px; }
+th button { font:inherit; font-size:12px; border:1px solid var(--b); background:var(--s); border-radius:6px; cursor:pointer; padding:1px 6px; }
+img.th { width:40px; height:40px; object-fit:contain; background:#eee; border-radius:6px; }
+.card { background:var(--s); border:1px solid var(--b); border-radius:12px; padding:12px 14px; margin-bottom:12px; display:grid; grid-template-columns:120px 1fr; gap:12px; }
+.card.done { opacity:.55; }
+.card img { width:120px; height:120px; object-fit:contain; background:#eee; border-radius:8px; }
+.card h3 { margin:0 0 4px; font-size:15px; }
+.opt { display:block; border:1px solid var(--b); border-radius:8px; padding:8px 10px; margin:6px 0; cursor:pointer; }
+.opt:has(input:checked) { border-color:var(--a); background:var(--as); }
+textarea { width:100%; min-height:70px; font:inherit; padding:6px; border:1px solid var(--b); border-radius:8px; }
+.small { font-size:12px; color:var(--t2); }
+.pill { display:inline-block; padding:1px 8px; border-radius:999px; background:#efeee8; font-size:12px; margin-right:4px; }
+kbd { border:1px solid var(--b); border-bottom-width:2px; border-radius:4px; padding:0 4px; font-size:12px; background:var(--s); }
+.toast { position:fixed; bottom:16px; left:50%; transform:translateX(-50%); background:#222; color:#fff; padding:8px 16px; border-radius:999px; opacity:0; transition:.2s; }
+.toast.show { opacity:1; }
+</style>
+</head>
+<body>
+<header>
+  <h1>資料審核</h1>
+  <nav id="tabs">
+    <button data-tab="stores" aria-pressed="true">通路</button>
+    <button data-tab="conflicts">數值與成分衝突</button>
+    <button data-tab="missing">缺資料</button>
+    <button data-tab="aliases">未對應添加物</button>
+    <button data-tab="labels">標籤確認</button>
+    <button data-tab="barcodes">條碼</button>
+  </nav>
+  <div class="right"><span id="changed" class="small">0 項變更</span><button class="btn" id="importBtn">匯入</button><button class="btn primary" id="exportBtn">匯出 review.json</button><input type="file" id="importFile" accept=".json" hidden></div>
+</header>
+<main id="main"></main>
+<div class="toast" id="toast"></div>
+<script>
+const $ = (s, el = document) => el.querySelector(s);
+const STORES = { pxmart: '全聯', seven: '7-11', family: '全家' };
+const CYCLE = ['yes', 'no', 'unknown'], SYM = { yes: '✓', no: '✗', unknown: '?' };
+const KEY = 'flipside.review';
+let R; try { R = JSON.parse(localStorage.getItem(KEY)) } catch {}
+R = Object.assign({ stores: {}, choices: {}, labels: {}, barcodes: {}, aliases: [], verified: [], missing: {} }, R || {});
+const save = () => { try { localStorage.setItem(KEY, JSON.stringify(R)); } catch {} updateCount(); };
+const toast = (m) => { const t = $('#toast'); t.textContent = m; t.classList.add('show'); setTimeout(() => t.classList.remove('show'), 1500); };
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+function updateCount() {
+  const n = Object.keys(R.stores).length + Object.keys(R.choices).length + Object.keys(R.labels).length + Object.keys(R.barcodes).length + R.aliases.length + Object.keys(R.missing).length;
+  $('#changed').textContent = `${n} 項變更`;
+}
+let P = [], PEND = new Map(), SUBS = [], BRANDS = new Map(), CATS = new Map();
+let view = { tab: 'stores', q: '', brand: '', cat: '', onlyUnknown: true };
+
+Promise.all([
+  fetch('../site/data/products.json').then((r) => r.json()),
+  fetch('pending.json').then((r) => r.json()),
+  fetch('../site/data/substances.json').then((r) => r.json()),
+  fetch('../site/data/brands.json').then((r) => r.json()),
+  fetch('../site/data/categories.json').then((r) => r.json()),
+]).then(([p, pend, subs, brands, cats]) => {
+  P = p.products; SUBS = subs;
+  for (const x of pend.items) PEND.set(x.id, x);
+  for (const b of brands) BRANDS.set(b.id, b.name);
+  for (const c of cats) { CATS.set(c.id, c.name); for (const s of c.children) CATS.set(s.id, s.name); }
+  updateCount(); render();
+}).catch((e) => { $('#main').innerHTML = `<p>資料載入失敗：${esc(e.message)}。請用本機伺服器開啟（例如在專案根目錄執行 <code>python -m http.server</code>，再開 http://localhost:8000/review/）。</p>`; });
+
+$('#tabs').addEventListener('click', (e) => { const b = e.target.closest('[data-tab]'); if (!b) return; view.tab = b.dataset.tab; document.querySelectorAll('#tabs button').forEach((x) => x.setAttribute('aria-pressed', x === b)); render(); });
+
+const title = (p) => `${BRANDS.get(p.brand) || p.brand} ${p.name}`;
+function filtered() {
+  const q = view.q.trim().toLowerCase();
+  return P.filter((p) => (!view.brand || p.brand === view.brand) && (!view.cat || p.category.startsWith(view.cat)) && (!q || title(p).toLowerCase().includes(q)));
+}
+function filterBar(extra = '') {
+  return `<div class="bar">
+    <input id="fq" placeholder="搜尋品名" value="${esc(view.q)}">
+    <select id="fb"><option value="">全部品牌</option>${[...BRANDS].map(([id, n]) => `<option value="${id}" ${view.brand === id ? 'selected' : ''}>${n}</option>`).join('')}</select>
+    <select id="fc"><option value="">全部分類</option>${[...CATS].filter(([id]) => !id.includes('.')).map(([id, n]) => `<option value="${id}" ${view.cat === id ? 'selected' : ''}>${n}</option>`).join('')}</select>
+    ${extra}</div>`;
+}
+function bindFilter() {
+  $('#fq').addEventListener('input', (e) => { view.q = e.target.value; clearTimeout(bindFilter.t); bindFilter.t = setTimeout(render, 200); });
+  $('#fb').addEventListener('change', (e) => { view.brand = e.target.value; render(); });
+  $('#fc').addEventListener('change', (e) => { view.cat = e.target.value; render(); });
+  const u = $('#fu'); if (u) u.addEventListener('change', (e) => { view.onlyUnknown = e.target.checked; render(); });
+}
+const storeVal = (p, s) => R.stores[p.id]?.[s] ?? p.stores?.[s]?.status ?? 'unknown';
+const isStoreDone = (p) => Object.keys(STORES).every((s) => R.stores[p.id]?.[s] || p.stores?.[s]?.verified);
+
+function render() {
+  const m = $('#main');
+  const keepFocus = document.activeElement?.id === 'fq';
+  ({ stores: renderStores, conflicts: renderConflicts, missing: renderMissing, aliases: renderAliases, labels: renderLabels, barcodes: renderBarcodes })[view.tab](m);
+  if (keepFocus) { const f = $('#fq'); f.focus(); f.setSelectionRange(f.value.length, f.value.length); }
+}
+
+function renderStores(m) {
+  const list = filtered().filter((p) => !view.onlyUnknown || !isStoreDone(p));
+  m.innerHTML = filterBar(`<label><input type="checkbox" id="fu" ${view.onlyUnknown ? 'checked' : ''}> 只看未確認</label><span class="small">${list.length} 項 · 點格子切換 ✓ 有 → ✗ 沒有 → ? 未知</span>`) +
+    `<table><thead><tr><th style="width:56px"></th><th>商品</th>${Object.entries(STORES).map(([k, n]) => `<th class="c">${n}<br><button data-all="${k}" title="把目前列表這欄全部設為 ✓">全✓</button></th>`).join('')}<th class="c">完成</th></tr></thead><tbody>
+    ${list.slice(0, 300).map((p) => `<tr data-id="${p.id}"><td>${p.images?.[0] ? `<img class="th" loading="lazy" src="${esc(p.images[0].file)}">` : ''}</td>
+      <td>${esc(title(p))}<div class="small">${esc(CATS.get(p.category) || '')} · ${esc((p.variants || []).map((v) => v.size).filter(Boolean).join('／'))}</div></td>
+      ${Object.keys(STORES).map((s) => { const v = storeVal(p, s); return `<td class="c cell ${R.stores[p.id]?.[s] ? 'changed' : ''}" data-s="${s}" data-v="${v}">${SYM[v]}</td>`; }).join('')}
+      <td class="c"><button class="btn" data-done title="其餘未設定的都標為 ✗ 並完成">✓ 完成</button></td></tr>`).join('')}
+    </tbody></table>${list.length > 300 ? `<p class="small">只顯示前 300 項，請用篩選縮小範圍。</p>` : ''}`;
+  bindFilter();
+  m.querySelector('tbody').addEventListener('click', (e) => {
+    const tr = e.target.closest('tr'); if (!tr) return; const id = tr.dataset.id;
+    const td = e.target.closest('td.cell');
+    if (td) { const v = CYCLE[(CYCLE.indexOf(td.dataset.v) + 1) % 3]; (R.stores[id] ||= {})[td.dataset.s] = v; td.dataset.v = v; td.textContent = SYM[v]; td.classList.add('changed'); save(); }
+    if (e.target.closest('[data-done]')) { const p = P.find((x) => x.id === id); R.stores[id] ||= {}; for (const s in STORES) if (!R.stores[id][s]) R.stores[id][s] = storeVal(p, s) === 'yes' ? 'yes' : 'no'; save(); render(); }
+  });
+  m.querySelectorAll('[data-all]').forEach((b) => b.addEventListener('click', () => {
+    const s = b.dataset.all; for (const p of list.slice(0, 300)) (R.stores[p.id] ||= {})[s] = 'yes'; save(); render(); toast(`已將 ${Math.min(300, list.length)} 項的${STORES[s]}設為 ✓`);
+  }));
+}
+
+function issueList(field, type) {
+  return filtered().map((p) => ({ p, iss: (PEND.get(p.id)?.issues || []).filter((i) => (!field || i.field === field) && (!type || i.type === type)) })).filter((x) => x.iss.length);
+}
+function card(p, body) {
+  const pend = PEND.get(p.id);
+  return `<div class="card" data-id="${p.id}">${p.images?.[0] ? `<img loading="lazy" src="${esc(p.images[0].file)}">` : '<div></div>'}
+    <div><h3>${esc(title(p))}</h3><div class="small"><span class="pill">${esc(CATS.get(p.category) || '')}</span><a href="${esc(pend?.url)}" target="_blank" rel="noopener">開啟來源頁</a></div>${body}</div></div>`;
+}
+const fmtNut = (n) => Object.entries(n || {}).map(([k, v]) => `${k} ${v}`).join('、');
+
+function renderConflicts(m) {
+  const items = issueList(null, 'conflict');
+  m.innerHTML = filterBar(`<span class="small">${items.length} 項 · 選擇正確的版本，或直接改寫</span>`) + items.map(({ p, iss }) => card(p, iss.map((i) => {
+    const chosen = R.choices[p.id]?.[i.field];
+    if (i.field === 'ingredients') return `<p class="small">${esc(i.note)}</p>` + i.candidates.map((c, k) => `<label class="opt"><input type="radio" name="${p.id}-ing" data-f="ingredients" value="${k}" ${chosen === c ? 'checked' : ''}> ${esc(c)}</label>`).join('') +
+      `<details><summary class="small">都不對，我來改</summary><textarea data-f="ingredients-text">${esc(typeof chosen === 'string' && !i.candidates.includes(chosen) ? chosen : '')}</textarea></details>`;
+    return `<p class="small">${esc(i.note)}</p>` + i.candidates.map((c, k) => `<label class="opt"><input type="radio" name="${p.id}-nut" data-f="nutrition" value="${k}" ${chosen === k ? 'checked' : ''}> 每100：${esc(fmtNut(c.per100))}${Object.keys(c.perServing || {}).length ? `<br><span class="small">每份${c.serving ? `（${c.serving.size}${c.serving.unit}）` : ''}：${esc(fmtNut(c.perServing))}</span>` : ''}</label>`).join('');
+  }).join(''))).join('') || '<p>沒有衝突項目。</p>';
+  bindFilter();
+  m.onchange = (e) => {
+    const c = e.target.closest('.card'); if (!c) return; const id = c.dataset.id; const f = e.target.dataset.f;
+    const iss = PEND.get(id).issues;
+    R.choices[id] ||= {};
+    if (f === 'ingredients') R.choices[id].ingredients = iss.find((i) => i.field === 'ingredients').candidates[+e.target.value];
+    if (f === 'ingredients-text' && e.target.value.trim()) R.choices[id].ingredients = e.target.value.trim();
+    if (f === 'nutrition') R.choices[id].nutrition = +e.target.value;
+    save();
+  };
+}
+
+function renderMissing(m) {
+  const items = issueList(null, 'missing');
+  m.innerHTML = filterBar(`<span class="small">${items.length} 項缺成分或營養標示 · 可以貼上包裝上的文字，或標記之後再補</span>`) + items.map(({ p, iss }) => card(p,
+    iss.map((i) => `<p class="small">${esc(i.note)}</p>${i.field === 'ingredients' ? `<textarea data-f="ing" placeholder="貼上成分，例如：水、砂糖、紅茶…">${esc(R.missing[p.id]?.ingredients || '')}</textarea>` : `<textarea data-f="nut" placeholder="貼上營養標示文字（每份／每100都可以）">${esc(R.missing[p.id]?.nutritionText || '')}</textarea>`}`).join('') +
+    `<label class="small"><input type="checkbox" data-f="hide" ${R.missing[p.id]?.hide ? 'checked' : ''}> 先從網站隱藏，等資料補齊</label>`)).join('') || '<p>沒有缺資料的項目。</p>';
+  bindFilter();
+  m.onchange = (e) => {
+    const c = e.target.closest('.card'); if (!c) return; const id = c.dataset.id; R.missing[id] ||= {};
+    if (e.target.dataset.f === 'ing') R.missing[id].ingredients = e.target.value.trim();
+    if (e.target.dataset.f === 'nut') R.missing[id].nutritionText = e.target.value.trim();
+    if (e.target.dataset.f === 'hide') R.missing[id].hide = e.target.checked;
+    save();
+  };
+}
+
+function renderAliases(m) {
+  const counts = new Map();
+  for (const x of PEND.values()) for (const i of x.issues) if (i.type === 'unmatched') for (const c of i.candidates) { const t = c.split('：').slice(1).join('：'); const k = c.split('：')[0]; const key = t; const o = counts.get(key) || { text: t, fn: k, n: 0 }; o.n++; counts.set(key, o); }
+  const list = [...counts.values()].sort((a, b) => b.n - a.n);
+  const done = new Map(R.aliases.map((a) => [a.text, a.substance]));
+  m.innerHTML = `<p class="small">這些字串出現在成分的添加物括號裡，但沒有對應到成分資料庫。選擇它屬於哪個成分（會成為別名），或選「不是添加物／忽略」。依出現次數排序。</p>
+    <table><thead><tr><th>字串</th><th>出現在</th><th class="c">次數</th><th>對應到</th></tr></thead><tbody>
+    ${list.map((x) => `<tr><td>${esc(x.text)}</td><td class="small">${esc(x.fn)}</td><td class="c">${x.n}</td><td><select data-text="${esc(x.text)}"><option value="">（未處理）</option><option value="__ignore" ${done.get(x.text) === '__ignore' ? 'selected' : ''}>不是添加物／忽略</option>${SUBS.map((s) => `<option value="${s.id}" ${done.get(x.text) === s.id ? 'selected' : ''}>${esc(s.name)}</option>`).join('')}</select></td></tr>`).join('')}
+    </tbody></table>`;
+  m.querySelector('tbody')?.addEventListener('change', (e) => {
+    const t = e.target.dataset.text; R.aliases = R.aliases.filter((a) => a.text !== t);
+    if (e.target.value) R.aliases.push({ text: t, substance: e.target.value }); save();
+  });
+}
+
+function renderLabels(m) {
+  const items = issueList('labels', 'verify');
+  m.innerHTML = filterBar(`<span class="small">${items.length} 項 · 只保留真的有認證標章或法定標示的</span>`) + items.map(({ p }) => card(p, (p.labels || []).map((l) => {
+    const kept = R.labels[p.id] ? R.labels[p.id].includes(l.id) : null;
+    return `<label class="opt"><input type="checkbox" data-l="${l.id}" ${kept !== false ? 'checked' : ''}> <b>${esc(l.id)}</b><br><span class="small">${esc(l.evidence || '')}</span></label>`;
+  }).join(''))).join('') || '<p>沒有需要確認的標籤。</p>';
+  bindFilter();
+  m.onchange = (e) => {
+    const c = e.target.closest('.card'); if (!c) return; const id = c.dataset.id;
+    R.labels[id] = [...c.querySelectorAll('[data-l]')].filter((x) => x.checked).map((x) => x.dataset.l); save();
+  };
+}
+
+function renderBarcodes(m) {
+  const list = filtered();
+  m.innerHTML = filterBar(`<span class="small">${list.length} 項 · 輸入條碼後按 <kbd>Enter</kbd> 跳到下一格；同一商品多個容量用逗號分隔</span>`) +
+    `<table><thead><tr><th style="width:56px"></th><th>商品</th><th>容量</th><th style="width:320px">條碼</th></tr></thead><tbody>
+    ${list.slice(0, 300).map((p) => `<tr data-id="${p.id}"><td>${p.images?.[0] ? `<img class="th" loading="lazy" src="${esc(p.images[0].file)}">` : ''}</td><td>${esc(title(p))}</td>
+      <td class="small">${esc((p.variants || []).map((v) => v.size).filter(Boolean).join('／'))}</td>
+      <td><input data-bc inputmode="numeric" style="width:100%;font:inherit;padding:6px;border:1px solid var(--b);border-radius:6px" value="${esc((R.barcodes[p.id] || p.variants.flatMap((v) => v.barcodes || [])).join(', '))}" placeholder="471…"></td></tr>`).join('')}
+    </tbody></table>`;
+  bindFilter();
+  const inputs = [...m.querySelectorAll('[data-bc]')];
+  inputs.forEach((inp, i) => {
+    inp.addEventListener('change', () => {
+      const id = inp.closest('tr').dataset.id; const codes = inp.value.split(/[,\s，]+/).map((x) => x.replace(/\D/g, '')).filter(Boolean);
+      const bad = codes.filter((c) => ![8, 12, 13, 14].includes(c.length));
+      inp.style.borderColor = bad.length ? 'var(--no)' : 'var(--b)';
+      if (codes.length) R.barcodes[id] = codes; else delete R.barcodes[id]; save();
+    });
+    inp.addEventListener('keydown', (e) => { if (e.key === 'Enter') { inp.dispatchEvent(new Event('change')); inputs[i + 1]?.focus(); } });
+  });
+}
+
+$('#exportBtn').addEventListener('click', () => {
+  const blob = new Blob([JSON.stringify({ exportedAt: new Date().toISOString(), ...R }, null, 2)], { type: 'application/json' });
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'review.json'; a.click();
+  toast('已下載 review.json，請放到專案的 review/ 資料夾');
+});
+$('#importBtn').addEventListener('click', () => $('#importFile').click());
+$('#importFile').addEventListener('change', async (e) => {
+  const f = e.target.files[0]; if (!f) return;
+  try { const d = JSON.parse(await f.text()); delete d.exportedAt; R = Object.assign(R, d); save(); render(); toast('已匯入'); } catch { toast('檔案格式不對'); }
+});
+</script>
+</body>
+</html>
