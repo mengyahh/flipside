@@ -1,7 +1,7 @@
 // 網站設定（公開資訊）
 window.FLIPSIDE_CONFIG = {
   // GoatCounter 站點代碼，例如 "flipside" → https://flipside.goatcounter.com
-  goatcounter: '',
+  goatcounter: 'flipside',
   report: {
     url: 'https://docs.google.com/forms/d/e/1FAIpQLSdmFZmdFannCHHomCHj2rPCkheHlqnDPdfbsP_MyRzmVdKrqw/viewform',
     fields: {
