@@ -7,24 +7,6 @@
       "category": "drink.soda",
       "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw00440eeb/images/large/1000100800101_NR_00.jpg?sw=480&sh=480",
       "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE%E6%B1%BD%E6%B0%B4/1000100800101.html",
-      "issues": [
-        {
-          "field": "substances",
-          "type": "unmatched",
-          "note": "下列添加物沒有對應到成分資料庫",
-          "candidates": [
-            "香料：含乙醇",
-            "香料：水"
-          ]
-        }
-      ]
-    },
-    {
-      "id": "heysong-1000200300104",
-      "title": "黑松 加鹽沙士",
-      "category": "drink.soda",
-      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw5f6df198/images/large/1000200300104_NR_00.jpg?sw=480&sh=480",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE%E6%B2%99%E5%A3%AB/1000200300104.html",
       "issues": []
     },
     {
@@ -33,6 +15,14 @@
       "category": "drink.soda",
       "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw270e8094/images/large/1000200900104_NR_00.jpg?sw=480&sh=480",
       "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE%E6%B2%99%E5%A3%AB/1000200900104.html",
+      "issues": []
+    },
+    {
+      "id": "heysong-1000200300104",
+      "title": "黑松 加鹽沙士",
+      "category": "drink.soda",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw5f6df198/images/large/1000200300104_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE%E6%B2%99%E5%A3%AB/1000200300104.html",
       "issues": []
     },
     {
@@ -49,13 +39,7 @@
       "category": "drink.juice",
       "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw4451d6b3/images/large/1001100100124.jpg?sw=480&sh=480",
       "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1001100100106.html",
-      "issues": [
-        {
-          "field": "nutrition",
-          "type": "missing",
-          "note": "找不到營養標示"
-        }
-      ]
+      "issues": []
     },
     {
       "id": "heysong-1001101600106",
@@ -66,24 +50,18 @@
       "issues": [
         {
           "field": "nutrition",
-          "type": "missing",
-          "note": "找不到營養標示"
+          "type": "verify",
+          "note": "營養標示沒有寫「每份」或「每100」，暫時當作每100，請對照包裝確認"
         }
       ]
     },
     {
-      "id": "kuangchuan-1001102100106",
+      "id": "kuangchuan-1001102100124",
       "title": "光泉 果汁時刻100%蘋果綜合果汁200ml",
       "category": "drink.juice",
       "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw501a4255/images/large/1001102100106.jpg?sw=480&sh=480",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1001102100106.html",
-      "issues": [
-        {
-          "field": "nutrition",
-          "type": "missing",
-          "note": "找不到營養標示"
-        }
-      ]
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1001102100124.html",
+      "issues": []
     },
     {
       "id": "heysong-1001300300106",
@@ -91,17 +69,7 @@
       "category": "drink.juice",
       "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw888c5bb0/images/large/1001300300106_NR_00.jpg?sw=480&sh=480",
       "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE/1001300300106.html",
-      "issues": [
-        {
-          "field": "substances",
-          "type": "unmatched",
-          "note": "下列添加物沒有對應到成分資料庫",
-          "candidates": [
-            "香料：含乙醇",
-            "香料：水"
-          ]
-        }
-      ]
+      "issues": []
     },
     {
       "id": "kuangchuan-1001300500124",
@@ -117,13 +85,7 @@
       "category": "drink.juice",
       "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwce6b73ce/images/large/0007833_t125ml.jpeg?sw=480&sh=480",
       "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1001301200106.html",
-      "issues": [
-        {
-          "field": "nutrition",
-          "type": "missing",
-          "note": "找不到營養標示"
-        }
-      ]
+      "issues": []
     },
     {
       "id": "kuangchuan-1001402800106",
@@ -131,13 +93,7 @@
       "category": "drink.juice",
       "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw95c8b206/images/large/1001402800124.jpg?sw=480&sh=480",
       "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1001402800106.html",
-      "issues": [
-        {
-          "field": "nutrition",
-          "type": "missing",
-          "note": "找不到營養標示"
-        }
-      ]
+      "issues": []
     },
     {
       "id": "heysong-1001403200106",
@@ -199,13 +155,7 @@
       "category": "drink.juice",
       "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw7a0f9e57/images/large/0118658_-530ml.jpeg?sw=480&sh=480",
       "url": "https://online.uni-prosperity.com.tw/zh/%E6%84%9B%E4%B9%8B%E5%91%B3/1001602000104.html",
-      "issues": [
-        {
-          "field": "nutrition",
-          "type": "missing",
-          "note": "找不到營養標示"
-        }
-      ]
+      "issues": []
     },
     {
       "id": "uni-1002001100106",
@@ -235,13 +185,7 @@
       "category": "drink.coffee",
       "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwe30a5766/images/large/0213125_t330ml.jpeg?sw=480&sh=480",
       "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1002003400106.html",
-      "issues": [
-        {
-          "field": "nutrition",
-          "type": "missing",
-          "note": "找不到營養標示"
-        }
-      ]
+      "issues": []
     },
     {
       "id": "uni-1002003600104",
@@ -260,18 +204,31 @@
       "issues": []
     },
     {
+      "id": "uni-1002101300106",
+      "title": "統一 UNI FIT 運動飲料",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw229e05f4/images/large/1002101300106_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1002101300106.html",
+      "issues": [
+        {
+          "field": "source",
+          "type": "verify",
+          "note": "營養標示來自Open Food Facts（品名相似度 1.00：「UniFit運動飲料」），請確認是同一商品"
+        },
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
       "id": "quaker-1002301600101",
       "title": "桂格 原味水解雞精",
       "category": "drink.juice",
       "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwb663ae42/images/large/0278759_18.jpeg?sw=480&sh=480",
       "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002301600101.html",
-      "issues": [
-        {
-          "field": "nutrition",
-          "type": "missing",
-          "note": "找不到營養標示"
-        }
-      ]
+      "issues": []
     },
     {
       "id": "quaker-1002301800101",
@@ -295,13 +252,7 @@
       "category": "drink.juice",
       "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwc9d696e2/images/large/0241886_60mlx19.jpeg?sw=480&sh=480",
       "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002302100104.html",
-      "issues": [
-        {
-          "field": "nutrition",
-          "type": "missing",
-          "note": "找不到營養標示"
-        }
-      ]
+      "issues": []
     },
     {
       "id": "quaker-1002303400101",
@@ -341,13 +292,7 @@
       "category": "drink.juice",
       "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw3c91a78e/images/large/0201278_42x5.jpeg?sw=480&sh=480",
       "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002306900101.html",
-      "issues": [
-        {
-          "field": "nutrition",
-          "type": "missing",
-          "note": "找不到營養標示"
-        }
-      ]
+      "issues": []
     },
     {
       "id": "quaker-1002307500101",
@@ -355,13 +300,7 @@
       "category": "drink.juice",
       "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw66eca518/images/large/0229144_5x15ml18.jpeg?sw=480&sh=480",
       "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002307500101.html",
-      "issues": [
-        {
-          "field": "nutrition",
-          "type": "missing",
-          "note": "找不到營養標示"
-        }
-      ]
+      "issues": []
     },
     {
       "id": "quaker-1002309300101",
@@ -402,8 +341,36 @@
       "issues": [
         {
           "field": "nutrition",
-          "type": "missing",
-          "note": "找不到營養標示"
+          "type": "verify",
+          "note": "營養標示沒有寫「每份」或「每100」，暫時當作每100，請對照包裝確認"
+        }
+      ]
+    },
+    {
+      "id": "uni-1002315300101",
+      "title": "統一 生機有機紅棗枸杞銀耳露",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwbc91afed/images/large/1002315300101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1002315300101.html",
+      "issues": [
+        {
+          "field": "source",
+          "type": "verify",
+          "note": "成分、營養標示來自Open Food Facts（品名相似度 0.89：「有機紅棗枸杞銀耳露」），請確認是同一商品"
+        }
+      ]
+    },
+    {
+      "id": "uni-1002315600101",
+      "title": "統一 生機菊花枸杞銀耳露",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw4b3d521d/images/large/1002315600101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1002315600101.html",
+      "issues": [
+        {
+          "field": "source",
+          "type": "verify",
+          "note": "成分、營養標示來自Open Food Facts（品名相似度 0.86：「菊花枸杞銀耳露」），請確認是同一商品"
         }
       ]
     },
@@ -422,18 +389,20 @@
       ]
     },
     {
-      "id": "uni-1003000100101",
+      "id": "uni-1003000100112",
       "title": "統一 開喜凍頂烏龍茶(無糖)",
       "category": "drink.coffee",
-      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwbf3db5a9/images/large/1003000100101_NR_00.png?sw=480&sh=480",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003000100101.html",
-      "issues": [
-        {
-          "field": "nutrition",
-          "type": "missing",
-          "note": "找不到營養標示"
-        }
-      ]
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwbe80ab83/images/large/1003000100112_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003000100112.html",
+      "issues": []
+    },
+    {
+      "id": "kuangchuan-1003003000101",
+      "title": "光泉 冷泡茶冰釀烏龍(無糖)",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw0978532d/images/large/1003003000101new.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003003000101.html",
+      "issues": []
     },
     {
       "id": "uni-1003000500101",
@@ -457,9 +426,9 @@
       "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003001400104.html",
       "issues": [
         {
-          "field": "nutrition",
-          "type": "missing",
-          "note": "找不到營養標示"
+          "field": "source",
+          "type": "verify",
+          "note": "營養標示來自Open Food Facts（品名相似度 1.00：「茶裏王白毫烏龍茶」），請確認是同一商品"
         }
       ]
     },
@@ -469,27 +438,15 @@
       "category": "drink.coffee",
       "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw6e9cfaa9/images/large/1003001400124_NR_00.png?sw=480&sh=480",
       "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003001400124.html",
-      "issues": [
-        {
-          "field": "nutrition",
-          "type": "missing",
-          "note": "找不到營養標示"
-        }
-      ]
+      "issues": []
     },
     {
-      "id": "uni-1003001500104",
+      "id": "uni-1003001500124",
       "title": "統一 青心烏龍無糖Pet 600ml",
       "category": "drink.coffee",
-      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw82002e9b/images/large/0099018_et600ml.jpeg?sw=480&sh=480",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003001500104.html",
-      "issues": [
-        {
-          "field": "nutrition",
-          "type": "missing",
-          "note": "找不到營養標示"
-        }
-      ]
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwf7a234e0/images/large/1003001500124_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003001500124.html",
+      "issues": []
     },
     {
       "id": "kuangchuan-1003001700101",
@@ -520,20 +477,18 @@
       ]
     },
     {
-      "id": "kuangchuan-1003003000101",
-      "title": "光泉 冷泡茶冰釀烏龍(無糖)",
-      "category": "drink.coffee",
-      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw0978532d/images/large/1003003000101new.jpg?sw=480&sh=480",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003003000101.html",
-      "issues": []
-    },
-    {
-      "id": "taisun-1003101200104",
+      "id": "taisun-1003100100106",
       "title": "泰山 冰鎮檸檬紅茶",
       "category": "drink.coffee",
-      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw0a6c8ba2/images/large/1003101200104_NR_00.png?sw=480&sh=480",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E6%B3%B0%E5%B1%B1/1003101200104.html",
-      "issues": []
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwd57f5360/images/large/10031001001.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%B3%B0%E5%B1%B1/1003100100106.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "verify",
+          "note": "營養標示沒有寫「每份」或「每100」，暫時當作每100，請對照包裝確認"
+        }
+      ]
     },
     {
       "id": "uni-1003100700104",
@@ -541,13 +496,7 @@
       "category": "drink.coffee",
       "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw0441d21e/images/large/1003100700104_NR_00.png?sw=480&sh=480",
       "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003100700104.html",
-      "issues": [
-        {
-          "field": "nutrition",
-          "type": "missing",
-          "note": "找不到營養標示"
-        }
-      ]
+      "issues": []
     },
     {
       "id": "uni-1003101900124",
@@ -555,17 +504,15 @@
       "category": "drink.coffee",
       "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw0fc11a3d/images/large/1003101900124_NR_00.png?sw=480&sh=480",
       "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003101900124.html",
-      "issues": [
-        {
-          "field": "substances",
-          "type": "unmatched",
-          "note": "下列添加物沒有對應到成分資料庫",
-          "candidates": [
-            "香料：含水",
-            "香料：酒 精"
-          ]
-        }
-      ]
+      "issues": []
+    },
+    {
+      "id": "kuangchuan-1003401100106",
+      "title": "光泉 茉莉茶園蘋果紅茶",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwc689d49d/images/large/0254437_-250ml.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003401100106.html",
+      "issues": []
     },
     {
       "id": "imei-1003103100124",
@@ -576,8 +523,8 @@
       "issues": [
         {
           "field": "nutrition",
-          "type": "missing",
-          "note": "找不到營養標示"
+          "type": "verify",
+          "note": "營養標示沒有寫「每份」或「每100」，暫時當作每100，請對照包裝確認"
         }
       ]
     },
@@ -611,15 +558,6 @@
       "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003201900106.html",
       "issues": [
         {
-          "field": "substances",
-          "type": "unmatched",
-          "note": "下列添加物沒有對應到成分資料庫",
-          "candidates": [
-            "香料：鹽",
-            "香料：中鏈三酸甘油酯"
-          ]
-        },
-        {
           "field": "nutrition",
           "type": "missing",
           "note": "找不到營養標示"
@@ -632,6 +570,60 @@
       "category": "drink.coffee",
       "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw963d8b7b/images/large/1003206400124.jpg?sw=480&sh=480",
       "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003206400106.html",
+      "issues": []
+    },
+    {
+      "id": "kuangchuan-1003301100104",
+      "title": "光泉 冷泡綠茶無糖",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw1b641c51/images/large/1003301100104.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003301100104.html",
+      "issues": []
+    },
+    {
+      "id": "uni-1003301400104",
+      "title": "統一 台式綠茶",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwd76cc7ce/images/large/1003301400104_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003301400104.html",
+      "issues": []
+    },
+    {
+      "id": "uni-1003301500104",
+      "title": "統一 日式綠茶無糖",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw452053c0/images/large/1003301500104_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003301500104.html",
+      "issues": []
+    },
+    {
+      "id": "agv-1003304100106",
+      "title": "愛之味 健康油切分解茶(無糖)",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwfb416dd7/images/large/0003025_-590ml.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%84%9B%E4%B9%8B%E5%91%B3/1003304100106.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "kuangchuan-1003306700104",
+      "title": "光泉 冷泡茶朝露綠茶(無糖)",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwf5de1814/images/large/1003306700104.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003306700104.html",
+      "issues": []
+    },
+    {
+      "id": "heysong-1003307000104",
+      "title": "黑松 茶花綠茶 無糖",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwa922743d/images/large/1003307000104_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE/1003307000104.html",
       "issues": [
         {
           "field": "nutrition",
@@ -641,11 +633,1563 @@
       ]
     },
     {
-      "id": "kuangchuan-1003301100104",
-      "title": "光泉 冷泡綠茶無糖",
+      "id": "agv-1003308100106",
+      "title": "愛之味 油切分解茶 四季春風味(無糖)",
       "category": "drink.coffee",
-      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw1b641c51/images/large/1003301100104.jpg?sw=480&sh=480",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003301100104.html",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw704471f3/images/large/1003308100106_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%84%9B%E4%B9%8B%E5%91%B3/1003308100106.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "kuangchuan-1003400300124",
+      "title": "光泉 茉莉茶園茉香柚茶",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw4af74b35/images/large/0226537_t250ml.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003400300124.html",
+      "issues": []
+    },
+    {
+      "id": "taisun-1003400700104",
+      "title": "泰山 冰鎮水果茶",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw731652cb/images/large/1003400700104_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%B3%B0%E5%B1%B1/1003400700104.html",
+      "issues": []
+    },
+    {
+      "id": "kuangchuan-1003404200106",
+      "title": "光泉 茉莉蜜茶",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw5f2074a1/images/large/0003038_t250ml.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003404200106.html",
+      "issues": []
+    },
+    {
+      "id": "kuangchuan-1003405200104",
+      "title": "光泉 茉莉茶園茉莉清茶(無糖)",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw48f49d14/images/large/1003405200104.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003405200104.html",
+      "issues": []
+    },
+    {
+      "id": "kuangchuan-1003499900106",
+      "title": "光泉 正庄蜂蜜菊花茶",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwfa311df0/images/large/0238947_250ml.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003499900106.html",
+      "issues": []
+    },
+    {
+      "id": "agv-1003500100101",
+      "title": "愛之味 麥仔茶",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwd29c329d/images/large/1003500100101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%84%9B%E4%B9%8B%E5%91%B3/1003500100101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1003500600124",
+      "title": "義美 桂圓紅棗茶",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw410e8d7f/images/large/0122146_t250ml.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1003500600124.html",
+      "issues": []
+    },
+    {
+      "id": "agv-1003500700104",
+      "title": "愛之味 麥仔茶冰萃漫香(無糖)",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw8d523cbc/images/large/1003500700104.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%84%9B%E4%B9%8B%E5%91%B3/1003500700104.html",
+      "issues": []
+    },
+    {
+      "id": "uni-1003500900101",
+      "title": "統一 原味本舖青草茶",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw2eed53ac/images/large/1003500900101_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003500900101.html",
+      "issues": []
+    },
+    {
+      "id": "taisun-1003501500106",
+      "title": "泰山 仙草蜜",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw1e6c8464/images/large/1003501500106_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%B3%B0%E5%B1%B1/1003501500106.html",
+      "issues": []
+    },
+    {
+      "id": "uni-1003501600106",
+      "title": "統一 原味本舖麥仔茶",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwb798c432/images/large/1003501600106_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003501600106.html",
+      "issues": []
+    },
+    {
+      "id": "kuangchuan-1003502800124",
+      "title": "光泉 正庄冬瓜茶",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw3b98434b/images/large/0238945_-250ml.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003502800124.html",
+      "issues": []
+    },
+    {
+      "id": "agv-1003503600106",
+      "title": "愛之味 分解茶 秋薑黃(無糖)",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw43872f4a/images/large/1003503600106_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%84%9B%E4%B9%8B%E5%91%B3/1003503600106.html",
+      "issues": []
+    },
+    {
+      "id": "uni-1003504000101",
+      "title": "統一 原味本舖冬瓜茶",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwf577c84a/images/large/1003504000101_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003504000101.html",
+      "issues": []
+    },
+    {
+      "id": "uni-1003506400101",
+      "title": "統一 原味本舖養身杏仁茶",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw1d8ce945/images/large/1003506400101_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003506400101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "taisun-1004000800112",
+      "title": "泰山 純水",
+      "category": "drink.soda",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw74185486/images/large/1004000800112_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%B3%B0%E5%B1%B1/1004000800112.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "taisun-1004100400104",
+      "title": "泰山 Cheers奇兒思氣泡水",
+      "category": "drink.soda",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw420512f2/images/large/1004100400104_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%B3%B0%E5%B1%B1/1004100400104.html",
+      "issues": [
+        {
+          "field": "source",
+          "type": "verify",
+          "note": "條碼來自Open Food Facts（品名相似度 1.00：「Cheers奇兒思氣泡水」），請確認是同一商品"
+        },
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "taisun-1004103400104",
+      "title": "泰山 Cheers奇兒思檸檬氣泡水",
+      "category": "drink.soda",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw85427cab/images/large/1004103400104_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%B3%B0%E5%B1%B1/1004103400104.html",
+      "issues": []
+    },
+    {
+      "id": "taisun-1004105700104",
+      "title": "泰山 Cheers Bee奇兒思蜂蜜氣泡水",
+      "category": "drink.soda",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwb1229a73/images/large/1004105700104_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%B3%B0%E5%B1%B1/1004105700104.html",
+      "issues": []
+    },
+    {
+      "id": "taisun-1004108500104",
+      "title": "泰山 Cheers奇兒思強氣泡水",
+      "category": "drink.soda",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwabb2ee41/images/large/1004108500104_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%B3%B0%E5%B1%B1/1004108500104.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "quaker-1090401500101",
+      "title": "桂格 御蔘禮盒",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw643c6806/images/large/1090401500101_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1090401500101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "quaker-1090492000101",
+      "title": "桂格 養氣人蔘無糖 94瓶(特規)(無提袋)",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw092ea06e/images/large/1090492000101_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1090492000101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "quaker-1232700200101",
+      "title": "桂格 完膳營養素白藜蘆醇237ml",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw71d9de31/images/large/1232700200101_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1232700200101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "quaker-1232701800101",
+      "title": "桂格 完膳營養素高鈣配方 禮盒",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dweb870ad9/images/large/1232701800101_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1232701800101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "quaker-1232702800124",
+      "title": "桂格 完膳營養素50鉻配方",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw7f591550/images/large/1232702800124_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1232702800124.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "quaker-1232704000101",
+      "title": "桂格 機能燕麥片",
+      "category": "drink.sport",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwb1237a01/images/large/1232704000101_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1232704000101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "quaker-1232704800101",
+      "title": "桂格 完膳營養素香草口味(低糖少甜)250ml",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwfcac22de/images/large/0244387_24.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1232704800101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "quaker-1232705000101",
+      "title": "桂格 完膳營養素白藜蘆醇",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw9e3f5223/images/large/1232705000101_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1232705000101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "quaker-1232705600124",
+      "title": "桂格 完膳營養素經典香草",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwaa3c88a9/images/large/1232705600124_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1232705600124.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "quaker-1232705900101",
+      "title": "桂格 完膳營養素植物蛋白配方 250ml",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw34fcf994/images/large/0242801_24.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1232705900101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "quaker-1232708700101",
+      "title": "桂格 完膳營養素糖尿病適用無糖100鉻 250ml",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw0c5375b0/images/large/1232708700101_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1232708700101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "quaker-1232708800101",
+      "title": "桂格 完膳營養素糖尿病適用無糖100鉻",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw44a2e457/images/large/0244423_10024.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1232708800101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "quaker-1232708900101",
+      "title": "桂格 完膳營養素植物蛋白配方",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw8e979c1e/images/large/1232708900101_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1232708900101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        },
+        {
+          "field": "labels",
+          "type": "verify",
+          "note": "自動偵測到標籤，請確認是認證而非宣稱",
+          "candidates": [
+            "non-gmo：非基改大豆的優質植物蛋白"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quaker-1232711800101",
+      "title": "桂格 完膳營養素3重優蛋白 禮盒",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw78c84afd/images/large/1232711800101_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1232711800101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "imei-1400103100101",
+      "title": "義美 美味蘇打餅乾 原味",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw1c03b1d0/images/large/1400103100101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1400103100101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1400103400101",
+      "title": "義美 美味蘇打餅乾 紫菜",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwcd8d738a/images/large/1400103400101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1400103400101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1400103600101",
+      "title": "義美 美味蘇打餅乾 鮮蔥",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw1816148e/images/large/1400103600101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1400103600101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1400112900101",
+      "title": "義美 純麥取向蘇打餅乾",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwc71da24f/images/large/0271076_341g.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1400112900101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1400113100101",
+      "title": "義美 起司取向蘇打餅乾",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw962a022b/images/large/0271077_300g.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1400113100101.html",
+      "issues": []
+    },
+    {
+      "id": "uni-1400114900101",
+      "title": "統一 亞麻仁海鹽蘇打餅 椒鹽",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw7f14c07c/images/large/1400114900101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1400114900101.html",
+      "issues": []
+    },
+    {
+      "id": "uni-1400115000101",
+      "title": "統一 亞麻仁海鹽蘇打餅 青蔥",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw4eb82d0e/images/large/1400115000101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1400115000101.html",
+      "issues": []
+    },
+    {
+      "id": "uni-1400115100101",
+      "title": "統一 亞麻仁海鹽蘇打餅 原味",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw4edce7df/images/large/1400115100101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1400115100101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1400115700101",
+      "title": "義美 生機 台灣紅藜蘇打餅",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw0c2334bd/images/large/1400115700101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E%E7%94%9F%E6%A9%9F/1400115700101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1400115800101",
+      "title": "義美 生機 亞麻仁蘇打餅",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwda8281bf/images/large/1400115800101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E%E7%94%9F%E6%A9%9F/1400115800101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1400300900101",
+      "title": "義美 美味營養餅乾",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw22fbce32/images/large/1400300900101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1400300900101.html",
+      "issues": []
+    },
+    {
+      "id": "hwayuan-1401001100101",
+      "title": "華元 真魷味歡樂包 紅燒口味12g",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw07e84e37/images/large/1401001100101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%8F%AF%E5%85%83/1401001100101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "lianhwa-1401001200101",
+      "title": "聯華食品 山葵(哇沙米)口味",
+      "category": "snack.puffed",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwa4db452e/images/large/0013436.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%81%AF%E8%8F%AF%E9%A3%9F%E5%93%81/1401001200101.html",
+      "issues": []
+    },
+    {
+      "id": "lianhwa-1401002900101",
+      "title": "聯華食品 九層塔",
+      "category": "snack.puffed",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwe3c7be5e/images/large/0013437.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%81%AF%E8%8F%AF%E9%A3%9F%E5%93%81/1401002900101.html",
+      "issues": []
+    },
+    {
+      "id": "hwayuan-1401003100101",
+      "title": "華元 鹹酥餅歡樂包",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw0b497bb8/images/large/1401003100101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%8F%AF%E5%85%83/1401003100101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "hwayuan-1401003400101",
+      "title": "華元 神氣包 三色野菜園",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwbc33051f/images/large/1401003400101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%8F%AF%E5%85%83/1401003400101.html",
+      "issues": []
+    },
+    {
+      "id": "uni-1401004000101",
+      "title": "統一 科學麵20合1 Min",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwdd1dac07/images/large/1401004000101.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1401004000101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "verify",
+          "note": "營養標示沒有寫「每份」或「每100」，暫時當作每100，請對照包裝確認"
+        }
+      ]
+    },
+    {
+      "id": "lianhwa-1401004700101",
+      "title": "聯華食品 酷辣可樂果",
+      "category": "snack.puffed",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwaddb750f/images/large/0015708.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%81%AF%E8%8F%AF%E9%A3%9F%E5%93%81/1401004700101.html",
+      "issues": []
+    },
+    {
+      "id": "lianhwa-1401004800101",
+      "title": "聯華食品 古早可樂果",
+      "category": "snack.puffed",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw6a8b04e6/images/large/0013439.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%81%AF%E8%8F%AF%E9%A3%9F%E5%93%81/1401004800101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "conflict",
+          "note": "頁面上有 2 組營養標示，每100熱量不一致：521 / 104",
+          "candidates": [
+            {
+              "per100": {
+                "kcal": 521,
+                "protein": 9.7,
+                "fat": 28.6,
+                "satFat": 12.8,
+                "transFat": 0,
+                "carb": 56.1,
+                "sugar": 1.8,
+                "sodium": 553
+              },
+              "perServing": {},
+              "serving": {
+                "size": 20,
+                "unit": "g"
+              }
+            },
+            {
+              "per100": {
+                "kcal": 104,
+                "protein": 2.2,
+                "fat": 5.5,
+                "satFat": 2.5,
+                "transFat": 0,
+                "carb": 11.3,
+                "sugar": 0.2,
+                "sodium": 136
+              },
+              "perServing": {},
+              "serving": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lianhwa-1401015400101",
+      "title": "聯華食品 德州薯條茄汁口味",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwe4349854/images/large/1401015400101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%8D%A1%E8%BF%AA%E9%82%A3/1401015400101.html",
+      "issues": []
+    },
+    {
+      "id": "lianhwa-1401006200101",
+      "title": "聯華食品 原味",
+      "category": "snack.puffed",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw23d81745/images/large/0215786.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%81%AF%E8%8F%AF%E9%A3%9F%E5%93%81/1401006200101.html",
+      "issues": []
+    },
+    {
+      "id": "lianhwa-1401006400101",
+      "title": "聯華食品 酷辣 分享包",
+      "category": "snack.puffed",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw73e7d77b/images/large/0026729.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%81%AF%E8%8F%AF%E9%A3%9F%E5%93%81/1401006400101.html",
+      "issues": []
+    },
+    {
+      "id": "lianhwa-1401007200101",
+      "title": "聯華食品 原味 分享包",
+      "category": "snack.puffed",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwd44d5e6c/images/large/0215781.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%81%AF%E8%8F%AF%E9%A3%9F%E5%93%81/1401007200101.html",
+      "issues": []
+    },
+    {
+      "id": "lianhwa-1401007300101",
+      "title": "聯華食品 檸檬玫瑰鹽口味",
+      "category": "snack.puffed",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwe81e5ea0/images/large/0208422_240g.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%81%AF%E8%8F%AF%E9%A3%9F%E5%93%81/1401007300101.html",
+      "issues": []
+    },
+    {
+      "id": "lianhwa-1401007800101",
+      "title": "聯華食品 酷辣",
+      "category": "snack.puffed",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwdaba8e1f/images/large/0085909.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%81%AF%E8%8F%AF%E9%A3%9F%E5%93%81/1401007800101.html",
+      "issues": []
+    },
+    {
+      "id": "lianhwa-1401009800112",
+      "title": "聯華食品 原味 箱",
+      "category": "snack.puffed",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwa0fc31c8/images/large/0215777_140g.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%81%AF%E8%8F%AF%E9%A3%9F%E5%93%81/1401009800112.html",
+      "issues": []
+    },
+    {
+      "id": "lianhwa-1401011600104",
+      "title": "聯華食品 小德薯濃厚茄汁口味",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwda440c3b/images/large/1401011600104.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%8D%A1%E8%BF%AA%E9%82%A3/1401011600104.html",
+      "issues": []
+    },
+    {
+      "id": "lianhwa-1401012100104",
+      "title": "聯華食品 小德薯湖鹽海苔口味",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw8be50a3c/images/large/1401012100104.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%8D%A1%E8%BF%AA%E9%82%A3/1401012100104.html",
+      "issues": []
+    },
+    {
+      "id": "lianhwa-1401012800101",
+      "title": "聯華食品 寶卡卡雞汁口味",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw4d85c09e/images/large/1401012800101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%8D%A1%E8%BF%AA%E9%82%A3/1401012800101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "lianhwa-1401016000101",
+      "title": "聯華食品 古早味",
+      "category": "snack.puffed",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw26cc4382/images/large/1401016000101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%81%AF%E8%8F%AF%E9%A3%9F%E5%93%81/1401016000101.html",
+      "issues": []
+    },
+    {
+      "id": "kuaikuai-1401026300101",
+      "title": "乖乖 玉米脆條 蝦乖乖原味",
+      "category": "snack.puffed",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw2c0a6a70/images/large/1401026300101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E4%B9%96%E4%B9%96/1401026300101.html",
+      "issues": [
+        {
+          "field": "labels",
+          "type": "verify",
+          "note": "自動偵測到標籤，請確認是認證而非宣稱",
+          "candidates": [
+            "non-gmo：成分：玉米(非基因改造)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kuaikuai-1401027800101",
+      "title": "乖乖 玉米脆條 蝦乖乖辣味",
+      "category": "snack.puffed",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw5a9b7b6f/images/large/1401027800101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E4%B9%96%E4%B9%96/1401027800101.html",
+      "issues": [
+        {
+          "field": "labels",
+          "type": "verify",
+          "note": "自動偵測到標籤，請確認是認證而非宣稱",
+          "candidates": [
+            "non-gmo：成分：玉米(非基因改造)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hwayuan-1401103200101",
+      "title": "華元 神氣包 玉黍叔",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwf2f47444/images/large/0218551_-.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%8F%AF%E5%85%83/1401103200101.html",
+      "issues": [
+        {
+          "field": "labels",
+          "type": "verify",
+          "note": "自動偵測到標籤，請確認是認證而非宣稱",
+          "candidates": [
+            "non-gmo：成分：玉米粉(非基因改造)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "kuaikuai-1401125300101",
+      "title": "乖乖 玉米脆條 奶油椰子",
+      "category": "snack.puffed",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw35572dd6/images/large/1401125300101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E4%B9%96%E4%B9%96/1401125300101.html",
+      "issues": [
+        {
+          "field": "labels",
+          "type": "verify",
+          "note": "自動偵測到標籤，請確認是認證而非宣稱",
+          "candidates": [
+            "non-gmo：成分：玉米(非基因改造)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hwayuan-1401209800101",
+      "title": "華元 Mini分享包 洋蔥圈經典原味",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw6b029e81/images/large/1401209800101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%8F%AF%E5%85%83/1401209800101.html",
+      "issues": []
+    },
+    {
+      "id": "hwayuan-1401209800110",
+      "title": "華元 Mini分享包 洋蔥圈經典原味 克",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw6b029e81/images/large/1401209800101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%8F%AF%E5%85%83/1401209800110.html",
+      "issues": []
+    },
+    {
+      "id": "hwayuan-1401400600101",
+      "title": "華元 大吉利 包",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwc1347ce8/images/large/1401400600101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%8F%AF%E5%85%83/1401400600101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        },
+        {
+          "field": "labels",
+          "type": "verify",
+          "note": "自動偵測到標籤，請確認是認證而非宣稱",
+          "candidates": [
+            "non-gmo：成份：玉米粉(非基因改造)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hwayuan-1402224400101",
+      "title": "華元 波的多洋芋片(濃厚蚵仔煎口味)",
+      "category": "snack.chips",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw4fac77ec/images/large/1402224400101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%8F%AF%E5%85%83/1402224400101.html",
+      "issues": []
+    },
+    {
+      "id": "hwayuan-1402224500101",
+      "title": "華元 波的多洋芋片(濃厚蚵仔煎香辣口味)",
+      "category": "snack.chips",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwe993bc59/images/large/1402224500101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%8F%AF%E5%85%83/1402224500101.html",
+      "issues": []
+    },
+    {
+      "id": "hty-1402319200101",
+      "title": "新東陽 樂事札幌湯咖哩口味洋芋片",
+      "category": "noodle.ready",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw50c8cf05/images/large/1402319200101_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%96%B0%E6%9D%B1%E9%99%BD/1402319200101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "uni-1402336100101",
+      "title": "統一 生機海鹽洋芋片 原味",
+      "category": "snack.chips",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwb7d7bcf7/images/large/1402336100101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1402336100101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1410000300101",
+      "title": "義美 煎餅 花生",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw32a4b3de/images/large/0004482_-.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1410000300101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1410000900101",
+      "title": "義美 狀元煎餅杏仁",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw8750945c/images/large/0213146.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1410000900101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1410001200101",
+      "title": "義美 狀元煎餅花生",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw6a94e094/images/large/0213145.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1410001200101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1410008700101",
+      "title": "義美 雙果仁煎餅(花生杏仁)",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw26f270ab/images/large/1410008700101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1410008700101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1410224600101",
+      "title": "義美 臻果巧克力酥片 (牛奶巧克力)",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw5b649203/images/large/0220111_-.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1410224600101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1410224900101",
+      "title": "義美 杏仁巧克力酥片(黑可可)",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw929fed6f/images/large/0241135.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1410224900101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1410225000101",
+      "title": "義美 杏仁巧克力酥片(牛奶巧克力)",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw39540342/images/large/0220109.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1410225000101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1410225800101",
+      "title": "義美 榛果巧克力酥片(黑可可)",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw5a8fe9d2/images/large/0220110.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1410225800101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1410400200101",
+      "title": "義美 煎餅 海苔",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw53e94f66/images/large/0004519_-.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1410400200101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1410403600101",
+      "title": "義美 檸檬風味薄餅",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwaab3ec94/images/large/1410403600101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1410403600101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "verify",
+          "note": "營養標示沒有寫「每份」或「每100」，暫時當作每100，請對照包裝確認"
+        }
+      ]
+    },
+    {
+      "id": "imei-1410406700101",
+      "title": "義美 紅麴養生薄餅",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwb101f261/images/large/0013477.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1410406700101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1410410100101",
+      "title": "義美 鮮乳薄餅量販盒",
+      "category": "dairy.milk",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwb7d56bdf/images/large/0155096.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1410410100101.html",
+      "issues": []
+    },
+    {
+      "id": "lianhwa-1410423000106",
+      "title": "聯華食品 萬歲堅穀力堅果穀物棒原味",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwee0a4ab4/images/large/1410423000106.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%90%AC%E6%AD%B2%E7%89%8C/1410423000106.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "quaker-1410429300101",
+      "title": "桂格 每日滿足蛋白穀物棒 藍莓可可",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw13673a8d/images/large/1410429300101_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1410429300101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "lianhwa-1410433700106",
+      "title": "聯華食品 萬歲堅穀力堅果穀物棒莓果口味",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw88d065f6/images/large/1410433700106.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%90%AC%E6%AD%B2%E7%89%8C/1410433700106.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1410464800101",
+      "title": "義美 雙果仁煎餅(杏仁南瓜子)",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw71244551/images/large/1410464800101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1410464800101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "imei-1411025600101",
+      "title": "義美 千層派杏仁",
+      "category": "biscuit.cake",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwff8aa0b1/images/large/1411025600101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1411025600101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "verify",
+          "note": "營養標示沒有寫「每份」或「每100」，暫時當作每100，請對照包裝確認"
+        }
+      ]
+    },
+    {
+      "id": "imei-1411025900101",
+      "title": "義美 奶霜可可千層派",
+      "category": "biscuit.cake",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw4b8f1848/images/large/1411025900101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1411025900101.html",
+      "issues": []
+    },
+    {
+      "id": "hty-1411100400101",
+      "title": "新東陽 鳳梨酥",
+      "category": "biscuit.cake",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw4abbac31/images/large/1411100400101_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%96%B0%E6%9D%B1%E9%99%BD/1411100400101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1411200700101",
+      "title": "義美 牛奶小泡芙",
+      "category": "biscuit.cake",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dweb018389/images/large/0245428.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1411200700101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1411201300101",
+      "title": "義美 巧克力小泡芙",
+      "category": "biscuit.cake",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw95caf5c0/images/large/0244774_-.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1411201300101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1411201400101",
+      "title": "義美 草莓小泡芙",
+      "category": "biscuit.cake",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw10ed0299/images/large/0244776.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1411201400101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1411205600101",
+      "title": "義美 小泡芙(黑可可)",
+      "category": "biscuit.cake",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwe8465e72/images/large/0268706.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1411205600101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1412001900101",
+      "title": "義美 巧克力法蘭酥",
+      "category": "biscuit.sandwich",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw4d4cc319/images/large/1412001900101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1412001900101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1412101400101",
+      "title": "義美 草莓法蘭酥",
+      "category": "biscuit.sandwich",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwd95c6e64/images/large/1412101400101r.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1412101400101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1412101700101",
+      "title": "義美 牛奶法蘭酥",
+      "category": "biscuit.sandwich",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwcd2506c8/images/large/0030296.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1412101700101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1412105700101",
+      "title": "義美 美味薄餅夾心 檸檬",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw5abf5207/images/large/1412105700101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1412105700101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1412105900101",
+      "title": "義美 蘇打餅夾心檸檬口味",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw66c34292/images/large/0073291.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1412105900101.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "conflict",
+          "note": "頁面上有 2 份成分寫法",
+          "candidates": [
+            "麵粉、植物油(棕櫚油、椰子油)、蔗糖、葡萄糖、奶粉、乳糖、起司、酵母、食鹽、麥芽萃取物、膨脹劑(碳酸氫鈉)、乳化劑(乳酸硬脂酸鈉、脂肪酸甘油酯)、&beta;-胡蘿蔔素、檸檬酸、香料",
+            "名稱 麵粉、植物油(棕櫚油、椰子油)、蔗糖、葡萄糖、奶粉、乳糖、起司、酵母、食鹽、麥芽萃取物、膨脹劑(碳酸氫鈉)、乳化劑(乳酸硬脂酸鈉、脂肪酸甘油酯)、β-胡蘿蔔素、檸檬酸、香料"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imei-1412114300101",
+      "title": "義美 美味薄餅夾心 草莓",
+      "category": "biscuit.cookie",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwb763cd9b/images/large/1412114300101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1412114300101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1413000700101",
+      "title": "義美 草莓夾心酥經濟包",
+      "category": "biscuit.sandwich",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw82ae08ab/images/large/0273430.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1413000700101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1413000900101",
+      "title": "義美 椰子夾心酥",
+      "category": "biscuit.sandwich",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw6af3382f/images/large/0241458.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1413000900101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1413001300101",
+      "title": "義美 夾心酥 檸檬",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw1db1a00c/images/large/0078744_152-.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1413001300101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1413005400101",
+      "title": "義美 清香檸檬風味夾心酥",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwdca4f120/images/large/0283726_400g.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1413005400101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1413102200101",
+      "title": "義美 夾心酥(黑可可)",
+      "category": "biscuit.sandwich",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw1d7ae9d7/images/large/0235207.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1413102200101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1413102700101",
+      "title": "義美 牛奶夾心酥",
+      "category": "biscuit.sandwich",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw5dde3cab/images/large/0242359.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1413102700101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1413104100101",
+      "title": "義美 巧克力夾心酥經濟包",
+      "category": "biscuit.sandwich",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw95f2380b/images/large/0006943.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1413104100101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1413107300101",
+      "title": "義美 香濃花生夾心酥",
+      "category": "biscuit.sandwich",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw24c80867/images/large/0283725_400g.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1413107300101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1413112200101",
+      "title": "義美 威化捲(巧克力)",
+      "category": "biscuit.sandwich",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw507a8c51/images/large/1413112200101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1413112200101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1413112400101",
+      "title": "義美 威化捲(香草牛奶)",
+      "category": "biscuit.sandwich",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw3396c38d/images/large/1413112400101.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1413112400101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1413233600101",
+      "title": "義美 威化捲輕巧桶巧克力",
+      "category": "biscuit.sandwich",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw4c025f57/images/large/1413233600101.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1413233600101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1413233700101",
+      "title": "義美 威化捲輕巧桶香草牛奶",
+      "category": "biscuit.sandwich",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwb630395b/images/large/1413233700101.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1413233700101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1413233800101",
+      "title": "義美 威化捲輕巧桶香甜草莓",
+      "category": "biscuit.sandwich",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwdfb74789/images/large/1413233800101.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1413233800101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1413302900101",
+      "title": "義美 小蛋捲 原味",
+      "category": "biscuit.eggroll",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw7f1607bc/images/large/0186640_-.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1413302900101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1413303000101",
+      "title": "義美 小蛋捲 芝麻",
+      "category": "biscuit.eggroll",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwefd65500/images/large/0027036_-.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1413303000101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1413304900101",
+      "title": "義美 厚濃蛋捲(花生)",
+      "category": "biscuit.eggroll",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw9bbf6257/images/large/1413304900101.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1413304900101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1413305000101",
+      "title": "義美 厚濃蛋捲(海苔)",
+      "category": "biscuit.eggroll",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw11fc49bb/images/large/1413305000101.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1413305000101.html",
+      "issues": []
+    },
+    {
+      "id": "hty-1420102100101",
+      "title": "新東陽 原味牛肉乾",
+      "category": "meat.jerky",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw5281f15a/images/large/1420102100101_NR_00.JPG?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%96%B0%E6%9D%B1%E9%99%BD/1420102100101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "hty-1420102200101",
+      "title": "新東陽 辣味牛肉乾",
+      "category": "meat.jerky",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw380dbc3f/images/large/1420102200101_NR_00.JPG?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%96%B0%E6%9D%B1%E9%99%BD/1420102200101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "hty-1420200100101",
+      "title": "新東陽 蜜汁豬肉乾",
+      "category": "meat.jerky",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwa0ecab00/images/large/1420200100101_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%96%B0%E6%9D%B1%E9%99%BD/1420200100101.html",
+      "issues": []
+    },
+    {
+      "id": "hty-1420200900101",
+      "title": "新東陽 辣味豬肉乾",
+      "category": "meat.jerky",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw03b76a19/images/large/1420200900101_NR_00.JPG?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%96%B0%E6%9D%B1%E9%99%BD/1420200900101.html",
+      "issues": []
+    },
+    {
+      "id": "hty-1420208000101",
+      "title": "新東陽 古早味炭烤豬肉乾",
+      "category": "meat.jerky",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwa3081a02/images/large/1420208000101_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%96%B0%E6%9D%B1%E9%99%BD/1420208000101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "lianhwa-1420408900101",
+      "title": "聯華食品 朝鮮海苔經典鹽味量販袋",
+      "category": "meat.jerky",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw8c459a52/images/large/1420408900101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%83%E6%9C%AC%E5%B1%B1/1420408900101.html",
+      "issues": []
+    },
+    {
+      "id": "lianhwa-1420414400101",
+      "title": "聯華食品 金綠罐海苔禮盒",
+      "category": "meat.jerky",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwd3b57090/images/large/1420414400101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%83%E6%9C%AC%E5%B1%B1/1420414400101.html",
+      "issues": []
+    },
+    {
+      "id": "lianhwa-1420415800101",
+      "title": "聯華食品 脆烤海苔 椒鹽",
+      "category": "meat.jerky",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw85ae2b72/images/large/1420415800101_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%83%E6%9C%AC%E5%B1%B1/1420415800101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1422201000101",
+      "title": "義美 小羊羹(紅豆)",
+      "category": "snack.chocolate",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwdc5bd43d/images/large/1422201000101_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1422201000101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "imei-1422333400101",
+      "title": "義美 知心Q軟糖 (草莓風味)",
+      "category": "snack.chocolate",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw4815b516/images/large/1422333400101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1422333400101.html",
+      "issues": []
+    },
+    {
+      "id": "kuaikuai-1422338600101",
+      "title": "乖乖 QQ水果軟糖 綜合水果口味",
+      "category": "snack.puffed",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw629cfe6e/images/large/1422338600101_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E4%B9%96%E4%B9%96/1422338600101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "kuaikuai-1422338700101",
+      "title": "乖乖 QQ水果軟糖 熱帶水果口味",
+      "category": "snack.puffed",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw7e410d59/images/large/1422338700101_NR_01.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E4%B9%96%E4%B9%96/1422338700101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "imei-1422353000101",
+      "title": "義美 果汁脆皮軟糖(綜合水果)",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwfb71cfa5/images/large/1422353000101_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1422353000101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "imei-1422353100101",
+      "title": "義美 果汁脆皮軟糖(香甜葡萄)",
+      "category": "drink.juice",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw8335cd13/images/large/1422353100101_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1422353100101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "imei-1422353200101",
+      "title": "義美 果汁脆皮軟糖(水果多多)",
+      "category": "dairy.yogurt",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwc44dd9aa/images/large/1422353200101_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1422353200101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "imei-1423022700101",
+      "title": "義美 葡萄QQ糖巧克球",
+      "category": "snack.chocolate",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwf2d6234e/images/large/1423022700101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1423022700101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1423039800101",
+      "title": "義美 草莓QQ糖巧克球",
+      "category": "snack.chocolate",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwa05ecbdf/images/large/1423039800101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1423039800101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1423052700101",
+      "title": "義美 草莓煉乳QQ糖巧克球",
+      "category": "snack.chocolate",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwb84bb5f9/images/large/1423052700101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1423052700101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1423053400101",
+      "title": "義美 超大葡萄乾巧克力",
+      "category": "snack.chocolate",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw48240a86/images/large/1423053400101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1423053400101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1423053500101",
+      "title": "義美 超大葡萄乾巧克力(牛奶巧克力)",
+      "category": "snack.chocolate",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwf10b773b/images/large/1423053500101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1423053500101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1423070000101",
+      "title": "義美 白葡萄QQ糖巧克球",
+      "category": "snack.chocolate",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw53e75cb2/images/large/1423070000101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1423070000101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1423201500101",
+      "title": "義美 杏仁巧克球(黑可可)",
+      "category": "snack.chocolate",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw8b22eaab/images/large/1423201500101.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1423201500101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1423217800101",
+      "title": "義美 杏仁巧克球",
+      "category": "snack.chocolate",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwc2c81eae/images/large/1423217800101.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1423217800101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1424108100101",
+      "title": "義美 好食瓶 油爆花生",
+      "category": "snack.nuts",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwff856822/images/large/1424108100101.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1424108100101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1424108500101",
+      "title": "義美 好食瓶 濃蒜花生",
+      "category": "snack.nuts",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwa373a1c8/images/large/1424108500101_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1424108500101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "imei-1424214500101",
+      "title": "義美 濃蒜青豆",
+      "category": "snack.nuts",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw7188754b/images/large/0237165.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1424214500101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1424215100101",
+      "title": "義美 芥末青豆",
+      "category": "snack.nuts",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw11c79711/images/large/0233488.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1424215100101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1424300300101",
+      "title": "義美 好食堅果 無調味五堅果",
+      "category": "snack.nuts",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dweedceb66/images/large/1424300300101_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1424300300101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "lianhwa-1424302600101",
+      "title": "聯華食品 杏仁果",
+      "category": "snack.nuts",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw1f06c1cb/images/large/1424302600101_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%90%AC%E6%AD%B2%E7%89%8C/1424302600101.html",
       "issues": [
         {
           "field": "ingredients",
@@ -653,6 +2197,1826 @@
           "note": "找不到成分"
         }
       ]
+    },
+    {
+      "id": "lianhwa-1424304100101",
+      "title": "聯華食品 珍味雙果",
+      "category": "snack.nuts",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw3774bcd1/images/large/1424304100101_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%90%AC%E6%AD%B2%E7%89%8C/1424304100101.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "lianhwa-1424489600105",
+      "title": "聯華食品 綜合纖果",
+      "category": "snack.nuts",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw1dbdb0c2/images/large/0252664.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%90%AC%E6%AD%B2%E7%89%8C/1424489600105.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "lianhwa-1424304300101",
+      "title": "聯華食品 特選甘栗",
+      "category": "snack.nuts",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw9d1f67ed/images/large/1424304300101_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%90%AC%E6%AD%B2%E7%89%8C/1424304300101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "lianhwa-1424304300112",
+      "title": "聯華食品 特選甘栗 克 Bag袋",
+      "category": "snack.nuts",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwa95f3b49/images/large/1424304300101.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%90%AC%E6%AD%B2%E7%89%8C/1424304300112.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "lianhwa-1424304400101",
+      "title": "聯華食品 楓糖腰果",
+      "category": "snack.nuts",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwa3b4c80f/images/large/1424304400101_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%90%AC%E6%AD%B2%E7%89%8C/1424304400101.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "lianhwa-1424304500101",
+      "title": "聯華食品 蜜汁腰果",
+      "category": "snack.nuts",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwef260976/images/large/1424304500101_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%90%AC%E6%AD%B2%E7%89%8C/1424304500101.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "lianhwa-1424306100101",
+      "title": "聯華食品 珍珠開心果 蒜味",
+      "category": "snack.nuts",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwba431741/images/large/1424306100101_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%90%AC%E6%AD%B2%E7%89%8C/1424306100101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "lianhwa-1424402000105",
+      "title": "聯華食品 無調味綜合果",
+      "category": "snack.nuts",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwcbdfc923/images/large/0252665_-.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%90%AC%E6%AD%B2%E7%89%8C/1424402000105.html",
+      "issues": []
+    },
+    {
+      "id": "lianhwa-1424402700101",
+      "title": "聯華食品 柿米果杏仁小魚",
+      "category": "snack.puffed",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw23aea668/images/large/1424402700101_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%90%AC%E6%AD%B2%E7%89%8C/1424402700101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1424402900101",
+      "title": "義美 好食堅果 無調味元氣六果",
+      "category": "snack.puffed",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw713106c0/images/large/1424402900101_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1424402900101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "imei-1424406300101",
+      "title": "義美 小魚杏仁",
+      "category": "snack.nuts",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwcfcf3d8d/images/large/1424406300101.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1424406300101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "imei-1424407700101",
+      "title": "義美 小魚干脆花生",
+      "category": "snack.nuts",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwd8bda289/images/large/1424407700101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1424407700101.html",
+      "issues": []
+    },
+    {
+      "id": "lianhwa-1424489800105",
+      "title": "聯華食品 萬歲海苔杏仁小魚",
+      "category": "snack.nuts",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw23f376d3/images/large/1424489800105.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%90%AC%E6%AD%B2%E7%89%8C/1424489800105.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "imei-1430389700101",
+      "title": "義美 薑母茶",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw8af82a71/images/large/0142062.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1430389700101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "imei-1430389800101",
+      "title": "義美 經典原味奶茶",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwf9ece2e9/images/large/0031088.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1430389800101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1430399600101",
+      "title": "義美 減糖香醇奶茶",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw0415d8f4/images/large/1430399600101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1430399600101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1430419400101",
+      "title": "義美 冰糖杏仁茶",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw247bf2de/images/large/0195631.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1430419400101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "imei-1430449700101",
+      "title": "義美 生機 台灣黑豆茶",
+      "category": "drink.coffee",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwafccc866/images/large/1430449700101.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E%E7%94%9F%E6%A9%9F/1430449700101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1434204200101",
+      "title": "義美 顆粒花生醬(鹹香風味)",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwda85c7ea/images/large/1434204200101.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1434204200101.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "imei-1434204300101",
+      "title": "義美 細滑花生醬",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw4be0fa4c/images/large/1434204300101.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1434204300101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1435105300101",
+      "title": "義美 生機水果穀物圈(莓果)",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw6c1e2287/images/large/1435105300101.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E%E7%94%9F%E6%A9%9F/1435105300101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "imei-1435109700101",
+      "title": "義美 生機 堅果亞麻仁燕麥(藍莓可可)",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw26b73b88/images/large/1435109700101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E%E7%94%9F%E6%A9%9F/1435109700101.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "quaker-1435302400101",
+      "title": "桂格 即沖即食大燕麥片",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw92019c0a/images/large/1435302400101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1435302400101.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "conflict",
+          "note": "頁面上有 2 份成分寫法",
+          "candidates": [
+            "與保健功效成分",
+            "全粒燕麥片及香草香料"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quaker-1435302300101",
+      "title": "桂格 大燕麥片嚴選薄片",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwe7103329/images/large/0014821_800g.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1435302300101.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "quaker-1435304000101",
+      "title": "桂格 原片原味大燕麥片",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw5b1a4055/images/large/0072699.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1435304000101.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "quaker-1435304500101",
+      "title": "桂格 紫米山藥大燕麥片",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw913e18ed/images/large/0152493.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1435304500101.html",
+      "issues": []
+    },
+    {
+      "id": "lianhwa-1436100400101",
+      "title": "聯華食品 燕麥堅果 核桃紅豆",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwc76b9349/images/large/0027553_-.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%90%AC%E6%AD%B2%E7%89%8C/1436100400101.html",
+      "issues": [
+        {
+          "field": "substances",
+          "type": "unmatched",
+          "note": "下列添加物沒有對應到成分資料庫",
+          "candidates": [
+            "複方焦磷酸鐵：玉米澱粉"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quaker-1436102400101",
+      "title": "桂格 全天然五麥 黑穀堅果無添加糖20g",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw6066f44c/images/large/1436102400101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1436102400101.html",
+      "issues": []
+    },
+    {
+      "id": "quaker-1436104500101",
+      "title": "桂格 全天然五麥 松子核桃27g",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwdf4a8c07/images/large/1436104500101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1436104500101.html",
+      "issues": []
+    },
+    {
+      "id": "lianhwa-1436105100101",
+      "title": "聯華食品 元氣什穀堅果飲 松子",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw321329bf/images/large/0027571_-.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%90%AC%E6%AD%B2%E7%89%8C/1436105100101.html",
+      "issues": []
+    },
+    {
+      "id": "quaker-1436105900101",
+      "title": "桂格 全天然五麥 嚴選十六無添加糖22g",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwce04b33e/images/large/1436105900101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1436105900101.html",
+      "issues": []
+    },
+    {
+      "id": "quaker-1436106000101",
+      "title": "桂格 五麥穀珍 黑芝麻糊30g",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw50c0cc5d/images/large/1436106000101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1436106000101.html",
+      "issues": []
+    },
+    {
+      "id": "quaker-1436108400101",
+      "title": "桂格 全天然五麥 黑芝麻糊無添加糖19g",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw8760cfc6/images/large/1436108400101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1436108400101.html",
+      "issues": []
+    },
+    {
+      "id": "quaker-1436110300101",
+      "title": "桂格 全天然五麥 藜麥堅果無添加糖23g",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw4f231446/images/large/1436110300101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1436110300101.html",
+      "issues": []
+    },
+    {
+      "id": "quaker-1436112600101",
+      "title": "桂格 全天然五麥 杏仁核桃(無添加糖)25g",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw4452c9fb/images/large/1436112600101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1436112600101.html",
+      "issues": []
+    },
+    {
+      "id": "quaker-1436113000101",
+      "title": "桂格 原杏仁燕麥榖奶",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwaa2310ca/images/large/0252401.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1436113000101.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1436114900101",
+      "title": "義美 杏仁粉(無添加蔗糖)",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw1c2a29e5/images/large/0169330_420g.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1436114900101.html",
+      "issues": []
+    },
+    {
+      "id": "quaker-1436123400101",
+      "title": "桂格 每日營養穀珍 杏仁蓮子26g",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw58a78632/images/large/1436123400101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1436123400101.html",
+      "issues": []
+    },
+    {
+      "id": "quaker-1436123400115",
+      "title": "桂格 每日營養穀珍 杏仁蓮子26g Bag包 箱",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw58a78632/images/large/1436123400101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1436123400115.html",
+      "issues": []
+    },
+    {
+      "id": "quaker-1436123500101",
+      "title": "桂格 每日營養穀珍 黑穀珍寶27g",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw21a46d91/images/large/1436123500101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1436123500101.html",
+      "issues": []
+    },
+    {
+      "id": "quaker-1436123500115",
+      "title": "桂格 每日營養穀珍 黑穀珍寶 克 Bag包",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw21a46d91/images/large/1436123500101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1436123500115.html",
+      "issues": []
+    },
+    {
+      "id": "quaker-1436125700101",
+      "title": "桂格 每日營養穀珍 核桃堅果無添加糖25g",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw54fa92bd/images/large/1436125700101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1436125700101.html",
+      "issues": []
+    },
+    {
+      "id": "quaker-1436125700115",
+      "title": "桂格 每日營養穀珍 核桃堅果無添加糖 克 Bag包",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw54fa92bd/images/large/1436125700101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1436125700115.html",
+      "issues": []
+    },
+    {
+      "id": "quaker-1436128000101",
+      "title": "桂格 每日營養穀珍 穀麥全餐無添加糖23g",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwe6ac51bf/images/large/1436128000101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1436128000101.html",
+      "issues": []
+    },
+    {
+      "id": "quaker-1436128000115",
+      "title": "桂格 每日營養穀珍 穀麥全餐無添加糖 克 Bag包",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwe6ac51bf/images/large/1436128000101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1436128000115.html",
+      "issues": []
+    },
+    {
+      "id": "imei-1436129600101",
+      "title": "義美 生機 真甘純藍莓",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw26a5b27a/images/large/1436129600101mia.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E%E7%94%9F%E6%A9%9F/1436129600101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "missing",
+          "note": "找不到營養標示"
+        }
+      ]
+    },
+    {
+      "id": "lianhwa-1436189900101",
+      "title": "聯華食品 燕麥堅果 堅果纖蔬",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw2d7a37f5/images/large/0013578_-.jpeg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%90%AC%E6%AD%B2%E7%89%8C/1436189900101.html",
+      "issues": [
+        {
+          "field": "nutrition",
+          "type": "conflict",
+          "note": "頁面上有 2 組營養標示，每100熱量不一致：381 / 122",
+          "candidates": [
+            {
+              "per100": {
+                "kcal": 381,
+                "protein": 11.4,
+                "fat": 9,
+                "satFat": 1.8,
+                "transFat": 0,
+                "carb": 67.5,
+                "sugar": 7.6,
+                "fiber": 7.7,
+                "sodium": 1122
+              },
+              "perServing": {
+                "kcal": 122,
+                "protein": 3.6,
+                "fat": 2.9,
+                "satFat": 0.6,
+                "transFat": 0,
+                "carb": 21.6,
+                "sugar": 2.4,
+                "fiber": 2.5,
+                "sodium": 359
+              },
+              "serving": {
+                "size": 32,
+                "unit": "g"
+              }
+            },
+            {
+              "per100": {
+                "kcal": 122,
+                "protein": 3.9,
+                "fat": 3.3,
+                "satFat": 0.7,
+                "transFat": 0,
+                "carb": 20.4,
+                "sugar": 2.2,
+                "fiber": 2.5,
+                "sodium": 400
+              },
+              "perServing": {},
+              "serving": null
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "quaker-1436290200101",
+      "title": "桂格 奇亞籽麥片 特濃鮮奶28g",
+      "category": "dairy.milk",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwe179f41c/images/large/1436290200101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1436290200101.html",
+      "issues": []
+    },
+    {
+      "id": "quaker-1436291600101",
+      "title": "桂格 奇亞籽麥片 黑穀堅果31g",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwfe9815e8/images/large/1436291600101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1436291600101.html",
+      "issues": []
+    },
+    {
+      "id": "quaker-1436291700101",
+      "title": "桂格 奇亞籽麥片 藜麥核桃30g",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw01b5d92e/images/large/1436291700101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1436291700101.html",
+      "issues": []
+    },
+    {
+      "id": "quaker-1436291800101",
+      "title": "桂格 奇亞籽麥片 草莓歐蕾28g",
+      "category": "noodle.cereal",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwf0b8b0a8/images/large/1436291800101.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1436291800101.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "conflict",
+          "note": "頁面上有 2 份成分寫法",
+          "candidates": [
+            "奇亞籽麥片（含小麥粉、小麥麩皮、蔗糖、麥芽抽出物、奇亞籽、玉米、鮮奶等）、蔗糖、麥芽糊精、燕麥、非氫化棕櫚仁油、脫脂奶粉、乳清粉、草莓粉、草莓粒、香料、紅甜菜粉等",
+            "奇亞籽麥片(小麥粉、小麥麩皮、蔗糖、麥芽抽出物、鼠尾草種子-奇亞籽、玉米、鮮奶、食鹽、卵磷脂、維生素E-抗氧化劑)、蔗糖、麥芽糊精、燕麥、非氫化棕櫚仁油、脫脂奶粉、乳清粉、草莓粉、香料、關華豆膠、草莓粒、食鹽、紅甜菜粉、檸檬酸 (奶素可食)"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uni-1450001000103",
+      "title": "統一 阿Q雞汁排骨(碗) 107g",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw6f8a85fd/images/large/1450001000103_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450001000103.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450001000112",
+      "title": "統一 阿Q雞汁排骨(碗)",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwca86fe5c/images/large/1450001000112_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450001000112.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450001200102",
+      "title": "統一 大補帖麻油雞(碗)",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwfa0fcd39/images/large/1450001200102_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450001200102.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450002300102",
+      "title": "統一 大補帖當歸鴨細麵(碗)",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwc38d2f0a/images/large/1450002300102_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450002300102.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450101000103",
+      "title": "統一 來一客 牛肉蔬菜",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw6408c847/images/large/1450101000103_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450101000103.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450101100102",
+      "title": "統一 滿漢大餐珍味牛肉麵(碗)",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw34270669/images/large/1450101100102_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450101100102.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450101200102",
+      "title": "統一 滿漢大餐蔥燒牛肉(碗)",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw52c7b5d4/images/large/1450101200102_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450101200102.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450101300103",
+      "title": "統一 阿Q紅椒牛肉(碗)",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw29ac4894/images/large/1450101300103_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450101300103.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450101400105",
+      "title": "統一 辣味蔥燒牛肉",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw493d68a4/images/large/1450101400105_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450101400105.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450101600103",
+      "title": "統一 滿漢大餐珍味牛肉(袋)",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw59d09b55/images/large/1450101600103_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450101600103.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450102200103",
+      "title": "統一 滿漢大餐蔥燒牛肉(袋)",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwda570a16/images/large/1450102200103_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450102200103.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450104100101",
+      "title": "統一 滿漢大餐蔥燒牛肉麵(減鈉)",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw4a93018f/images/large/1450104100101_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450104100101.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450104500103",
+      "title": "統一 來一客川辣牛肉",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwc57064d0/images/large/1450104500103_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450104500103.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450106300103",
+      "title": "統一 蔥燒牛肉碗麵",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwac1297fb/images/large/1450106300103_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450106300103.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450200600104",
+      "title": "統一 拉麵道 日式豚骨(袋)",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwe21bb46e/images/large/1450200600104_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450200600104.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450200900105",
+      "title": "統一 肉燥",
+      "category": "meat.canned",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw2506f50d/images/large/1450200900105_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450200900105.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450201200105",
+      "title": "統一 肉骨茶",
+      "category": "drink.tea",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw6ab1a88f/images/large/1450201200105_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450201200105.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450201500103",
+      "title": "統一 阿Q蒜香珍肉(碗)106g",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwff883293/images/large/1450201500103_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450201500103.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450201500112",
+      "title": "統一 阿Q蒜香珍肉(碗)",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw896ba28b/images/large/1450201500112_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450201500112.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450202200103",
+      "title": "統一 滿漢大餐蔥燒豬肉(袋)",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwa860b9ca/images/large/1450202200103_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450202200103.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450202600102",
+      "title": "統一 滿漢大餐蔥燒豬肉麵(碗)",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw275852d8/images/large/1450202600102_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450202600102.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450207700103",
+      "title": "統一 肉燥碗麵 85g",
+      "category": "meat.canned",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwc5a04c0e/images/large/1450207700103_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450207700103.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450207700112",
+      "title": "統一 肉燥碗麵",
+      "category": "meat.canned",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw48cdb8d0/images/large/1450207700112_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450207700112.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450207800103",
+      "title": "統一 肉骨茶碗麵",
+      "category": "drink.tea",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwc84967e1/images/large/1450207800103_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450207800103.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450300000105",
+      "title": "統一 鮮蝦麵",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw3b220f16/images/large/1450300000105_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450300000105.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450301300103",
+      "title": "統一 鮮蝦碗麵",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwe63d378e/images/large/1450301300103_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450301300103.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450301900103",
+      "title": "統一 阿Q桶麵生猛海鮮(碗)98g",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwcab7033d/images/large/1450301900103_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450301900103.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450301900112",
+      "title": "統一 阿Q桶麵生猛海鮮(碗)",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw514f7809/images/large/1450301900112_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450301900112.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450404700101",
+      "title": "統一 麵 小時光麵館 青蔬椒麻風味乾麵",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwfb8911b3/images/large/1450404700101_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450404700101.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450500500105",
+      "title": "統一 肉燥風味調合米粉 60g",
+      "category": "meat.canned",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwbe0bf814/images/large/1450500500105_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450500500105.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450503100103",
+      "title": "統一 阿Q桶麵韓式泡菜麵102g",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw7ee77f24/images/large/1450503100103_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450503100103.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450503100112",
+      "title": "統一 阿Q桶麵韓式泡菜麵",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw7d3767cf/images/large/1450503100112_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450503100112.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450506100101",
+      "title": "統一 麵 小時光麵館 花椒擔擔風味湯麵",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw750e5ec6/images/large/1450506100101_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450506100101.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450510200105",
+      "title": "統一 科學麵 香辣",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw564c12f1/images/large/1450510200105_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450510200105.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450512400104",
+      "title": "統一 巷口拌麵 紅油椒麻",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw9bbd02e1/images/large/1450512400104_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450512400104.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450513800103",
+      "title": "統一 拉麵道 日式豚骨(杯)",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwbbb39050/images/large/1450513800103_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450513800103.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450591100101",
+      "title": "統一 肉燥調合米粉(碗)",
+      "category": "meat.canned",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw8cc6a1cc/images/large/1450591100101_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450591100101.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450591100112",
+      "title": "統一 肉燥調合米粉(碗)64g",
+      "category": "meat.canned",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwe056eadd/images/large/1450591100112_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450591100112.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450591700105",
+      "title": "統一 科學麵香蔥雞汁風味40g",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw958bb043/images/large/1450591700105_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450591700105.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450591700140",
+      "title": "統一 科學麵香蔥雞汁風味",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw4ea88619/images/large/1450591700140_NR_00.png?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450591700140.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450604900101",
+      "title": "統一 好勁道 寬版大麵",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw7fdd11fc/images/large/1450604900101_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450604900101.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450606500101",
+      "title": "統一 好勁道 家常麵條",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dw89539716/images/large/1450606500101_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450606500101.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "uni-1450606600101",
+      "title": "統一 好勁道 天禧麵線",
+      "category": "noodle.instant",
+      "image": "https://online.uni-prosperity.com.tw/on/demandware.static/-/Sites-uniprosperity-tw-m-inner/default/dwc79e7b24/images/large/1450606600101_NR_00.jpg?sw=480&sh=480",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450606600101.html",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "missing",
+          "note": "找不到成分"
+        }
+      ]
+    },
+    {
+      "id": "kuangchuan-off-4710105024134",
+      "title": "光泉 乳香世家高品質純鮮乳",
+      "category": "dairy.milk",
+      "image": "https://images.openfoodfacts.org/images/products/471/010/502/4134/front_en.12.400.jpg",
+      "url": "https://world.openfoodfacts.org/product/4710105024134",
+      "issues": []
+    },
+    {
+      "id": "kuangchuan-off-4710105037103",
+      "title": "光泉 無加糖濃豆漿",
+      "category": "drink.plant",
+      "image": "https://images.openfoodfacts.org/images/products/471/010/503/7103/front_zh.20.400.jpg",
+      "url": "https://world.openfoodfacts.org/product/4710105037103",
+      "issues": [
+        {
+          "field": "labels",
+          "type": "verify",
+          "note": "自動偵測到標籤，請確認是認證而非宣稱",
+          "candidates": [
+            "non-gmo：非基因改造黃豆"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "imei-off-4710126040595",
+      "title": "義美 知心水果軟糖",
+      "category": "snack.candy",
+      "image": "https://images.openfoodfacts.org/images/products/471/012/604/0595/front_zh.8.400.jpg",
+      "url": "https://world.openfoodfacts.org/product/4710126040595",
+      "issues": []
+    },
+    {
+      "id": "uni-off-4710088824448",
+      "title": "統一 無加糖高纖豆漿",
+      "category": "drink.plant",
+      "image": "https://images.openfoodfacts.org/images/products/471/008/882/4448/front_zh.5.400.jpg",
+      "url": "https://world.openfoodfacts.org/product/4710088824448",
+      "issues": [
+        {
+          "field": "labels",
+          "type": "verify",
+          "note": "自動偵測到標籤，請確認是認證而非宣稱",
+          "candidates": [
+            "non-gmo：水\n非基因改造黃豆\n菊苣纖維\n食鹽"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "weichuan-off-4710063337710",
+      "title": "味全 萬丹酪農戶限定鮮乳",
+      "category": "dairy.milk",
+      "image": "https://images.openfoodfacts.org/images/products/471/006/333/7710/front_zh.11.400.jpg",
+      "url": "https://world.openfoodfacts.org/product/4710063337710",
+      "issues": []
+    },
+    {
+      "id": "weichuan-off-4710063338038",
+      "title": "味全 特濃重乳優格(無加糖)",
+      "category": "dairy.yogurt",
+      "image": "https://images.openfoodfacts.org/images/products/471/006/333/8038/front_zh.19.400.jpg",
+      "url": "https://world.openfoodfacts.org/product/4710063338038",
+      "issues": []
+    },
+    {
+      "id": "kuangchuan-off-4710105020310",
+      "title": "光泉 高鈣牛乳",
+      "category": "dairy.milk",
+      "image": "https://images.openfoodfacts.org/images/products/471/010/502/0310/front_zh.7.400.jpg",
+      "url": "https://world.openfoodfacts.org/product/4710105020310",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304102114",
+      "title": "喜年來 土鳳梨酥風味蛋捲禮盒",
+      "category": "biscuit.eggroll",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_LINE_20260727_113900.png",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=132021",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304301753",
+      "title": "喜年來 Oh!醬小蛋餅",
+      "category": "biscuit.cookie",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/prodPic/prod_Pics1%E5%96%AE%E5%93%81%E7%85%A7%E7%89%87-%E5%96%AE%E7%9B%92%E6%A8%A1%E6%93%AC%E5%9C%96.png",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=322015",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304400456",
+      "title": "喜年來 金牛角噴霧榛果可可",
+      "category": "snack.puffed",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_441008.png",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=441008",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304400432",
+      "title": "喜年來 金牛角噴霧醇黑可可",
+      "category": "snack.puffed",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/prodPic/prod_Pics1%E9%87%91%E7%89%9B%E8%A7%92-%E5%99%B4%E9%9C%A7%E9%86%87%E9%BB%91%E5%8F%AF%E5%8F%AF%20%E8%A2%8B%E8%A3%9D.png",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=441007",
+      "issues": [
+        {
+          "field": "labels",
+          "type": "verify",
+          "note": "自動偵測到標籤，請確認是認證而非宣稱",
+          "candidates": [
+            "non-gmo：玉米膨化團粒(非基因改造玉米"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "serena-4710304400425",
+      "title": "喜年來 金牛角法式黑松露風味",
+      "category": "snack.puffed",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_441006.png",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=441006",
+      "issues": [
+        {
+          "field": "labels",
+          "type": "verify",
+          "note": "自動偵測到標籤，請確認是認證而非宣稱",
+          "candidates": [
+            "non-gmo：玉米膨化團粒(非基因改造玉米"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "serena-4710304200780",
+      "title": "喜年來 85%原味減糖蛋捲經濟包",
+      "category": "biscuit.eggroll",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/prodPic/prod_Pics185%E6%B8%9B%E7%B3%96%E9%9A%A8%E6%89%8B%E5%8C%85%E6%A8%A1%E6%93%AC.jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=232098",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304200865",
+      "title": "喜年來 臻朵臻朵巧克力風味捲(榛果)",
+      "category": "biscuit.eggroll",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_rouledor.jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=232102",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304101896",
+      "title": "喜年來 聯名公仔蛋捲禮盒",
+      "category": "biscuit.eggroll",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_136012.png",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=136012",
+      "issues": [
+        {
+          "field": "ingredients",
+          "type": "conflict",
+          "note": "頁面上有 2 份成分寫法",
+          "candidates": [
+            "原味蛋捲３包 + 喜年來朝隈俊男聯名馬年公仔１個（款式隨機）+ 設計背版１個（款式隨機）",
+            "雞蛋、植物油(軟質棕油、脂肪酸丙二醇酯、脂肪酸甘油酯)、麵粉、砂糖"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "serena-4710304100455",
+      "title": "喜年來 綜合蛋捲新富貴禮盒",
+      "category": "biscuit.eggroll",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_12345.jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=134005",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304101759",
+      "title": "喜年來 精緻芝麻小蛋捲禮盒",
+      "category": "biscuit.eggroll",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_112117.png",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=112117",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304101384",
+      "title": "喜年來 精緻小蛋捲禮盒",
+      "category": "biscuit.eggroll",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_112116.png",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=112116",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304100677",
+      "title": "喜年來 芝麻蛋捲大發禮盒",
+      "category": "biscuit.eggroll",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_IMG_7856.jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=122038",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304100660",
+      "title": "喜年來 原味蛋捲大發禮盒",
+      "category": "biscuit.eggroll",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_122037(1).jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=122037",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304110928",
+      "title": "喜年來 原味蛋捲新大方禮盒",
+      "category": "biscuit.eggroll",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_112043b.jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=112043",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304101643",
+      "title": "喜年來 豪華型蛋捲禮盒藻油DHA",
+      "category": "biscuit.eggroll",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_112807.jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=112807",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304110997",
+      "title": "喜年來 原味蛋捲禮盒",
+      "category": "biscuit.eggroll",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_112008.jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=112008",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304100011",
+      "title": "喜年來 西雅圖咖啡蛋捲禮盒",
+      "category": "biscuit.eggroll",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_112041(1).jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=112041",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304101766",
+      "title": "喜年來 蛋捲吉福禮盒",
+      "category": "biscuit.eggroll",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_123(1).jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=134014",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304111734",
+      "title": "喜年來 山藥蛋捲禮盒",
+      "category": "biscuit.eggroll",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_1-01.jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=112012",
+      "issues": []
+    },
+    {
+      "id": "serena-850045354732",
+      "title": "喜年來 原味蛋捲多美禮盒",
+      "category": "biscuit.eggroll",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_02.png",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=122719",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304101957",
+      "title": "喜年來 原味蛋捲金寶禮盒",
+      "category": "biscuit.eggroll",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_112112_BOX(1).jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=112112",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304200728",
+      "title": "喜年來 精緻小蛋捲分享包",
+      "category": "biscuit.eggroll",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/prodPic/prod_Pics1%E7%B2%BE%E7%B7%BB%E5%B0%8F%E8%9B%8B%E6%8D%B2%E6%A8%A1%E6%93%AC.jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=232093",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304200827",
+      "title": "喜年來 黃金香烤地瓜蛋捲隨手包",
+      "category": "biscuit.eggroll",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/prodPic/prod_Pics1%E5%9C%B0%E7%93%9C%E8%9B%8B%E6%8D%B2%E9%9A%A8%E6%89%8B%E6%A8%A1%E6%93%AC.jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=231057",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304200766",
+      "title": "喜年來 85%原味減糖蛋捲隨手包",
+      "category": "biscuit.eggroll",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/prodPic/prod_Pics1%E6%9C%AA%E5%91%BD%E5%90%8D%E8%A8%AD%E8%A8%88%20(3).jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=231054",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304200742",
+      "title": "喜年來 73號紫薯蛋捲隨手包",
+      "category": "biscuit.eggroll",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/prodPic/prod_Pics1%E7%B4%AB%E8%96%AF%E8%9B%8B%E6%8D%B2%E9%9A%A8%E6%89%8B%E5%8C%85%E6%A8%A1%E6%93%AC.jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=231053",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304111123",
+      "title": "喜年來 原味蛋捲隨手包",
+      "category": "biscuit.eggroll",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/prodPic/prod_Pics1%E6%9C%AA%E5%91%BD%E5%90%8D%E8%A8%AD%E8%A8%88%20(3).png",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=231043",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304111130",
+      "title": "喜年來 芝麻蛋捲隨手包",
+      "category": "biscuit.eggroll",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/prodPic/prod_Pics1%E6%9C%AA%E5%91%BD%E5%90%8D%E8%A8%AD%E8%A8%88%20(4).png",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=231044",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304100592",
+      "title": "喜年來 原味蛋捲好事禮盒",
+      "category": "biscuit.eggroll",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_122034-1.jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=122034",
+      "issues": [
+        {
+          "field": "substances",
+          "type": "unmatched",
+          "note": "下列添加物沒有對應到成分資料庫",
+          "candidates": [
+            "乳化劑：肪脂酸丙二醇酯"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "serena-4710304111131",
+      "title": "喜年來 咖啡蛋捲隨手包",
+      "category": "biscuit.eggroll",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/prodPic/prod_Pics1%E5%92%96%E5%95%A1%E8%9B%8B%E6%8D%B2%E9%9A%A8%E6%89%8B%E5%8C%85.jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=231045",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304111154",
+      "title": "喜年來 芝麻蛋捲經濟包",
+      "category": "biscuit.eggroll",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/prodPic/prod_Pics1%E6%9C%AA%E5%91%BD%E5%90%8D%E8%A8%AD%E8%A8%88%20(13).jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=232061",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304111147",
+      "title": "喜年來 原味蛋捲經濟包",
+      "category": "biscuit.eggroll",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/prodPic/prod_Pics1%E6%9C%AA%E5%91%BD%E5%90%8D%E8%A8%AD%E8%A8%88%20(14).jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=232060",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304111109",
+      "title": "喜年來 醇濃蛋捲分享包",
+      "category": "biscuit.eggroll",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_232504.png",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=232504",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304400494",
+      "title": "喜年來 金牛角熱炒海瓜子風味",
+      "category": "snack.puffed",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_441012.jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=441012",
+      "issues": [
+        {
+          "field": "labels",
+          "type": "verify",
+          "note": "自動偵測到標籤，請確認是認證而非宣稱",
+          "candidates": [
+            "non-gmo：玉米膨化團粒（非基因改造玉米"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "serena-4710304400470",
+      "title": "喜年來 金牛角噴霧芒果可可風味",
+      "category": "snack.puffed",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_441010.png",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=441010",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304400425",
+      "title": "喜年來 金牛角香菜玉米排骨湯風味",
+      "category": "snack.puffed",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_441009.png",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=441009",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304400449",
+      "title": "喜年來 金牛角經典原味",
+      "category": "snack.puffed",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_441005.png",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=441005",
+      "issues": [
+        {
+          "field": "labels",
+          "type": "verify",
+          "note": "自動偵測到標籤，請確認是認證而非宣稱",
+          "candidates": [
+            "non-gmo：玉米膨化團粒(非基因改造玉米"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "serena-4710304130223",
+      "title": "喜年來 金牛角",
+      "category": "snack.puffed",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_431004.jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=431004",
+      "issues": [
+        {
+          "field": "labels",
+          "type": "verify",
+          "note": "自動偵測到標籤，請確認是認證而非宣稱",
+          "candidates": [
+            "non-gmo：玉米膨化團粒[非基因改造玉米"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "serena-4710304130124",
+      "title": "喜年來 金牛角 原味(大)",
+      "category": "snack.puffed",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_431002b.jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=431002",
+      "issues": [
+        {
+          "field": "labels",
+          "type": "verify",
+          "note": "自動偵測到標籤，請確認是認證而非宣稱",
+          "candidates": [
+            "non-gmo：玉米膨化團粒(非基因改造玉米"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "serena-4710304130117",
+      "title": "喜年來 金牛角 原味(小)",
+      "category": "snack.puffed",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_431001.jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=431001",
+      "issues": [
+        {
+          "field": "labels",
+          "type": "verify",
+          "note": "自動偵測到標籤，請確認是認證而非宣稱",
+          "candidates": [
+            "non-gmo：玉米膨化團粒(非基因改造玉米"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "serena-4710304130117",
+      "title": "喜年來 金牛角原味成功高中限定款",
+      "category": "snack.puffed",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/prodPic/prod_Pics1S__146276356.jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=431039",
+      "issues": [
+        {
+          "field": "labels",
+          "type": "verify",
+          "note": "自動偵測到標籤，請確認是認證而非宣稱",
+          "candidates": [
+            "non-gmo：玉米膨化團粒(非基因改造玉米"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "serena-4710304130131",
+      "title": "喜年來 金牛角 海鹽玉米風味",
+      "category": "snack.puffed",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_360-1.jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=432007",
+      "issues": [
+        {
+          "field": "labels",
+          "type": "verify",
+          "note": "自動偵測到標籤，請確認是認證而非宣稱",
+          "candidates": [
+            "non-gmo：玉米膨化團粒(非基因改造玉米"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "serena-4710304120217",
+      "title": "喜年來 蔬菜餅乾(小)",
+      "category": "biscuit.cookie",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_331001.jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=331001",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304120224",
+      "title": "喜年來 蔬菜餅乾(大)",
+      "category": "biscuit.cookie",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_331038.jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=331038",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304300169",
+      "title": "喜年來 紅麴薄餅",
+      "category": "biscuit.cookie",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_3310571.jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=331057",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304301111",
+      "title": "喜年來 小蛋餅大盒",
+      "category": "biscuit.cookie",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_IMG_7897.jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=331068",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304301098",
+      "title": "喜年來 小蛋餅隨手包",
+      "category": "biscuit.cookie",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_IMG_7911.jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=331067",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304301166",
+      "title": "喜年來 海鹽芝麻餅分享包",
+      "category": "biscuit.cookie",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_332043-20231.jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=332043",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304301135",
+      "title": "喜年來 海鹽芝麻餅隨手包",
+      "category": "biscuit.cookie",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_IMG_7922.jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=331080",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304300930",
+      "title": "喜年來 蔬菜薄餅隨手包",
+      "category": "biscuit.cookie",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_331063b-1.jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=331063",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304300787",
+      "title": "喜年來 蔬菜薄餅",
+      "category": "biscuit.cookie",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_322008.jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=322008",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304301142",
+      "title": "喜年來 甘藍蘇打分享包",
+      "category": "biscuit.cookie",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_332041-2.jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=332041",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304120941",
+      "title": "喜年來 甘藍蘇打",
+      "category": "biscuit.cookie",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_331054.jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=331054",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304300190",
+      "title": "喜年來 紅麴薄餅 包",
+      "category": "biscuit.cookie",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_352012.jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=352012",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304300176",
+      "title": "喜年來 紅麴薄餅經濟包",
+      "category": "biscuit.cookie",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_332034.jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=332034",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304301425",
+      "title": "喜年來 POLI小蛋餅",
+      "category": "biscuit.cookie",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_352019.jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=352019",
+      "issues": []
+    },
+    {
+      "id": "serena-4710304200872",
+      "title": "喜年來 臻朵臻朵巧克力莓果風味捲",
+      "category": "biscuit.eggroll",
+      "image": "https://www.serenafoods.com.tw/rwd1851/Store/bImages/b_232104-2.jpg",
+      "url": "https://www.serenafoods.com.tw/ec99/rwd1851/product.asp?prodid=232104",
+      "issues": []
     }
   ]
 }

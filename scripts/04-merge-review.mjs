@@ -34,6 +34,15 @@ for (const [id, m] of Object.entries(review.missing || {})) {
   o.hidden = !!m.hide;
 }
 for (const [id, keep] of Object.entries(review.labels || {})) touch(id).labelsKeep = keep;
+for (const [id, cat] of Object.entries(review.cats || {})) touch(id).category = cat;
+for (const [id, v] of Object.entries(review.verify || {})) {
+  const o = touch(id);
+  if (v.source === false) o.dropSupplement = true;
+  if (v.source === true) o.supplementOk = true;
+  if (v.nutrition === true) o.nutritionOk = true;
+  if (v.nutrition === false) o.nutritionBad = true;
+}
+for (const id of Object.keys(review.hide || {})) touch(id).hidden = true;
 for (const [id, codes] of Object.entries(review.barcodes || {})) touch(id).barcodes = codes;
 
 await writeJson(new URL('data/overrides.json', ROOT), ov);

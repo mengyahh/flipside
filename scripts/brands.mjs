@@ -15,4 +15,12 @@ export const BRANDS = [
   { id: 'hty', name: '新東陽', aliases: [], slugs: ['新東陽'] },
   { id: 'tfc', name: '台畜', aliases: [], slugs: ['台畜'] },
 ];
+// 英文或其他寫法（比對 Open Food Facts 的品牌欄位用）
+const EN = {
+  lianhwa: ['lian hwa', 'lianhwa', 'cadina', 'koloko', 'yuan ben shan'], serena: ['serena'], imei: ['i-mei', 'imei', 'i mei'],
+  uni: ['uni-president', 'uni president'], weichuan: ['wei chuan', 'weichuan', 'lin feng ying'], heysong: ['hey song', 'heysong'],
+  kuangchuan: ['kuang chuan', 'kuangchuan'], kuaikuai: ['kuai kuai', 'kuaikuai'], quaker: ['quaker'], hwayuan: ['hwa yuan', 'hwayuan'],
+  taisun: ['taisun', 'tai sun'], agv: ['agv'], hty: ['hsin tung yang', 'hty'], tfc: ['台畜'],
+};
+for (const b of BRANDS) b.en = EN[b.id] || [];
 export const SLUG_TO_BRAND = new Map(BRANDS.flatMap((b) => b.slugs.map((s) => [s, b.id])));

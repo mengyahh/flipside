@@ -54,11 +54,13 @@ export function parseNutrition(lines) {
   let cur = null;
   const start = () => { cur = { mode: null, serving: null, perPack: null, perServing: {}, per100: {}, basis: null }; tables.push(cur); };
   for (const raw of lines) {
-    const l = raw.replace(/[：:]/g, ':');
-    if (/營養標示|營養成分/.test(l) || (!cur && /每一?份量|^每份\s*\d/.test(l))) start();
+    const l = raw.replace(/[：:]/g, ':').replace(/^[˙•·●◎※＊*\-–\s]+/, '');
+    const startsNutrient = /^熱\s*量/.test(l);
+    if (/營養標示|營養成分/.test(l) || (!cur && (/每\s*[一1]?\s*(份|瓶|罐|包|盒|杯|條|片)?\s*份?量|^每份\s*\d|^每\s*100/.test(l) || startsNutrient))) start();
     if (!cur) continue;
-    const sv = l.match(/每一?份量?\s*:?\s*(\d+(?:\.\d+)?)\s*(公克|克|g|毫升|ml|mL)/i);
-    if (sv) { cur.serving = { size: +sv[1], unit: /毫升|ml/i.test(sv[2]) ? 'ml' : 'g' }; }
+    if (startsNutrient && Object.keys(cur.per100).length + Object.keys(cur.perServing).length >= 3) start(); // 第二組表
+    const sv = l.match(/每\s*[一1]?\s*(?:份|瓶|罐|包|盒|杯|條|片)?\s*份?量\s*:?\s*(\d+(?:\.\d+)?)\s*(公克|克|g|毫升|ml|mL)/i) || l.match(/^每份\s*(\d+(?:\.\d+)?)\s*(公克|克|g|毫升|ml|mL)/i);
+    if (sv) { cur.serving = { size: +sv[1], unit: /毫升|ml/i.test(sv[2]) ? 'ml' : 'g' }; if (!cur.mode && !/每\s*100/.test(l)) cur.mode = 'serving'; }
     const pk = l.match(/本包裝含\s*:?\s*(\d+(?:\.\d+)?)\s*份/);
     if (pk) cur.perPack = +pk[1];
     if (/每\s*100\s*(公克|克|g)/i.test(l)) cur.basis = 'solid';
@@ -67,13 +69,14 @@ export function parseNutrition(lines) {
     if (hasPerServing && hasPer100) cur.mode = 'both';
     else if (hasPer100 && !NUTRI_KEYS.some(([, re]) => re.test(l))) cur.mode = cur.mode === 'both' ? 'both' : 'per100';
     else if (hasPerServing && !NUTRI_KEYS.some(([, re]) => re.test(l))) cur.mode = cur.mode === 'both' ? 'both' : 'serving';
-    // 一行可能含多個營養素（以、或，分隔）
-    for (const part of l.split(/[、，,]/)) {
-      const p = part.trim();
+    // 一行可能含多個營養素（以、，或句點分隔）
+    for (const part of l.split(/[、，,;；]|(?<=[卡克])[.．。]/)) {
+      const p = part.trim().replace(/^[˙•·●\-\s]+/, '');
       const key = NUTRI_KEYS.find(([, re]) => re.test(p));
       if (!key) continue;
       const n = nums(p.replace(/^[^\d]*/, ''));
       if (!n.length) continue;
+      if (!cur.mode) cur.assumedPer100 = true;
       const mode = cur.mode || 'per100';
       if (mode === 'both' && n.length >= 2) { cur.perServing[key[0]] ??= n[0].v; cur.per100[key[0]] ??= n[1].v; }
       else if (mode === 'serving') cur.perServing[key[0]] ??= n[0].v;
@@ -81,6 +84,45 @@ export function parseNutrition(lines) {
     }
   }
   return tables.filter((t) => Object.keys(t.per100).length + Object.keys(t.perServing).length >= 3);
+}
+
+// 備援：把營養標示區塊當成一串「營養素名稱、數值」來讀（處理表格被拆成一格一行、或整表擠在一行）
+const TOKEN_RE = /(熱\s*量|蛋\s*白\s*質|飽\s*和\s*脂\s*肪|反\s*式\s*脂\s*肪|脂\s*肪|碳\s*水\s*化\s*合\s*物|(?<![蔗果砂冰麥芽葡萄蜂乳寡])糖(?!醇|漿|粉)|鈉|膳\s*食\s*纖\s*維|膽\s*固\s*醇)|(\d+(?:\.\d+)?)\s*(大卡|千卡|kcal|公克|克|g|毫克|mg)(?![a-z])/gi;
+const TOKEN_KEY = [['kcal', /熱/], ['protein', /蛋/], ['satFat', /飽/], ['transFat', /反/], ['fat', /脂/], ['carb', /碳/], ['sugar', /糖/], ['sodium', /鈉/], ['fiber', /纖/], ['cholesterol', /膽/]];
+export function parseNutritionBlob(lines) {
+  const text = lines.join(' ');
+  const start = text.search(/營\s*養\s*標\s*示|營\s*養\s*成\s*分|熱\s*量\s*[-—:：\s]*\d|熱\s*量\s*$|熱\s*量\s+\d/m);
+  if (start < 0) return [];
+  let blob = text.slice(start, start + 1200);
+  const end = blob.slice(10).search(/製造|※|食品業者|保存|過敏|產品成|商品成|(?<!營\s*養\s*)成\s*分(?!\s*[每熱])|原料|咖啡因|負責廠商/);
+  if (end > 0) blob = blob.slice(0, end + 10);
+  const sv = blob.match(/每\s*[一1]?\s*(?:份|瓶|罐|包|盒|杯|條|片)?\s*份?\s*量\s*[:：]?\s*(\d+(?:\.\d+)?)\s*(公克|克|g|毫升|ml|mL)/i);
+  const pk = blob.match(/本包裝含\s*[:：]?\s*(\d+(?:\.\d+)?)\s*份/);
+  const iServ = blob.search(/每\s*份(?!\s*量)/), i100 = blob.search(/每\s*100/);
+  const vals = {}; let key = null;
+  const toks = [...blob.matchAll(TOKEN_RE)].map((m) => (m[1] ? { k: TOKEN_KEY.find(([, re]) => re.test(m[1]))?.[0] } : { v: +m[2] }));
+  // 欄式表格：先連續列出 5 個以上營養素名稱，再列數值（一欄接一欄）
+  let runStart = -1, run = 0;
+  for (let i = 0; i < toks.length; i++) { let j = i; while (j < toks.length && toks[j].k) j++; if (j - i >= 5) { runStart = i; run = j - i; break; } }
+  if (run >= 5) {
+    const keys = toks.slice(runStart, runStart + run).map((t) => t.k), nums2 = toks.slice(runStart + run).filter((t) => t.v != null).map((t) => t.v);
+    if (nums2.length >= keys.length) keys.forEach((k, i) => { vals[k] = [nums2[i]]; if (nums2.length >= keys.length * 2) vals[k].push(nums2[i + keys.length]); });
+  } else for (const t of toks) {
+    if (t.k !== undefined) { key = t.k; if (key && !vals[key]) vals[key] = []; else key = vals[key]?.length ? null : key; continue; }
+    if (key && vals[key].length < 2) vals[key].push(t.v);
+  }
+  if (Object.keys(vals).length < 3) return [];
+  const t = { mode: null, serving: sv ? { size: +sv[1], unit: /毫升|ml/i.test(sv[2]) ? 'ml' : 'g' } : null, perPack: pk ? +pk[1] : null, perServing: {}, per100: {}, basis: /每\s*100\s*(毫升|ml)/i.test(blob) ? 'liquid' : /每\s*100/.test(blob) ? 'solid' : null };
+  const both = iServ >= 0 && i100 >= 0;
+  const servFirst = both ? iServ < i100 : null;
+  for (const [k, arr] of Object.entries(vals)) {
+    if (!arr.length) continue;
+    if (both && arr.length >= 2) { t.perServing[k] = servFirst ? arr[0] : arr[1]; t.per100[k] = servFirst ? arr[1] : arr[0]; }
+    else if (i100 >= 0 && iServ < 0) t.per100[k] = arr[0];
+    else if (t.serving || iServ >= 0) t.perServing[k] = arr[0];
+    else { t.per100[k] = arr[0]; t.assumedPer100 = true; }
+  }
+  return [t];
 }
 
 export function parseIngredients(lines) {
@@ -145,7 +187,7 @@ export function parseProductPage(html, url) {
     breadcrumb: breadcrumb(html),
     spec,
     ingredients: parseIngredients(lines),
-    nutrition: parseNutrition(lines),
+    nutrition: (() => { const a = parseNutrition(lines); return a.length ? a : parseNutritionBlob(lines); })(),
     allergens: allergenLines,
     diet: dietLine || null,
     origin: spec['商品來源國家'] || originLine?.replace(/^[^:：]+[:：]\s*/, '') || null,

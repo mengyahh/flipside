@@ -4,6 +4,7 @@ import { readdir } from 'node:fs/promises';
 import { readJson, writeJson, CACHE_DIR } from './lib/fetch.mjs';
 import { parseList, annotate, buildMatcher } from './lib/ingredients.mjs';
 import { BRANDS } from './brands.mjs';
+import { loadSupplements, nameKey, similarity, brandMatches } from './lib/supplement.mjs';
 
 const ROOT = new URL('../', import.meta.url);
 const today = new Date().toISOString().slice(0, 10);
@@ -25,6 +26,10 @@ const CAT_RULES = [
   ['dairy.yogurt', /優格|優酪|多多|發酵乳|活菌|養樂/],
   ['dairy.pudding', /布丁|奶酪|仙草凍|愛玉|豆花|果凍杯/],
   ['dairy.milk', /鮮乳|鮮奶|保久乳|全脂牛乳|低脂牛乳|脫脂牛乳|^.{0,8}牛乳\s*\d|羊乳|高鈣牛乳/],
+  // 餅乾類先判斷，避免「咖啡蛋捲」「甘藍蘇打」被當成飲料
+  ['biscuit.eggroll', /蛋捲|捲心酥|雞蛋捲|蛋酥捲|風味捲/],
+  ['snack.puffed', /金牛角|乖乖|可樂果|浪味仙|蝦味先|玉米脆/],
+  ['biscuit.cookie', /蘇打餅|甘藍蘇打|薄餅|小蛋餅|芝麻餅|蔬菜餅乾|蘇打(?=.{0,4}(分享|隨手|經濟)包)/],
   ['drink.coffee', /咖啡|拿鐵|美式|卡布|貝納頌|韋恩|左岸/],
   ['drink.milk', /調味乳|奶茶|乳飲|果乳|巧克力牛乳|麥芽牛乳|木瓜牛乳|蘋果牛乳|咖啡牛乳|保久調味|乳酸飲料|可爾必思|優酪飲|鮮奶茶|麥芽飲/],
   ['drink.plant', /豆漿|豆奶|燕麥奶|杏仁奶|米漿|植物奶|黑豆漿/],
@@ -66,7 +71,7 @@ function categorize(title, bread) {
 const SIZE_RE = /(\d+(?:\.\d+)?)\s*(公克|克|g|G|kg|KG|公斤|毫升|ml|mL|ML|cc|CC|公升|L)(?![a-z])/;
 const PACK_RE = /[x×X*＊]\s*(\d+)\s*(入|包|罐|瓶|盒|袋|杯|支|條|片|組)?|(\d+)\s*(入|包入|罐入|瓶入|盒入|袋入|杯入|支入)/;
 function splitTitle(title, brand) {
-  let t = title.normalize('NFKC').replace(/【[^】]*】|\[[^\]]*\]|（[^）]*箱[^）]*）|\([^)]*箱[^)]*\)/g, ' ').trim();
+  let t = title.normalize('NFKC').replace(/[(（][^()（）]*(入|包|支|片|罐|瓶|\dg|公克|毫升|ml)[^()（）]*[)）]/gi, ' ').replace(/【[^】]*】|\[[^\]]*\]|（[^）]*箱[^）]*）|\([^)]*箱[^)]*\)/g, ' ').trim();
   const size = t.match(SIZE_RE);
   const pack = t.match(PACK_RE);
   let name = t;
@@ -80,6 +85,9 @@ function splitTitle(title, brand) {
     .replace(/[\s\-_/|]+/g, ' ')
     .replace(/\s*\b(TP|PET|Pet|pet|can|CAN|Can|BIB|LL)\b\s*$/g, '')
     .replace(/\s*(鋁罐|寶特瓶|利樂包|易開罐|鐵罐|玻璃瓶)\s*$/g, '')
+    .replace(/[(（]\s*[)）]/g, '')
+    .replace(/^[×xX\s]+/, '')
+    .replace(/\s+/g, ' ')
     .trim();
   const sizeStr = size ? `${size[1]}${normUnit(size[2])}` : null;
   const packN = pack ? +(pack[1] || pack[3]) : null;
@@ -137,8 +145,9 @@ function labelsOf(certLines, gmo) {
   return out;
 }
 
-function pickNutrition(tables, issues) {
+function pickNutrition(tables, issues, cat = '') {
   if (!tables.length) return null;
+  for (const x of tables) if (!x.basis && !x.serving && /^(drink|dairy\.milk|dairy\.yogurt)/.test(cat)) x.basis = 'liquid';
   const t = tables[0];
   if (tables.length > 1) {
     const a = t.per100.kcal, others = tables.slice(1).map((x) => x.per100.kcal).filter((x) => x != null);
@@ -146,6 +155,7 @@ function pickNutrition(tables, issues) {
       issues.push({ field: 'nutrition', type: 'conflict', note: `頁面上有 ${tables.length} 組營養標示，每100熱量不一致：${[a, ...others].join(' / ')}`, candidates: tables.map((x) => ({ per100: x.per100, perServing: x.perServing, serving: x.serving })) });
     }
   }
+  if (t.assumedPer100) issues.push({ field: 'nutrition', type: 'verify', note: '營養標示沒有寫「每份」或「每100」，暫時當作每100，請對照包裝確認' });
   const n = { basis: t.basis || (t.serving?.unit === 'ml' ? 'liquid' : 'solid'), serving: t.serving, servingsPerPack: t.perPack, perServing: t.perServing, per100: { ...t.per100 } };
   // 只有每份時換算每100
   if (!Object.keys(n.per100).length && t.serving?.size) {
@@ -166,7 +176,6 @@ for (const f of files) {
   const brand = BRANDS.find((b) => b.id === r.brandId);
   const cat = categorize(r.title, r.breadcrumb || []);
   if (cat === 'EXCLUDE') { stats.excluded++; continue; }
-  if (!r.ingredients.length && !r.nutrition.length) { stats.noIngredients++; continue; }
   if (!cat) { stats.uncategorized++; uncategorized.push(`${r.title} | ${(r.breadcrumb || []).join('>')}`); continue; }
   const { name, size } = splitTitle(r.title, brand);
   const key = `${brand.id}|${name.normalize('NFKC').replace(/\s/g, '').toLowerCase()}`;
@@ -174,29 +183,109 @@ for (const f of files) {
   groups.get(key).raws.push({ ...r, size });
 }
 
+// ---------- 其他來源補資料 ----------
+const supplements = await loadSupplements();
+const brandWords = (b) => [b.name, ...b.aliases, ...b.slugs];
+for (const s of supplements) {
+  s.brand = s.brandId ? BRANDS.find((b) => b.id === s.brandId) : BRANDS.find((b) => brandMatches(b, s.brandText) || brandMatches(b, s.title.slice(0, 6)));
+  if (s.brand) s.key = nameKey(s.title, brandWords(s.brand));
+}
+const usable = supplements.filter((s) => s.brand && (s.ingredients.length || s.nutrition.length || s.barcode));
+// 一對一配對：所有（商品, 來源）組合依相似度排序，貪婪配對；口味不同（字數差太多）不配
+const assign = new Map();
+{
+  const pairs = [];
+  for (const g of groups.values()) {
+    const k = nameKey(g.name, brandWords(g.brand));
+    for (const s of usable) {
+      if (s.brand.id !== g.brand.id) continue;
+      const sim = similarity(k, s.key);
+      if (sim >= 0.8 && Math.abs(k.length - s.key.length) <= 2) pairs.push({ g, s, sim });
+    }
+  }
+  pairs.sort((a, b) => b.sim - a.sim);
+  const usedS = new Set();
+  for (const p of pairs) if (!assign.has(p.g) && !usedS.has(p.s)) { assign.set(p.g, p); usedS.add(p.s); }
+}
+const bestSupplement = (g) => assign.get(g) || null;
+// 只在其他來源出現、萬家福沒有的商品：也建立群組
+const fromSupp = new Map();
+for (const s of usable) {
+  if (!s.ingredients.length) continue;
+  const cat = categorize(s.title, []);
+  if (!cat || cat === 'EXCLUDE') continue;
+  const { name, size } = splitTitle(s.title, s.brand);
+  const key = `${s.brand.id}|${name.normalize('NFKC').replace(/\s/g, '').toLowerCase()}`;
+  if (groups.has(key) || fromSupp.has(key)) continue;
+  fromSupp.set(key, { raws: [], brand: s.brand, name, cat, suppOnly: s, size });
+}
+
 const products = [];
 const pending = [];
+const noData = [];
+const usedSupp = new Set();
 const richness = (x) => (x.ingredients.length ? 2 : 0) + (x.nutrition.length ? 2 : 0) + (x.allergens.length ? 1 : 0) - (x.ingredients.length > 1 ? 0.5 : 0);
-for (const g of groups.values()) {
-  g.raws.sort((a, b) => richness(b) - richness(a) || a.sku.localeCompare(b.sku));
-  const r = g.raws[0];
-  const id = `${g.brand.id}-${r.sku}`;
-  const issues = [];
+for (const g of [...groups.values(), ...fromSupp.values()]) {
+  let r;
+  if (g.suppOnly) {
+    const s = g.suppOnly;
+    // 若已被某個萬家福商品用掉就略過
+    if (usedSupp.has(s)) continue;
+    r = { sku: (s.barcode || s.id || s.url).toString().replace(/\D/g, '').slice(-13) || String(products.length), url: s.url, title: s.title, image: null, breadcrumb: [], spec: {},
+      ingredients: s.ingredients, nutrition: s.nutrition, allergens: s.allergens || [], diet: s.diet || null, origin: s.origin || null, gmoLines: [], certLines: [], size: g.size };
+    g.raws = [r];
+  } else {
+    g.raws.sort((a, b) => richness(b) - richness(a) || a.sku.localeCompare(b.sku));
+    r = { ...g.raws[0] };
+  }
+  const extraSources = [];
+  const supIssues = [];
+  let barcodes = [];
+  let suppImage = null;
+  const idPrefix = g.suppOnly && g.suppOnly.source !== g.brand.id ? `${g.brand.id}-${g.suppOnly.source}-` : `${g.brand.id}-`;
+  const ovPre = overrides[`${idPrefix}${r.sku}`];
+  const best = g.suppOnly ? { s: g.suppOnly, sim: 1 } : ovPre?.dropSupplement ? null : bestSupplement(g);
+  if (best) {
+    const { s, sim } = best;
+    const filled = [];
+    if (!r.ingredients.length && s.ingredients.length) { r.ingredients = s.ingredients; filled.push('成分'); }
+    if (!r.nutrition.length && s.nutrition.length) { r.nutrition = s.nutrition; filled.push('營養標示'); }
+    if (!r.allergens.length && s.allergens?.length) { r.allergens = s.allergens; filled.push('過敏原'); }
+    if (!r.diet && s.diet) r.diet = s.diet;
+    if (!r.origin && s.origin) r.origin = s.origin;
+    if (s.barcode && sim >= 0.95) barcodes = [s.barcode];
+    suppImage = s.image;
+    r._allergenIds = s.allergenIds; r._sharedIds = s.sharedIds; r._stores = s.stores; r._storeLabel = s.label;
+    if (filled.length || barcodes.length) {
+      usedSupp.add(s);
+      extraSources.push({ type: s.source, label: s.label, url: s.url, fetchedAt: today });
+      if (!g.suppOnly) supIssues.push({ field: 'source', type: 'verify', note: `${filled.length ? filled.join('、') : '條碼'}來自${s.label}（品名相似度 ${sim.toFixed(2)}：「${s.title}」），請確認是同一商品` });
+    }
+  }
+  if (!r.ingredients.length && !r.nutrition.length) {
+    stats.noIngredients++;
+    noData.push({ title: r.title, brand: g.brand.name, category: g.cat, url: r.url });
+    continue;
+  }
+  const id = `${idPrefix}${r.sku}`;
+  const issues = [...supIssues];
   const ingRaw = r.ingredients[0] || null;
   if (r.ingredients.length > 1) issues.push({ field: 'ingredients', type: 'conflict', note: `頁面上有 ${r.ingredients.length} 份成分寫法`, candidates: r.ingredients });
   if (!ingRaw) issues.push({ field: 'ingredients', type: 'missing', note: '找不到成分' });
   const items = ingRaw ? annotate(parseList(ingRaw), match) : [];
   const unmatchedFunctions = [];
-  (function walk(arr) { for (const it of arr) { if (it.function && it.children) for (const c of it.children) if (!c.substance && !c.children && !ignored.has(c.text)) unmatchedFunctions.push(`${it.function}：${c.text}`); if (it.children) walk(it.children); } })(items);
+  (function walk(arr) { for (const it of arr) { if (it.function && it.children) for (const c of it.children) if (!c.substance && !c.children && !ignored.has(c.text.replace(/\s/g, ''))) unmatchedFunctions.push(`${it.function}：${c.text}`); if (it.children) walk(it.children); } })(items);
   if (unmatchedFunctions.length) issues.push({ field: 'substances', type: 'unmatched', note: '下列添加物沒有對應到成分資料庫', candidates: unmatchedFunctions });
-  const nutrition = pickNutrition(r.nutrition, issues);
+  const nutrition = pickNutrition(r.nutrition, issues, g.cat);
   if (!nutrition) issues.push({ field: 'nutrition', type: 'missing', note: '找不到營養標示' });
   const gmo = gmoOf(r.gmoLines, ingRaw);
   const labels = labelsOf(r.certLines, gmo);
   if (labels.length) issues.push({ field: 'labels', type: 'verify', note: '自動偵測到標籤，請確認是認證而非宣稱', candidates: labels.map((l) => `${l.id}：${l.evidence || ''}`) });
-  const allergens = parseAllergens(r.allergens);
+  let allergens = parseAllergens(r.allergens);
+  if (!allergens && r._allergenIds?.length) allergens = { contains: r._allergenIds, sharedLine: r._sharedIds || [], raw: '' };
   const variants = g.raws.map((x) => ({ size: x.size, sku: x.sku, barcodes: [] }))
     .filter((v, i, a) => a.findIndex((y) => y.size === v.size) === i);
+  if (barcodes.length) variants[0].barcodes = barcodes;
   const p = {
     id,
     name: g.name,
@@ -211,11 +300,14 @@ for (const g of groups.values()) {
     diet: dietOf(r.diet),
     labels,
     stores: { pxmart: { status: 'unknown', verified: false }, seven: { status: 'unknown', verified: false }, family: { status: 'unknown', verified: false } },
-    images: r.image ? [{ kind: 'front', file: `${r.image}?sw=480&sh=480`, sourceUrl: r.url, credit: '萬家福線上購物' }] : [],
-    sources: g.raws.map((x) => ({ type: 'uni-prosperity', label: '萬家福線上購物', url: x.url, fetchedAt: today })),
+    images: r.image ? [{ kind: 'front', file: `${r.image}?sw=480&sh=480`, sourceUrl: r.url, credit: '萬家福線上購物' }]
+      : suppImage ? [{ kind: 'front', file: suppImage, sourceUrl: extraSources[0]?.url, credit: extraSources[0]?.label }] : [],
+    sources: [...(g.suppOnly ? [] : g.raws.map((x) => ({ type: 'uni-prosperity', label: '萬家福線上購物', url: x.url, fetchedAt: today }))), ...extraSources],
     review: { status: 'needs-review', issues },
     updatedAt: today,
   };
+  // 品牌官網列出的販售通路（未經人工確認）
+  if (r._stores) for (const [k, yes] of Object.entries(r._stores)) if (yes) p.stores[k] = { status: 'yes', verified: false, source: r._storeLabel };
   // 套用人工審核結果
   const o = overrides[id];
   if (o?.hidden) continue;
@@ -229,6 +321,9 @@ for (const g of groups.values()) {
     if (o.nutrition) { p.nutrition = o.nutrition; p.review.issues = p.review.issues.filter((i) => i.field !== 'nutrition'); }
     if (o.labelsKeep) { p.labels = p.labels.filter((l) => o.labelsKeep.includes(l.id)); p.review.issues = p.review.issues.filter((i) => i.field !== 'labels'); }
     for (const k of ['name', 'category', 'diet', 'origin', 'allergens', 'gmo']) if (o[k] !== undefined) p[k] = o[k];
+    if (o.supplementOk) p.review.issues = p.review.issues.filter((i) => i.field !== 'source');
+    if (o.nutritionOk) p.review.issues = p.review.issues.filter((i) => !(i.field === 'nutrition' && i.type === 'verify'));
+    if (o.nutritionBad && !o.nutrition) { p.nutrition = null; p.review.issues = p.review.issues.filter((i) => i.field !== 'nutrition'); p.review.issues.push({ field: 'nutrition', type: 'missing', note: '原本的營養標示經確認不正確，請補上' }); }
     const storesDone = Object.values(p.stores).every((s) => s.verified);
     if (storesDone && !p.review.issues.length) p.review.status = 'verified';
   }
@@ -241,6 +336,10 @@ await writeJson(new URL('site/data/products.json', ROOT), { meta: { updatedAt: t
 await writeJson(new URL('site/data/brands.json', ROOT), BRANDS.map(({ id, name, aliases }) => ({ id, name, aliases })));
 await writeJson(new URL('review/pending.json', ROOT), { generatedAt: today, items: pending });
 await writeJson(new URL('uncategorized.json', CACHE_DIR), uncategorized);
+await writeJson(new URL('review/no-data.json', ROOT), { generatedAt: today, note: '萬家福與其他來源都找不到成分和營養標示的商品，需要拍包裝或人工查詢', items: noData });
+stats.fromOtherSources = products.filter((p) => p.sources.some((s) => s.type !== 'uni-prosperity')).length;
+stats.otherSourceOnly = products.filter((p) => !p.sources.some((s) => s.type === 'uni-prosperity')).length;
+stats.withBarcode = products.filter((p) => p.variants.some((v) => v.barcodes.length)).length;
 
 const byCat = {}; for (const p of products) byCat[p.category] = (byCat[p.category] || 0) + 1;
 const issueCount = {}; for (const x of pending) for (const i of x.issues) issueCount[`${i.field}.${i.type}`] = (issueCount[`${i.field}.${i.type}`] || 0) + 1;
