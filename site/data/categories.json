@@ -43,7 +43,7 @@
     { "id": "noodle.ready", "name": "即食調理" },
     { "id": "noodle.cereal", "name": "麥片沖泡" }
   ]},
-  { "id": "dairy", "name": "乳製品甜點", "emoji": "🥛", "children": [
+  { "id": "dairy", "name": "乳品甜點", "emoji": "🥛", "children": [
     { "id": "dairy.milk", "name": "鮮乳保久乳" },
     { "id": "dairy.yogurt", "name": "優格優酪乳" },
     { "id": "dairy.pudding", "name": "布丁甜點" }

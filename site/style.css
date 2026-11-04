@@ -86,13 +86,14 @@ h2 { font-size: 1.05em; margin: 0 0 8px; }
 .btn.block { width: 100%; }
 .btn svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
 
-.grid-cats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+.grid-cats { display: grid; grid-template-columns: repeat(auto-fill, minmax(10em, 1fr)); gap: 8px; }
 .cat {
   display: flex; align-items: center; gap: 10px; min-height: 56px; padding: 10px 12px; border-radius: var(--radius);
   background: var(--surface); border: 1px solid var(--border); text-decoration: none; color: var(--text);
 }
-.cat .emo { font-size: 1.3em; line-height: 1; }
-.cat .n { margin-left: auto; color: var(--text-3); font-size: .8em; }
+.cat .emo { font-size: 1.3em; line-height: 1; flex: none; }
+.cat .nm { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cat .n { flex: none; color: var(--text-3); font-size: .8em; }
 
 .chips { display: flex; flex-wrap: wrap; gap: 6px; }
 .chip {

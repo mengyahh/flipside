@@ -71,7 +71,7 @@
     {
       "title": "黑松桂花烏梅汁 980ml",
       "brand": "黑松",
-      "category": "drink.juice",
+      "category": "snack.dried",
       "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE/1001408300101.html"
     },
     {
@@ -159,183 +159,141 @@
       "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE%E9%9F%8B%E6%81%A9/1002013600104.html"
     },
     {
-      "title": "黑松FIN補給飲料Pet580ml",
-      "brand": "黑松",
-      "category": "drink.coffee",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE/1002100600104.html"
-    },
-    {
       "title": "黑松FIN健康補給飲料-300ml",
       "brand": "黑松",
-      "category": "drink.coffee",
+      "category": "drink.sport",
       "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE/1002102500106.html"
     },
     {
       "title": "黑松FIN好菌補給飲",
       "brand": "黑松",
-      "category": "drink.coffee",
+      "category": "drink.sport",
       "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE/1002104900104.html"
-    },
-    {
-      "title": "桂格優步力關鍵專利配方60克15包",
-      "brand": "桂格",
-      "category": "drink.juice",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002301300101.html"
-    },
-    {
-      "title": "桂格滴雞精52mlx9",
-      "brand": "桂格",
-      "category": "drink.juice",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002301700101.html"
-    },
-    {
-      "title": "[箱購]桂格滴雞精52mlx9入x6盒/箱(箱購依實際收貨為主，無法保證原封箱出貨)",
-      "brand": "桂格",
-      "category": "drink.juice",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002301700106.html"
-    },
-    {
-      "title": "桂格養氣人蔘雞精雙效滋補18入**隨機出貨不挑款，以實際出貨為準。**",
-      "brand": "桂格",
-      "category": "drink.juice",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002305100101.html"
-    },
-    {
-      "title": "桂格雙效活靈芝盒裝16瓶",
-      "brand": "桂格",
-      "category": "drink.juice",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1002305500101.html"
     },
     {
       "title": "光泉冷泡茶冰釀烏龍585ml(箱購依實際收貨為主，無法保證原封箱出貨)",
       "brand": "光泉",
-      "category": "drink.coffee",
+      "category": "drink.tea",
       "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003000300124.html"
     },
     {
       "title": "茶裏王四季春茶(無糖) 600ml",
       "brand": "統一",
-      "category": "drink.coffee",
+      "category": "drink.tea",
       "url": "https://online.uni-prosperity.com.tw/zh/%E8%8C%B6%E8%A3%8F%E7%8E%8B/1003000600104.html"
     },
     {
       "title": "統一茶裏王半熟金萱(無糖) 600ml",
       "brand": "統一",
-      "category": "drink.coffee",
+      "category": "drink.tea",
       "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003002400104.html"
-    },
-    {
-      "title": "統一麥香紅茶TP375ml",
-      "brand": "統一",
-      "category": "drink.coffee",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003101300106.html"
     },
     {
       "title": "茶裏王伯爵紅茶(無糖) 600ml",
       "brand": "統一",
-      "category": "drink.coffee",
+      "category": "drink.tea",
       "url": "https://online.uni-prosperity.com.tw/zh/%E8%8C%B6%E8%A3%8F%E7%8E%8B/1003103600104.html"
     },
     {
       "title": "麥香阿薩姆紅茶 975ml",
       "brand": "統一",
-      "category": "drink.coffee",
+      "category": "drink.tea",
       "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003103700101.html"
     },
     {
       "title": "統一麥香奶茶TP375ml",
       "brand": "統一",
-      "category": "drink.coffee",
+      "category": "drink.milk",
       "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003201300106.html"
     },
     {
       "title": "光泉午后時光重乳奶茶330ml",
       "brand": "光泉",
-      "category": "drink.coffee",
+      "category": "drink.milk",
       "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003205500106.html"
     },
     {
       "title": "麥香錫蘭奶茶 600ml",
       "brand": "統一",
-      "category": "drink.coffee",
+      "category": "drink.milk",
       "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003207900104.html"
     },
     {
       "title": "統一麥香錫蘭奶茶600ml(箱購依實際收貨為主，無法保證原封箱出貨)",
       "brand": "統一",
-      "category": "drink.coffee",
+      "category": "drink.milk",
       "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003207900124.html"
     },
     {
       "title": "黑松茶花綠茶(無糖)  1230ml",
       "brand": "黑松",
-      "category": "drink.coffee",
+      "category": "drink.tea",
       "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE%E8%8C%B6%E8%8A%B1/1003301000101.html"
     },
     {
       "title": "光泉冷泡茶冷萃綠茶無糖-1235ml",
       "brand": "光泉",
-      "category": "drink.coffee",
+      "category": "drink.tea",
       "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003302200101.html"
     },
     {
       "title": "光泉冷泡茶冷韻青茶585ml",
       "brand": "光泉",
-      "category": "drink.coffee",
+      "category": "drink.tea",
       "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003302500104.html"
     },
     {
       "title": "黑松茶花一番煎茶(無糖) 580ml*新包裝轉換期，新舊包裝隨機出貨，敬請見諒!",
       "brand": "黑松",
-      "category": "drink.coffee",
+      "category": "drink.tea",
       "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE%E8%8C%B6%E8%8A%B1/1003304700104.html"
     },
     {
       "title": "黑松茶花一番煎茶(無糖) 580ml(新舊包裝隨機出貨)(箱購依實際收貨為主，無法保證原封箱出貨)",
       "brand": "黑松",
-      "category": "drink.coffee",
+      "category": "drink.tea",
       "url": "https://online.uni-prosperity.com.tw/zh/%E9%BB%91%E6%9D%BE/1003304700124.html"
     },
     {
       "title": "茶裏王綠茶玉露(無糖) 600ml",
       "brand": "統一",
-      "category": "drink.coffee",
+      "category": "drink.tea",
       "url": "https://online.uni-prosperity.com.tw/zh/%E8%8C%B6%E8%A3%8F%E7%8E%8B/1003306000104.html"
     },
     {
       "title": "統一麥香綠茶TP375ml",
       "brand": "統一",
-      "category": "drink.coffee",
+      "category": "drink.tea",
       "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003306400106.html"
     },
     {
       "title": "愛之味油切分解茶-綠茶風味(無糖) 590ml",
       "brand": "愛之味",
-      "category": "drink.coffee",
+      "category": "drink.tea",
       "url": "https://online.uni-prosperity.com.tw/zh/%E6%84%9B%E4%B9%8B%E5%91%B3/1003307200106.html"
     },
     {
       "title": "麥香檸檬茶 600ml",
       "brand": "統一",
-      "category": "drink.coffee",
+      "category": "drink.tea",
       "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1003402800101.html"
     },
     {
       "title": "泰山冰鎮芭樂綠茶 535ml",
       "brand": "泰山",
-      "category": "drink.coffee",
+      "category": "drink.tea",
       "url": "https://online.uni-prosperity.com.tw/zh/%E6%B3%B0%E5%B1%B1/1003403500104.html"
     },
     {
       "title": "泰山冰鎮葡萄鮮冰茶 535ml",
       "brand": "泰山",
-      "category": "drink.coffee",
+      "category": "drink.tea",
       "url": "https://online.uni-prosperity.com.tw/zh/%E6%B3%B0%E5%B1%B1/1003403600104.html"
     },
     {
       "title": "光泉茉莉茶園茉莉蜜茶 585ml",
       "brand": "光泉",
-      "category": "drink.coffee",
+      "category": "drink.tea",
       "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1003404400104.html"
     },
     {
@@ -353,31 +311,31 @@
     {
       "title": "統一H2O純水5800ml",
       "brand": "統一",
-      "category": "drink.soda",
+      "category": "drink.water",
       "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1004002600102.html"
     },
     {
       "title": "統一H2O純水600*24（無標版）",
       "brand": "統一",
-      "category": "drink.soda",
+      "category": "drink.water",
       "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1004002900101.html"
     },
     {
       "title": "UNI Water 純水550ml(箱購依實際收貨為主，無法保證原封箱出貨)",
       "brand": "統一",
-      "category": "drink.soda",
+      "category": "drink.water",
       "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1004003600124.html"
     },
     {
       "title": "水事紀麥飯石礦泉水5000ml",
       "brand": "統一",
-      "category": "drink.soda",
+      "category": "drink.water",
       "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1004007900102.html"
     },
     {
       "title": "統一H2O Water純水PET600ml(箱購依實際收貨為主，無法保證原封箱出貨)",
       "brand": "統一",
-      "category": "drink.soda",
+      "category": "drink.water",
       "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1004021900124.html"
     },
     {
@@ -385,30 +343,6 @@
       "brand": "統一",
       "category": "drink.soda",
       "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1004106400101.html"
-    },
-    {
-      "title": "桂格活靈芝禮盒 60mlx8",
-      "brand": "桂格",
-      "category": "drink.juice",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1090400500101.html"
-    },
-    {
-      "title": "桂格雙效活靈芝禮盒60ml*8",
-      "brand": "桂格",
-      "category": "drink.juice",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1090400800101.html"
-    },
-    {
-      "title": "桂格養氣人蔘滋補大禮盒60ml*8",
-      "brand": "桂格",
-      "category": "drink.juice",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1090402100101.html"
-    },
-    {
-      "title": "桂格養氣人蔘禮盒60mlx8",
-      "brand": "桂格",
-      "category": "drink.juice",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1090489900101.html"
     },
     {
       "title": "乖乖發財金順普渡包",
@@ -429,87 +363,33 @@
       "url": "https://online.uni-prosperity.com.tw/zh/%E4%B9%96%E4%B9%96/1221206300101.html"
     },
     {
-      "title": "桂格完膳營養素鮮甜玉米濃湯24入",
-      "brand": "桂格",
-      "category": "noodle.cereal",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1232700100101.html"
-    },
-    {
-      "title": "桂格完膳營養素鮮甜玉米濃湯盒裝8罐",
-      "brand": "桂格",
-      "category": "noodle.cereal",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1232700800101.html"
-    },
-    {
-      "title": "桂格完膳營養素糖尿病穩健配方900g",
-      "brand": "桂格",
-      "category": "noodle.cereal",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1232701300101.html"
-    },
-    {
-      "title": "桂格完膳營養素全新均衡營養配方",
-      "brand": "桂格",
-      "category": "noodle.cereal",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1232702700101.html"
-    },
-    {
-      "title": "桂格完膳營養素高鈣配方237ml*24入",
-      "brand": "桂格",
-      "category": "noodle.cereal",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1232704500101.html"
-    },
-    {
-      "title": "桂格完膳羅勒茄汁嫩豬丁160G",
-      "brand": "桂格",
-      "category": "noodle.cereal",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC%E5%AE%8C%E8%86%B3/1232704900101.html"
-    },
-    {
-      "title": "桂格完膳營養素- 原味無糖",
-      "brand": "桂格",
-      "category": "noodle.cereal",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1232706100101.html"
-    },
-    {
-      "title": "桂格完膳營養素經典香草配方8入禮盒",
-      "brand": "桂格",
-      "category": "noodle.cereal",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1232706800101.html"
-    },
-    {
-      "title": "桂格完膳營養素3重優蛋白24入",
-      "brand": "桂格",
-      "category": "noodle.cereal",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1232711700101.html"
-    },
-    {
       "title": "萬歲牌米果綜合果燒鳥雞汁味",
       "brand": "聯華食品",
-      "category": "biscuit.cookie",
+      "category": "snack.puffed",
       "url": "https://online.uni-prosperity.com.tw/zh/%E8%90%AC%E6%AD%B2%E7%89%8C/1400013900101.html"
     },
     {
       "title": "萬歲牌米果綜合果鹽味",
       "brand": "聯華食品",
-      "category": "biscuit.cookie",
+      "category": "snack.puffed",
       "url": "https://online.uni-prosperity.com.tw/zh/%E8%90%AC%E6%AD%B2%E7%89%8C/1400019600101.html"
     },
     {
       "title": "[箱購]萬歲牌米果綜合果鹽味180g x 12Bag包(箱購依實際收貨為主，無法保證原封箱出貨)",
       "brand": "聯華食品",
-      "category": "biscuit.cookie",
+      "category": "snack.puffed",
       "url": "https://online.uni-prosperity.com.tw/zh/%E8%90%AC%E6%AD%B2%E7%89%8C/1400019600112.html"
     },
     {
       "title": "萬歲牌米果綜合果辣味",
       "brand": "聯華食品",
-      "category": "biscuit.cookie",
+      "category": "snack.puffed",
       "url": "https://online.uni-prosperity.com.tw/zh/%E8%90%AC%E6%AD%B2%E7%89%8C/1400019700101.html"
     },
     {
       "title": "萬歲牌米果綜合果梅味_200g",
       "brand": "聯華食品",
-      "category": "biscuit.cookie",
+      "category": "snack.puffed",
       "url": "https://online.uni-prosperity.com.tw/zh/%E8%90%AC%E6%AD%B2%E7%89%8C/1400034400101.html"
     },
     {
@@ -533,7 +413,7 @@
     {
       "title": "卡迪那寶卡卡原味",
       "brand": "聯華食品",
-      "category": "biscuit.cookie",
+      "category": "snack.chips",
       "url": "https://online.uni-prosperity.com.tw/zh/%E5%8D%A1%E8%BF%AA%E9%82%A3/1401007400101.html"
     },
     {
@@ -545,14 +425,8 @@
     {
       "title": "卡迪那多穀波浪脆海鹽口味",
       "brand": "聯華食品",
-      "category": "biscuit.cookie",
+      "category": "snack.chips",
       "url": "https://online.uni-prosperity.com.tw/zh/%E8%81%AF%E8%8F%AF%E9%A3%9F%E5%93%81/1401013500101.html"
-    },
-    {
-      "title": "可樂果墨西哥辣起司口味",
-      "brand": "聯華食品",
-      "category": "snack.puffed",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E8%81%AF%E8%8F%AF%E9%A3%9F%E5%93%81/1401016600101.html"
     },
     {
       "title": "可樂果JUMBO原味",
@@ -569,20 +443,8 @@
     {
       "title": "卡迪那豌豆波浪脆哇沙米口味",
       "brand": "聯華食品",
-      "category": "biscuit.cookie",
+      "category": "snack.chips",
       "url": "https://online.uni-prosperity.com.tw/zh/%E8%81%AF%E8%8F%AF%E9%A3%9F%E5%93%81/1401020600101.html"
-    },
-    {
-      "title": "可樂果黃金起司口味160G",
-      "brand": "聯華食品",
-      "category": "snack.puffed",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E8%81%AF%E8%8F%AF%E9%A3%9F%E5%93%81/1401022300101.html"
-    },
-    {
-      "title": "華元Mini分享包-起司圈香濃起司風味",
-      "brand": "華元",
-      "category": "biscuit.cookie",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E8%8F%AF%E5%85%83/1401022700101.html"
     },
     {
       "title": "可樂果MiNi蒜小辣口味",
@@ -665,7 +527,7 @@
     {
       "title": "華元玉黍叔-濃經典風味",
       "brand": "華元",
-      "category": "biscuit.cookie",
+      "category": "snack.puffed",
       "url": "https://online.uni-prosperity.com.tw/zh/%E8%8F%AF%E5%85%83/1401120700101.html"
     },
     {
@@ -681,6 +543,12 @@
       "url": "https://online.uni-prosperity.com.tw/zh/%E4%B9%96%E4%B9%96/1401125200101.html"
     },
     {
+      "title": "金牛角家庭號-海鹽玉米",
+      "brand": "喜年來",
+      "category": "snack.puffed",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%96%9C%E5%B9%B4%E4%BE%86/1401126000101.html"
+    },
+    {
       "title": "紅烏龍茶米乖乖",
       "brand": "乖乖",
       "category": "snack.puffed",
@@ -691,12 +559,6 @@
       "brand": "華元",
       "category": "biscuit.cookie",
       "url": "https://online.uni-prosperity.com.tw/zh/%E8%8F%AF%E5%85%83/1401489900101.html"
-    },
-    {
-      "title": "卡迪那95℃薯條經典原味",
-      "brand": "聯華食品",
-      "category": "snack.chips",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E5%8D%A1%E8%BF%AA%E9%82%A3/1402000400101.html"
     },
     {
       "title": "卡迪那95℃薯條經典海苔風味",
@@ -735,28 +597,10 @@
       "url": "https://online.uni-prosperity.com.tw/zh/%E8%8F%AF%E5%85%83/1402303400101.html"
     },
     {
-      "title": "卡迪那95℃薯條奶油玉米風味",
-      "brand": "聯華食品",
-      "category": "snack.chips",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E5%8D%A1%E8%BF%AA%E9%82%A3/1402311300101.html"
-    },
-    {
       "title": "華元波的多洋芋片-香煎荷包蛋風味110.5g",
       "brand": "華元",
       "category": "snack.chips",
       "url": "https://online.uni-prosperity.com.tw/zh/%E8%8F%AF%E5%85%83/1402313200101.html"
-    },
-    {
-      "title": "卡迪那95℃波浪薯條雙濃起司風味",
-      "brand": "聯華食品",
-      "category": "snack.chips",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E5%8D%A1%E8%BF%AA%E9%82%A3/1402320300101.html"
-    },
-    {
-      "title": "卡迪那95℃薯條北海道起司風味",
-      "brand": "聯華食品",
-      "category": "snack.chips",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E5%8D%A1%E8%BF%AA%E9%82%A3/1402320600101.html"
     },
     {
       "title": "卡迪那95℃松露風味薯條",
@@ -815,13 +659,13 @@
     {
       "title": "新東陽古早味冬筍餅",
       "brand": "新東陽",
-      "category": "meat.canned",
+      "category": "noodle.ready",
       "url": "https://online.uni-prosperity.com.tw/zh/%E6%96%B0%E6%9D%B1%E9%99%BD/1411138500101.html"
     },
     {
       "title": "新東陽古早味蒜香豌豆餅",
       "brand": "新東陽",
-      "category": "biscuit.cookie",
+      "category": "snack.nuts",
       "url": "https://online.uni-prosperity.com.tw/zh/%E6%96%B0%E6%9D%B1%E9%99%BD/1411138600101.html"
     },
     {
@@ -905,73 +749,73 @@
     {
       "title": "元本山脆烤海苔-原味",
       "brand": "聯華食品",
-      "category": "meat.jerky",
+      "category": "snack.seaweed",
       "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%83%E6%9C%AC%E5%B1%B1/1420400800101.html"
     },
     {
       "title": "元本山朝鮮海苔山葵風味量販袋",
       "brand": "聯華食品",
-      "category": "meat.jerky",
+      "category": "snack.seaweed",
       "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%83%E6%9C%AC%E5%B1%B1/1420403300101.html"
     },
     {
       "title": "元本山朝鮮海苔海鹽風味",
       "brand": "聯華食品",
-      "category": "meat.jerky",
+      "category": "snack.seaweed",
       "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%83%E6%9C%AC%E5%B1%B1/1420407400101.html"
     },
     {
       "title": "元本山味付對切海苔",
       "brand": "聯華食品",
-      "category": "meat.jerky",
+      "category": "snack.seaweed",
       "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%83%E6%9C%AC%E5%B1%B1/1420409400101.html"
     },
     {
       "title": "元本山朝鮮海苔",
       "brand": "聯華食品",
-      "category": "meat.jerky",
+      "category": "snack.seaweed",
       "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%83%E6%9C%AC%E5%B1%B1/1420409500101.html"
     },
     {
       "title": "元本山味付84束",
       "brand": "聯華食品",
-      "category": "meat.jerky",
+      "category": "snack.seaweed",
       "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%83%E6%9C%AC%E5%B1%B1/1420410200101.html"
     },
     {
       "title": "元本山朝鮮海苔湖鹽風味",
       "brand": "聯華食品",
-      "category": "meat.jerky",
+      "category": "snack.seaweed",
       "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%83%E6%9C%AC%E5%B1%B1/1420411500101.html"
     },
     {
       "title": "元本山朝鮮海苔BBQ風味量販袋",
       "brand": "聯華食品",
-      "category": "meat.jerky",
+      "category": "snack.seaweed",
       "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%83%E6%9C%AC%E5%B1%B1/1420417800101.html"
     },
     {
       "title": "元本山脆烤海苔-甜辣",
       "brand": "聯華食品",
-      "category": "meat.jerky",
+      "category": "snack.seaweed",
       "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%83%E6%9C%AC%E5%B1%B1/1420419200101.html"
     },
     {
       "title": "義美知心Q軟糖(經典水果)",
       "brand": "義美",
-      "category": "snack.chocolate",
+      "category": "snack.candy",
       "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1422202600101.html"
     },
     {
       "title": "義美知心Q軟糖(繽紛水果)",
       "brand": "義美",
-      "category": "snack.chocolate",
+      "category": "snack.candy",
       "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1422209500101.html"
     },
     {
       "title": "義美知心Q軟糖(綜合乳酸)",
       "brand": "義美",
-      "category": "snack.chocolate",
+      "category": "snack.candy",
       "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1422210000101.html"
     },
     {
@@ -1001,7 +845,7 @@
     {
       "title": "義美鹹酥脆皮青豆151g",
       "brand": "義美",
-      "category": "biscuit.cookie",
+      "category": "snack.puffed",
       "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1424227200101.html"
     },
     {
@@ -1013,7 +857,7 @@
     {
       "title": "萬歲牌香酥腰果",
       "brand": "聯華食品",
-      "category": "biscuit.cookie",
+      "category": "snack.nuts",
       "url": "https://online.uni-prosperity.com.tw/zh/%E8%90%AC%E6%AD%B2%E7%89%8C/1424304600101.html"
     },
     {
@@ -1025,7 +869,7 @@
     {
       "title": "萬歲牌酥脆雙果",
       "brand": "聯華食品",
-      "category": "biscuit.cookie",
+      "category": "snack.nuts",
       "url": "https://online.uni-prosperity.com.tw/zh/%E8%90%AC%E6%AD%B2%E7%89%8C/1424306300101.html"
     },
     {
@@ -1101,12 +945,6 @@
       "url": "https://online.uni-prosperity.com.tw/zh/%E8%90%AC%E6%AD%B2%E7%89%8C/1424402300101.html"
     },
     {
-      "title": "萬歲牌起司乾酪堅果椒鹽風味",
-      "brand": "聯華食品",
-      "category": "snack.nuts",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E8%90%AC%E6%AD%B2%E7%89%8C/1424402400101.html"
-    },
-    {
       "title": "萬歲牌活力六寶",
       "brand": "聯華食品",
       "category": "snack.nuts",
@@ -1161,24 +999,6 @@
       "url": "https://online.uni-prosperity.com.tw/zh/%E8%90%AC%E6%AD%B2%E7%89%8C/1424422400101.html"
     },
     {
-      "title": "萬歲牌鹽之花烘焙堅果",
-      "brand": "聯華食品",
-      "category": "snack.nuts",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E8%90%AC%E6%AD%B2%E7%89%8C/1424422500101.html"
-    },
-    {
-      "title": "萬歲牌無調味三果",
-      "brand": "聯華食品",
-      "category": "snack.nuts",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E8%90%AC%E6%AD%B2%E7%89%8C/1424422600101.html"
-    },
-    {
-      "title": "萬歲牌養生八寶",
-      "brand": "聯華食品",
-      "category": "snack.nuts",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E8%90%AC%E6%AD%B2%E7%89%8C/1424490600101.html"
-    },
-    {
       "title": "貝納頌咖啡豆-精選綜合454g",
       "brand": "味全",
       "category": "drink.coffee",
@@ -1191,27 +1011,21 @@
       "url": "https://online.uni-prosperity.com.tw/zh/%E8%B2%9D%E7%B4%8D%E9%A0%8C/1431011600101.html"
     },
     {
-      "title": "貝納頌尊爵級咖啡豆 200g",
-      "brand": "味全",
-      "category": "drink.coffee",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E8%B2%9D%E7%B4%8D%E9%A0%8C/1431025600101.html"
-    },
-    {
       "title": "貝納頌經典曼特寧三合一咖啡 18g x10",
       "brand": "味全",
-      "category": "drink.coffee",
+      "category": "noodle.cereal",
       "url": "https://online.uni-prosperity.com.tw/zh/%E8%B2%9D%E7%B4%8D%E9%A0%8C/1431103900101.html"
     },
     {
       "title": "貝納頌三合一咖啡-經典拿鐵 20g x25",
       "brand": "味全",
-      "category": "drink.coffee",
+      "category": "noodle.cereal",
       "url": "https://online.uni-prosperity.com.tw/zh/%E8%B2%9D%E7%B4%8D%E9%A0%8C/1431105900101.html"
     },
     {
       "title": "貝納頌經典拿鐵三合一咖啡20g x10",
       "brand": "味全",
-      "category": "drink.coffee",
+      "category": "noodle.cereal",
       "url": "https://online.uni-prosperity.com.tw/zh/%E8%B2%9D%E7%B4%8D%E9%A0%8C/1431107900101.html"
     },
     {
@@ -1229,7 +1043,7 @@
     {
       "title": "貝納頌三合一咖啡-經典曼特寧 18g x25",
       "brand": "味全",
-      "category": "drink.coffee",
+      "category": "noodle.cereal",
       "url": "https://online.uni-prosperity.com.tw/zh/%E8%B2%9D%E7%B4%8D%E9%A0%8C/1431113400101.html"
     },
     {
@@ -1237,24 +1051,6 @@
       "brand": "味全",
       "category": "drink.coffee",
       "url": "https://online.uni-prosperity.com.tw/zh/%E8%B2%9D%E7%B4%8D%E9%A0%8C/1431127000101.html"
-    },
-    {
-      "title": "桂格高蛋白雙纖高鈣燕麥奶 1000g",
-      "brand": "桂格",
-      "category": "drink.plant",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1433300200101.html"
-    },
-    {
-      "title": "義美草莓果粒醬",
-      "brand": "義美",
-      "category": "drink.juice",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1434002600101.html"
-    },
-    {
-      "title": "義美藍莓果粒醬",
-      "brand": "義美",
-      "category": "drink.juice",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1434106800101.html"
     },
     {
       "title": "桂格每日滿足蛋白穀脆-莓果派對250g",
@@ -1265,7 +1061,7 @@
     {
       "title": "桂格每日滿足蛋白穀脆-可可鮮莓250g",
       "brand": "桂格",
-      "category": "noodle.cereal",
+      "category": "snack.chocolate",
       "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1435104700101.html"
     },
     {
@@ -1293,18 +1089,6 @@
       "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1435206900101.html"
     },
     {
-      "title": "桂格濃湯燕麥-鮮蔬蘑菇風味-43gx5",
-      "brand": "桂格",
-      "category": "noodle.cereal",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1435300900101.html"
-    },
-    {
-      "title": "桂格濃湯燕麥-奶油玉米風味-47gx5",
-      "brand": "桂格",
-      "category": "noodle.cereal",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1435301000101.html"
-    },
-    {
       "title": "桂格有機燕麥片730G",
       "brand": "桂格",
       "category": "noodle.cereal",
@@ -1315,24 +1099,6 @@
       "brand": "桂格",
       "category": "noodle.cereal",
       "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1435303600101.html"
-    },
-    {
-      "title": "桂格濃湯燕麥-白醬雞肉風味45gx5",
-      "brand": "桂格",
-      "category": "noodle.cereal",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1435307500101.html"
-    },
-    {
-      "title": "桂格美味燕麥-可可鮮莓46.4g x5",
-      "brand": "桂格",
-      "category": "noodle.cereal",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1435391600101.html"
-    },
-    {
-      "title": "桂格美味燕麥-水果優格51.2g x5",
-      "brand": "桂格",
-      "category": "dairy.yogurt",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1435391700101.html"
     },
     {
       "title": "萬歲牌芋頭香菇燕麥",
@@ -1355,13 +1121,13 @@
     {
       "title": "萬歲牌元氣什穀堅果飲-杏仁",
       "brand": "聯華食品",
-      "category": "noodle.cereal",
+      "category": "drink.plant",
       "url": "https://online.uni-prosperity.com.tw/zh/%E8%90%AC%E6%AD%B2%E7%89%8C/1436100800101.html"
     },
     {
       "title": "萬歲牌元氣什穀堅果飲-芝麻",
       "brand": "聯華食品",
-      "category": "noodle.cereal",
+      "category": "drink.plant",
       "url": "https://online.uni-prosperity.com.tw/zh/%E8%90%AC%E6%AD%B2%E7%89%8C/1436100900101.html"
     },
     {
@@ -1377,12 +1143,6 @@
       "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1436104800101.html"
     },
     {
-      "title": "義美極細高鈣100%純黑芝麻粉",
-      "brand": "義美",
-      "category": "noodle.cereal",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1436105200101.html"
-    },
-    {
       "title": "萬歲牌燕麥堅果-杏仁蓮子",
       "brand": "聯華食品",
       "category": "noodle.cereal",
@@ -1391,7 +1151,7 @@
     {
       "title": "萬歲牌全天然無加糖堅果飲-黑榖藜麥",
       "brand": "聯華食品",
-      "category": "noodle.cereal",
+      "category": "drink.plant",
       "url": "https://online.uni-prosperity.com.tw/zh/%E8%90%AC%E6%AD%B2%E7%89%8C/1436107900101.html"
     },
     {
@@ -1413,22 +1173,10 @@
       "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1436113200101.html"
     },
     {
-      "title": "義美黑芝麻粉400g",
-      "brand": "義美",
-      "category": "noodle.cereal",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1436114800101.html"
-    },
-    {
       "title": "桂格晚安好眠營養全穀奶",
       "brand": "桂格",
       "category": "noodle.cereal",
       "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1436116800101.html"
-    },
-    {
-      "title": "桂格奇亞籽麥片-特濃鮮奶減糖280g",
-      "brand": "桂格",
-      "category": "dairy.milk",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1436293200101.html"
     },
     {
       "title": "桂格金黃穀香減糖美味三合一 32.5g X10",
@@ -1455,88 +1203,700 @@
       "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1436293900101.html"
     },
     {
-      "title": "桂格敏兒HA麥精五種水果配方",
-      "brand": "桂格",
+      "title": "義美花東種穀 芋香晶米1.5kg",
+      "brand": "義美",
       "category": "noodle.cereal",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1441201100101.html"
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1451018300101.html"
     },
     {
-      "title": "桂格敏兒HA麥精纖果順暢配方",
-      "brand": "桂格",
+      "title": "義美 花東種穀胚芽金米1.5kg",
+      "brand": "義美",
       "category": "noodle.cereal",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1441202300101.html"
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1451113500101.html"
     },
     {
-      "title": "桂格有機麥精300G",
-      "brand": "桂格",
+      "title": "統一生機日曬海鹽2公斤",
+      "brand": "統一",
       "category": "noodle.cereal",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E6%A1%82%E6%A0%BC/1441206100101.html"
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1460099900101.html"
     },
     {
-      "title": "滿漢大餐Gold 金牛肉麵碗",
+      "title": "統一生機葵花籽油",
       "brand": "統一",
-      "category": "noodle.instant",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450103600101.html"
+      "category": "noodle.cereal",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1461102400101.html"
     },
     {
-      "title": "滿漢大餐Gold 熗牛肉麵碗",
+      "title": "森永鬆餅粉600g",
       "brand": "統一",
-      "category": "noodle.instant",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450103900101.html"
+      "category": "biscuit.cookie",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1474204300101.html"
     },
     {
-      "title": "來一客-京燉肉骨 71g",
+      "title": "原味本舖八寶粥can255g",
       "brand": "統一",
-      "category": "noodle.instant",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450201100103.html"
+      "category": "dairy.pudding",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1480401100101.html"
     },
     {
-      "title": "來一客-肉燥菠菜-67g",
-      "brand": "統一",
-      "category": "meat.canned",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450201400103.html"
+      "title": "【限量】愛之味沖繩黑八寶禮盒340gx12(無提袋)",
+      "brand": "愛之味",
+      "category": "dairy.pudding",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%84%9B%E4%B9%8B%E5%91%B3/1480401400101.html"
     },
     {
-      "title": "來一客-鮮蝦魚板-63g",
-      "brand": "統一",
-      "category": "noodle.instant",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450300300103.html"
+      "title": "愛之味五穀開運八寶粥",
+      "brand": "愛之味",
+      "category": "dairy.pudding",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%84%9B%E4%B9%8B%E5%91%B3/1480401900106.html"
     },
     {
-      "title": "來一客-韓式泡菜-67g",
-      "brand": "統一",
-      "category": "noodle.instant",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450501600103.html"
+      "title": "愛之味杏仁派",
+      "brand": "愛之味",
+      "category": "biscuit.cake",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%84%9B%E4%B9%8B%E5%91%B3/1480402200106.html"
     },
     {
-      "title": "科學麵-原味(包)40gx5",
-      "brand": "統一",
-      "category": "noodle.instant",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450504100105.html"
+      "title": "愛之味燕麥奶花生",
+      "brand": "愛之味",
+      "category": "drink.plant",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%84%9B%E4%B9%8B%E5%91%B3/1480402300106.html"
     },
     {
-      "title": "科學麵-原味(包)40g(箱購依實際收貨為主，無法保證原封箱出貨)",
-      "brand": "統一",
-      "category": "noodle.instant",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450504100140.html"
+      "title": "愛之味牛奶花生禮盒340g*12",
+      "brand": "愛之味",
+      "category": "dairy.pudding",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%84%9B%E4%B9%8B%E5%91%B3/1480501300101.html"
     },
     {
-      "title": "來一客-辛辣香菇風味69g",
+      "title": "原味本舖牛奶花生CAN255g",
       "brand": "統一",
-      "category": "noodle.instant",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450519000103.html"
+      "category": "dairy.pudding",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1480593700101.html"
     },
     {
-      "title": "統一脆麵(包)55gx5",
-      "brand": "統一",
-      "category": "noodle.instant",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450589900105.html"
+      "title": "愛之味寒天嫩仙草",
+      "brand": "愛之味",
+      "category": "dairy.pudding",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%84%9B%E4%B9%8B%E5%91%B3/1480594100106.html"
     },
     {
-      "title": "統一脆麵(包)55g(箱購依實際收貨為主，無法保證原封箱出貨)",
+      "title": "泰山自然就好系列-花生湯",
+      "brand": "泰山",
+      "category": "dairy.pudding",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%B3%B0%E5%B1%B1/1480594800106.html"
+    },
+    {
+      "title": "義美純豬肉鬆175g",
+      "brand": "義美",
+      "category": "meat.floss",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1483307200101.html"
+    },
+    {
+      "title": "義美純豬肉鬆-海苔芝麻175g",
+      "brand": "義美",
+      "category": "meat.floss",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1483308600101.html"
+    },
+    {
+      "title": "新東陽豬肉鬆(履歷)",
+      "brand": "新東陽",
+      "category": "meat.floss",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%96%B0%E6%9D%B1%E9%99%BD/1483314800101.html"
+    },
+    {
+      "title": "味全花生麵筋170g",
+      "brand": "味全",
+      "category": "noodle.ready",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%91%B3%E5%85%A8/1484002200103.html"
+    },
+    {
+      "title": "味全花瓜170g",
+      "brand": "味全",
+      "category": "noodle.ready",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%91%B3%E5%85%A8/1484002300103.html"
+    },
+    {
+      "title": "【限量】乖乖御守樂福盒(加價購商品，非單獨販售，刪單不另行通知)",
+      "brand": "乖乖",
+      "category": "snack.puffed",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E4%B9%96%E4%B9%96/1490402400101.html"
+    },
+    {
+      "title": "義美原味優酪乳875ml※實際到貨效期約4天以上",
+      "brand": "義美",
+      "category": "dairy.yogurt",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1500002600101.html"
+    },
+    {
+      "title": "光泉原味優酪乳(每瓶900ml)※實際到貨效期約4天以上",
+      "brand": "光泉",
+      "category": "dairy.yogurt",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1500004800101.html"
+    },
+    {
+      "title": "簡單點優酪乳150ml※實際到貨效期約4天以上",
+      "brand": "味全",
+      "category": "dairy.yogurt",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%91%B3%E5%85%A8/1500006600101.html"
+    },
+    {
+      "title": "義美無加糖優酪乳(每瓶1700ml)到貨效期約6-8天※實際到貨效期約4天以上",
+      "brand": "義美",
+      "category": "dairy.yogurt",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1500007100101.html"
+    },
+    {
+      "title": "義美優酪乳(每瓶1700ml)到貨效期約6-8天※實際到貨效期約4天以上",
+      "brand": "義美",
+      "category": "dairy.yogurt",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1500007200101.html"
+    },
+    {
+      "title": "光泉優酪乳-草莓綜合-900ml※實際到貨效期約4天以上",
+      "brand": "光泉",
+      "category": "dairy.yogurt",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1500101300101.html"
+    },
+    {
+      "title": "光泉頂級無加糖牛奶燕麥優酪500g※實際到貨效期約4天以上",
+      "brand": "光泉",
+      "category": "dairy.yogurt",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1500302500101.html"
+    },
+    {
+      "title": "林鳳營特濃重乳優格※實際到貨效期約4天以上",
+      "brand": "味全",
+      "category": "dairy.yogurt",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%9E%97%E9%B3%B3%E7%87%9F/1500305100101.html"
+    },
+    {
+      "title": "林鳳營特濃重乳優格(草莓)※實際到貨效期約4天以上",
+      "brand": "味全",
+      "category": "dairy.yogurt",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%9E%97%E9%B3%B3%E7%87%9F/1500306000101.html"
+    },
+    {
+      "title": "光泉希臘式優酪500g-無加糖※實際到貨效期約4天以上",
+      "brand": "光泉",
+      "category": "dairy.yogurt",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1500311200101.html"
+    },
+    {
+      "title": "LCA506活菌發酵乳Light-1750ml※實際到貨效期約4天以上",
+      "brand": "味全",
+      "category": "dairy.yogurt",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%91%B3%E5%85%A8/1500400800101.html"
+    },
+    {
+      "title": "LCA506活菌發酵乳-Light原味 10入※實際到貨效期約4天以上",
+      "brand": "味全",
+      "category": "dairy.yogurt",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%91%B3%E5%85%A8/1500402000101.html"
+    },
+    {
+      "title": "LCA506活菌原味發酵乳10入※實際到貨效期約4天以上",
+      "brand": "味全",
+      "category": "dairy.yogurt",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%91%B3%E5%85%A8/1500499900101.html"
+    },
+    {
+      "title": "瑞穗鮮奶-全脂930ml※實際到貨效期約4天以上",
       "brand": "統一",
-      "category": "noodle.instant",
-      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1450589900140.html"
+      "category": "dairy.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1501001100101.html"
+    },
+    {
+      "title": "林鳳營全脂鮮乳家庭號2728ml※實際到貨效期約4天以上",
+      "brand": "味全",
+      "category": "dairy.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%91%B3%E5%85%A8/1501001400101.html"
+    },
+    {
+      "title": "光泉100％純鮮乳(無調整)1857ml※實際到貨效期約4天以上",
+      "brand": "光泉",
+      "category": "dairy.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1501002300101.html"
+    },
+    {
+      "title": "義美全脂鮮奶1000ml※實際到貨效期約4天以上",
+      "brand": "義美",
+      "category": "dairy.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1501002900101.html"
+    },
+    {
+      "title": "北海道別海牛乳1000ml※實際到貨效期約4天以上",
+      "brand": "光泉",
+      "category": "dairy.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1501005900101.html"
+    },
+    {
+      "title": "義美無乳糖全脂鮮奶900ml※實際到貨效期約4天以上",
+      "brand": "義美",
+      "category": "dairy.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1501007100101.html"
+    },
+    {
+      "title": "紐西蘭進口草飼牛乳1000ml※實際到貨效期約4天以上",
+      "brand": "統一",
+      "category": "dairy.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1501007700101.html"
+    },
+    {
+      "title": "義美低脂鮮乳2000ml※實際到貨效期約4天以上",
+      "brand": "義美",
+      "category": "dairy.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1501102500101.html"
+    },
+    {
+      "title": "義美低脂鮮奶1000ml※實際到貨效期約4天以上",
+      "brand": "義美",
+      "category": "dairy.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1501103400101.html"
+    },
+    {
+      "title": "光泉調味乳飲品-果汁牛乳-936ml※實際到貨效期約4天以上",
+      "brand": "光泉",
+      "category": "drink.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1501201100101.html"
+    },
+    {
+      "title": "統一木瓜牛奶400ml※實際到貨效期約4天以上",
+      "brand": "統一",
+      "category": "drink.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1501201200101.html"
+    },
+    {
+      "title": "瑞穗果汁調味乳930ml※實際到貨效期約4天以上",
+      "brand": "統一",
+      "category": "drink.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%91%9E%E7%A9%97%E8%AA%BF%E5%91%B3%E4%B9%B3/1501201400101.html"
+    },
+    {
+      "title": "光泉調味乳飲品-蘋果牛乳936ml※實際到貨效期約4天以上",
+      "brand": "光泉",
+      "category": "drink.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1501201500101.html"
+    },
+    {
+      "title": "光泉調味乳飲品-木瓜牛乳-400ml※實際到貨效期約4天以上",
+      "brand": "光泉",
+      "category": "drink.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1501290800101.html"
+    },
+    {
+      "title": "味全蘋果牛乳375ml※實際到貨效期約4天以上",
+      "brand": "味全",
+      "category": "drink.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%91%B3%E5%85%A8/1501291900101.html"
+    },
+    {
+      "title": "瑞穗巧克力調味乳930ml※實際到貨效期約4天以上",
+      "brand": "統一",
+      "category": "drink.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%91%9E%E7%A9%97%E8%AA%BF%E5%91%B3%E4%B9%B3/1501300100101.html"
+    },
+    {
+      "title": "光泉調味乳飲品-麥芽牛乳-936ml※實際到貨效期約4天以上",
+      "brand": "光泉",
+      "category": "drink.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1501300800101.html"
+    },
+    {
+      "title": "光泉調味乳飲品-綠豆沙牛乳-400ml※實際到貨效期約4天以上",
+      "brand": "光泉",
+      "category": "dairy.pudding",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1501301100101.html"
+    },
+    {
+      "title": "味全超優質蘋果牛乳936ml※實際到貨效期約4天以上",
+      "brand": "味全",
+      "category": "drink.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%91%B3%E5%85%A8/1501301200101.html"
+    },
+    {
+      "title": "味全超優質巧克力牛乳※實際到貨效期約4天以上",
+      "brand": "味全",
+      "category": "drink.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%91%B3%E5%85%A8/1501301300101.html"
+    },
+    {
+      "title": "光泉調味乳飲品-巧克力牛乳-936ml※實際到貨效期約4天以上",
+      "brand": "光泉",
+      "category": "drink.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1501301400101.html"
+    },
+    {
+      "title": "瑞穗麥芽調味乳930ml※實際到貨效期約4天以上",
+      "brand": "統一",
+      "category": "drink.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%91%9E%E7%A9%97%E8%AA%BF%E5%91%B3%E4%B9%B3/1501302300101.html"
+    },
+    {
+      "title": "味全木瓜牛乳375ml※實際到貨效期約4天以上",
+      "brand": "味全",
+      "category": "drink.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%91%B3%E5%85%A8/1501304500101.html"
+    },
+    {
+      "title": "義美無加糖鮮奶豆奶900ml※實際到貨效期約4天以上",
+      "brand": "義美",
+      "category": "drink.plant",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1501393400101.html"
+    },
+    {
+      "title": "萬丹芋頭牛奶 936ml※實際到貨效期約4天以上",
+      "brand": "味全",
+      "category": "drink.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%91%B3%E5%85%A8/1501393700101.html"
+    },
+    {
+      "title": "光泉原味鮮豆漿-1857ml※實際到貨效期約4天以上",
+      "brand": "光泉",
+      "category": "drink.plant",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1501400300101.html"
+    },
+    {
+      "title": "統一陽光低糖高纖豆漿400ml※實際到貨效期約4天以上",
+      "brand": "統一",
+      "category": "drink.plant",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80%E9%99%BD%E5%85%89/1501401100101.html"
+    },
+    {
+      "title": "義美古早傳統豆奶(無加糖)400ML※實際到貨效期約4天以上",
+      "brand": "義美",
+      "category": "drink.plant",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1501401300101.html"
+    },
+    {
+      "title": "光泉低糖鮮豆漿-1857ml※實際到貨效期約4天以上",
+      "brand": "光泉",
+      "category": "drink.plant",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1501403200101.html"
+    },
+    {
+      "title": "光泉黑芝麻鮮豆漿400ml※實際到貨效期約4天以上",
+      "brand": "光泉",
+      "category": "drink.plant",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1501403800101.html"
+    },
+    {
+      "title": "統一陽光高纖燕麥穀奶※實際到貨效期約4天以上",
+      "brand": "統一",
+      "category": "noodle.cereal",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80%E9%99%BD%E5%85%89/1501403900101.html"
+    },
+    {
+      "title": "義美無加糖厚豆奶-936ml※實際到貨效期約4天以上",
+      "brand": "義美",
+      "category": "drink.plant",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1501408600101.html"
+    },
+    {
+      "title": "義美無加糖高纖全豆豆奶-936ml※實際到貨效期約4天以上",
+      "brand": "義美",
+      "category": "drink.plant",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1501409600101.html"
+    },
+    {
+      "title": "義美無加糖厚黑豆奶900ml※實際到貨效期約4天以上",
+      "brand": "義美",
+      "category": "drink.plant",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1501410400101.html"
+    },
+    {
+      "title": "味全超優質牛乳936ml※實際到貨效期約4天以上",
+      "brand": "味全",
+      "category": "dairy.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%91%B3%E5%85%A8/1501591000101.html"
+    },
+    {
+      "title": "光泉低脂保久牛乳-200ml",
+      "brand": "光泉",
+      "category": "dairy.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1502000100106.html"
+    },
+    {
+      "title": "光泉低脂高鈣牛乳-200ml",
+      "brand": "光泉",
+      "category": "dairy.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1502001000106.html"
+    },
+    {
+      "title": "光泉全脂保久牛乳-200ml",
+      "brand": "光泉",
+      "category": "dairy.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1502004700106.html"
+    },
+    {
+      "title": "萬丹保久乳(脂肪無調整)200ml",
+      "brand": "味全",
+      "category": "dairy.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%91%B3%E5%85%A8/1502092400106.html"
+    },
+    {
+      "title": "義美高鈣營養牛乳125ml",
+      "brand": "義美",
+      "category": "dairy.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1502099700106.html"
+    },
+    {
+      "title": "光泉果汁牛乳-200ml",
+      "brand": "光泉",
+      "category": "drink.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1502100100106.html"
+    },
+    {
+      "title": "光泉果汁調味乳",
+      "brand": "光泉",
+      "category": "drink.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1502100100124.html"
+    },
+    {
+      "title": "光泉蘋果牛乳(200mlx6入)兩款包裝隨機出貨",
+      "brand": "光泉",
+      "category": "drink.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1502101400106.html"
+    },
+    {
+      "title": "極品限定蘋果牛乳200ml",
+      "brand": "味全",
+      "category": "drink.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%91%B3%E5%85%A8/1502106000106.html"
+    },
+    {
+      "title": "光泉保久乳飲品-黑芝麻牛乳-200ml",
+      "brand": "光泉",
+      "category": "drink.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89%E4%BF%9D%E4%B9%85%E4%B9%B3/1502201800106.html"
+    },
+    {
+      "title": "光泉麥芽牛乳(200mlx6入)",
+      "brand": "光泉",
+      "category": "drink.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1502203800106.html"
+    },
+    {
+      "title": "光泉果汁時刻柳橙綜合果汁※實際到貨效期約4天以上",
+      "brand": "光泉",
+      "category": "drink.juice",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1505001700101.html"
+    },
+    {
+      "title": "每日C果肉有感100%柳橙綜合果汁1300ml※實際到貨效期約4天以上",
+      "brand": "味全",
+      "category": "drink.juice",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%91%B3%E5%85%A8/1505005000101.html"
+    },
+    {
+      "title": "光泉果汁時刻-100％柳橙綜合果汁1400ml",
+      "brand": "光泉",
+      "category": "drink.juice",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1505005400101.html"
+    },
+    {
+      "title": "光泉果汁時刻-100％葡萄綜合果汁1400ml※實際到貨效期約4天以上",
+      "brand": "光泉",
+      "category": "drink.juice",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1505122900101.html"
+    },
+    {
+      "title": "義美低糖錫蘭紅茶946ML※實際到貨效期約4天以上",
+      "brand": "義美",
+      "category": "drink.tea",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1506003400101.html"
+    },
+    {
+      "title": "義美無糖台灣四季春600ml※實際到貨效期約4天以上",
+      "brand": "義美",
+      "category": "drink.coffee",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1506003900101.html"
+    },
+    {
+      "title": "義美仙草甘茶400ml※實際到貨效期約4天以上",
+      "brand": "義美",
+      "category": "dairy.pudding",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1506008300101.html"
+    },
+    {
+      "title": "義美無糖台灣金萱茶※實際到貨效期約4天以上",
+      "brand": "義美",
+      "category": "drink.tea",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1506008400101.html"
+    },
+    {
+      "title": "義美鮮奶茶900ml※實際到貨效期約4天以上",
+      "brand": "義美",
+      "category": "drink.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1506009200101.html"
+    },
+    {
+      "title": "義美無加糖仙草甘茶946ml※實際到貨效期約4天以上",
+      "brand": "義美",
+      "category": "dairy.pudding",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1506012300101.html"
+    },
+    {
+      "title": "義美茉莉鮮奶綠茶900ml※實際到貨效期約4天以上",
+      "brand": "義美",
+      "category": "dairy.milk",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1506015700101.html"
+    },
+    {
+      "title": "貝納頌咖啡經典曼特寧深焙風味290ml※實際到貨效期約4天以上",
+      "brand": "味全",
+      "category": "drink.coffee",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%B2%9D%E7%B4%8D%E9%A0%8C/1506100300101.html"
+    },
+    {
+      "title": "貝納頌經典拿鐵290ml※實際到貨效期約4天以上",
+      "brand": "味全",
+      "category": "drink.coffee",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%B2%9D%E7%B4%8D%E9%A0%8C/1506100800101.html"
+    },
+    {
+      "title": "貝納頌咖啡經典曼特寧風味290ml※實際到貨效期約4天以上",
+      "brand": "味全",
+      "category": "drink.coffee",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E8%B2%9D%E7%B4%8D%E9%A0%8C/1506100900101.html"
+    },
+    {
+      "title": "義美酸梅湯946ml※實際到貨效期約4天以上",
+      "brand": "義美",
+      "category": "drink.juice",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1506208100101.html"
+    },
+    {
+      "title": "新東陽德式香腸業務包640G",
+      "brand": "新東陽",
+      "category": "meat.sausage",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%96%B0%E6%9D%B1%E9%99%BD/1510201500101.html"
+    },
+    {
+      "title": "新東陽嚴選培根170g",
+      "brand": "新東陽",
+      "category": "meat.ham",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%96%B0%E6%9D%B1%E9%99%BD/1510301600101.html"
+    },
+    {
+      "title": "滿漢原味香腸",
+      "brand": "統一",
+      "category": "meat.sausage",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1511000900101.html"
+    },
+    {
+      "title": "新東陽原味小香腸",
+      "brand": "新東陽",
+      "category": "meat.sausage",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%96%B0%E6%9D%B1%E9%99%BD/1511001700101.html"
+    },
+    {
+      "title": "滿漢蒜味香腸",
+      "brand": "統一",
+      "category": "meat.sausage",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1511100600101.html"
+    },
+    {
+      "title": "新東陽原味德式香腸",
+      "brand": "新東陽",
+      "category": "meat.sausage",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%96%B0%E6%9D%B1%E9%99%BD/1511201400101.html"
+    },
+    {
+      "title": "義美小籠湯包",
+      "brand": "義美",
+      "category": "biscuit.cookie",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1521400600101.html"
+    },
+    {
+      "title": "台畜雞肉漢堡肉排-900g",
+      "brand": "台畜",
+      "category": "noodle.ready",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%8F%B0%E7%95%9C/1523101000101.html"
+    },
+    {
+      "title": "義美台灣芋香貢丸",
+      "brand": "義美",
+      "category": "meat.sausage",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1526297900101.html"
+    },
+    {
+      "title": "義美花枝魚丸",
+      "brand": "義美",
+      "category": "meat.sausage",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1526300200101.html"
+    },
+    {
+      "title": "義美包餡魚丸紅蔥肉燥",
+      "brand": "義美",
+      "category": "meat.sausage",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1526393300101.html"
+    },
+    {
+      "title": "【安心價】義美冷凍玉米粒(全素)",
+      "brand": "義美",
+      "category": "noodle.ready",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1527103400101.html"
+    },
+    {
+      "title": "品味典藏醇奶布丁-100g※實際到貨效期約4天以上",
+      "brand": "味全",
+      "category": "dairy.pudding",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%91%B3%E5%85%A8/1530000800103.html"
+    },
+    {
+      "title": "義美鮮奶雞蛋布丁",
+      "brand": "義美",
+      "category": "dairy.pudding",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1530001200112.html"
+    },
+    {
+      "title": "義美仙草凍160g (每盒4入)",
+      "brand": "義美",
+      "category": "dairy.pudding",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1530203500104.html"
+    },
+    {
+      "title": "光泉晶典小品 茉莉茶凍-130g",
+      "brand": "光泉",
+      "category": "drink.tea",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%85%89%E6%B3%89/1530204300103.html"
+    },
+    {
+      "title": "味全輕淳奶酪90gX3",
+      "brand": "味全",
+      "category": "dairy.pudding",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E5%91%B3%E5%85%A8/1530293400101.html"
+    },
+    {
+      "title": "義美茉莉茶凍160gX4",
+      "brand": "義美",
+      "category": "drink.tea",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1530296400101.html"
+    },
+    {
+      "title": "義美錫蘭紅茶凍160gX4",
+      "brand": "義美",
+      "category": "drink.tea",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1530296500101.html"
+    },
+    {
+      "title": "義美銅鑼燒冰淇淋巧克力-80gx4",
+      "brand": "義美",
+      "category": "ice.cream",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%BE%A9%E7%BE%8E/1532001000101.html"
+    },
+    {
+      "title": "Ice Walker冰塊",
+      "brand": "統一",
+      "category": "ice.bar",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E7%B5%B1%E4%B8%80/1532020500101.html"
+    },
+    {
+      "title": "【限量】新東陽培根芋香糕",
+      "brand": "新東陽",
+      "category": "meat.ham",
+      "url": "https://online.uni-prosperity.com.tw/zh/%E6%96%B0%E6%9D%B1%E9%99%BD/1550010100101.html"
     }
   ]
 }

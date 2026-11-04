@@ -175,7 +175,7 @@ function viewHome() {
     <div><h1 class="sr">翻背面：查加工食品成分</h1>${searchBox()}</div>
     <a class="btn primary block" href="#/scan">${icon.scan}掃描條碼</a>
     <section><h2>分類</h2><div class="grid-cats">
-      ${DB.categories.map((c) => `<a class="cat" href="#/browse?cat=${c.id}"><span class="emo" aria-hidden="true">${c.emoji || ''}</span><span>${esc(c.name)}</span><span class="n">${counts[c.id] || 0}</span></a>`).join('')}
+      ${DB.categories.map((c) => `<a class="cat" href="#/browse?cat=${c.id}"><span class="emo" aria-hidden="true">${c.emoji || ''}</span><span class="nm">${esc(c.name)}</span><span class="n" aria-label="${counts[c.id] || 0} 項">${counts[c.id] || 0}</span></a>`).join('')}
     </div></section>
     <section><h2>依通路</h2><div class="chips">
       ${Object.entries(STORES).map(([k, n]) => `<a class="chip" href="#/browse?store=${k}">${n}</a>`).join('')}

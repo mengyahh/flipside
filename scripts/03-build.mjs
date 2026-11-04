@@ -13,57 +13,56 @@ const match = buildMatcher(substances);
 const overrides = await readJson(new URL('data/overrides.json', ROOT), {});
 const ignored = new Set(await readJson(new URL('data/ignored-terms.json', ROOT), []));
 
-// ---------- 分類規則（依序比對：標題 + 麵包屑） ----------
+// ---------- 分類規則 ----------
+// 先只看標題依序比對；標題判斷不出來，才加上萬家福的分類路徑再比一次（路徑常常很籠統，例如「米油沖泡」「咖啡．茶飲」）
+const EXCLUDE_RE = /啤酒|紹興|高粱|米酒|料理酒|調酒|威士忌|葡萄酒|清酒|梅酒|沙瓦|酒精|飼料|寵物|貓|狗|洗|紙|保養|面膜|牙|餐具|保溫|鍋|杯具|禮券|贈品|保健食品|膠囊|錠|益生菌|酵素|奶粉|嬰兒|幼兒|成長配方|配方奶|醬油|油膏|味噌|沙拉醬|番茄醬|烤肉醬|(?<!肉)醬(?!油餅)|辣油|和露|可樂餅|彩頭糕|蘿蔔糕|穀飯|穀豆飯|調味料|胡椒|鹽巴|食用油|沙拉油|芥花油|葵花油|橄欖油|麻油|香油|亞麻仁油|苦茶油|玄米油|調合油|大豆油|花生油|芝麻油|植物油s*d|[^奶]油s*d|麵粉|杏仁粉|白米|糙米|珍珠Q米|[^玉]米$|米s*d+(kg|公斤)|冷凍水餃|水餃|餛飩|湯圓|包子|肉包|饅頭|蔥油餅|抓餅|蛋餅皮|豆腐|豆乾|百頁|粿|飯糰|起司|乳酪|奶油(?!椰子|夾心|餅|酥|蛋捲|風味)|潔顏|卸妝/;
 const CAT_RULES = [
-  ['EXCLUDE', /啤酒|紹興|高粱|米酒|料理酒|調酒|威士忌|葡萄酒|清酒|梅酒|沙瓦|酒精|飼料|寵物|貓|狗|洗|紙|保養|面膜|牙|餐具|保溫|鍋|杯具|禮券|贈品|保健食品|膠囊|錠|益生菌粉|奶粉|嬰兒|幼兒|成長配方|配方奶|醬油|味噌|沙拉醬|番茄醬|烤肉醬|調味料|胡椒|鹽巴|食用油|沙拉油|麵粉|白米|糙米|米$|冷凍水餃|水餃|餛飩|湯圓|包子|饅頭|蔥油餅/],
-  ['meat.sausage', /香腸|熱狗|德式|小熱狗|雞肉腸|豬肉腸|貢丸|魚丸|甜不辣/],
-  ['meat.ham', /火腿|培根|臘肉|叉燒|煙燻/],
+  ['snack.candy', /軟糖|QQ糖|喉糖|口香糖|棒棒糖|牛軋糖|硬糖|糖果/],
+  ['meat.sausage', /香腸|熱狗|小熱狗|雞肉腸|豬肉腸|貢丸|魚丸|甜不辣/],
+  ['meat.ham', /火腿|培根|臘肉|叉燒/],
   ['meat.jerky', /肉乾|肉條|肉角|牛肉乾|豬肉乾|肉紙|肉脯/],
-  ['meat.floss', /肉鬆|肉酥|魚鬆/],
-  ['meat.canned', /肉醬|肉燥|肉罐|牛肉罐|雞肉罐|鮪魚|罐頭.*(肉|雞|魚)|(肉|雞|魚).*罐|花瓜|麵筋|菜心|筍|蔭瓜|豆腐乳/],
+  ['meat.floss', /肉鬆|肉酥(?!餅)|魚鬆/],
+  ['noodle.instant', /泡麵|拉麵|麵s*d+g|碗麵|杯麵|袋麵|速食麵|科學麵|王子麵|雞絲麵|拌麵|速拌麵|乾麵|麵線|冬粉|米粉|意麵|來一客|滿漢|大補帖|阿Q|一度贊|小廚師|好勁道|拉麵道|杯湯/],
+  ['meat.canned', /肉醬|肉燥|肉罐|牛肉罐|雞肉罐|鮪魚|鯖魚|秋刀魚|罐頭.*(肉|雞|魚)|(肉|雞|魚).*罐/],
   ['ice.bar', /冰棒|雪糕|雪派|冰棍|冰沙棒/],
   ['ice.cream', /冰淇淋|冰品|霜淇淋|冰淇林|杯冰|甜筒/],
   ['dairy.yogurt', /優格|優酪|多多|發酵乳|活菌|養樂/],
-  ['dairy.pudding', /布丁|奶酪|仙草凍|愛玉|豆花|果凍杯/],
-  ['dairy.milk', /鮮乳|鮮奶|保久乳|全脂牛乳|低脂牛乳|脫脂牛乳|^.{0,8}牛乳\s*\d|羊乳|高鈣牛乳/],
-  // 餅乾類先判斷，避免「咖啡蛋捲」「甘藍蘇打」被當成飲料
+  ['dairy.pudding', /布丁|奶酪|仙草|愛玉|豆花|果凍杯|八寶|紅豆湯|綠豆湯|綠豆|紅豆|薏仁|粉粿|珍珠圓|牛奶花生|花生湯|銀耳|甜湯/],
   ['biscuit.eggroll', /蛋捲|捲心酥|雞蛋捲|蛋酥捲|風味捲/],
-  ['snack.puffed', /金牛角|乖乖|可樂果|浪味仙|蝦味先|玉米脆/],
-  ['biscuit.cookie', /蘇打餅|甘藍蘇打|薄餅|小蛋餅|芝麻餅|蔬菜餅乾|蘇打(?=.{0,4}(分享|隨手|經濟)包)/],
+  ['snack.chips', /洋芋片|薯片|薯條|卡迪那|卡廸那|波卡|樂事|多力多滋|薯格/],
+  ['snack.puffed', /金牛角|乖乖|可樂果|浪味仙|蝦味先|玉米脆|脆條|脆棒|圈圈|洋蔥圈|米果|仙貝|雪餅|米菓|膨化|旺旺|豆塔|爆米花|鍋巴|真魷味|魷魚|歡樂包|神氣包|野菜園|玉黍叔|大吉利|鹹酥|捲心/],
+  ['biscuit.cookie', /蘇打餅|甘藍蘇打|薄餅|小蛋餅|芝麻餅|蔬菜餅乾|鮮乳薄餅|蘇打(?=.{0,4}(分享|隨手|經濟)包)|煎餅|酥片/],
+  ['noodle.cereal', /麥片|燕麥(?!飲|奶|.*豆漿)|穀片|玉米片|穀物圈|麥粉|即溶|三合一|麵茶|芝麻糊|穀粉|五穀粉|完膳|沖泡/],
   ['drink.coffee', /咖啡|拿鐵|美式|卡布|貝納頌|韋恩|左岸/],
-  ['drink.milk', /調味乳|奶茶|乳飲|果乳|巧克力牛乳|麥芽牛乳|木瓜牛乳|蘋果牛乳|咖啡牛乳|保久調味|乳酸飲料|可爾必思|優酪飲|鮮奶茶|麥芽飲/],
-  ['drink.plant', /豆漿|豆奶|燕麥奶|杏仁奶|米漿|植物奶|黑豆漿/],
-  ['drink.tea', /茶|烏龍|紅茶|綠茶|麥茶|青茶|普洱|花茶|冬瓜|茶裏王|純喫茶|麥香/],
+  ['drink.milk', /(西瓜|香蕉|草莓|果汁|巧克力|咖啡|麥芽|木瓜|蘋果)(風味)?牛乳|牛乳.{0,6}口味|調味乳|奶茶|乳飲|果乳|巧克力牛乳|麥芽牛乳|木瓜牛乳|蘋果牛乳|咖啡牛乳|保久調味|乳酸飲料|可爾必思|優酪飲|鮮奶茶|麥芽飲|保久乳飲品/],
+  ['drink.plant', /豆漿|豆奶|燕麥奶|燕麥飲|杏仁奶|米漿|植物奶|穀飲|堅果飲|杏仁茶/],
+  ['dairy.milk', /鮮乳|鮮奶|保久乳|全脂牛乳|低脂牛乳|脫脂牛乳|^.{0,8}牛乳|羊乳|高鈣牛乳/],
+  ['drink.juice', /果汁|蔬果汁|柳橙汁|蘋果汁|葡萄汁|番茄汁|蕃茄汁|芭樂汁|蔓越莓|檸檬汁|柳丁|鳳梨汁|蘆筍汁|蔬菜汁|每日C|椰子水|椰奶|果粒|果肉|酸梅湯|楊桃|紅豆水|黑豆水|薏仁水/],
+  ['drink.tea', /茶|烏龍|紅茶|綠茶|麥茶|青茶|普洱|冬瓜|茶裏王|純喫茶|麥香/],
   ['drink.soda', /汽水|沙士|可樂|蘇打|氣泡|碳酸|C&C|candc/i],
-  ['drink.sport', /運動飲料|電解質|能量|機能|維他命飲|寶礦力|舒跑|補給|蠻牛|提神/],
-  ['drink.juice', /果汁|蔬果汁|柳橙汁|蘋果汁|葡萄汁|番茄汁|芭樂汁|蔓越莓|檸檬|柳丁|鳳梨汁|蘆筍汁|蔬菜汁|每日C|椰子水|果粒|果肉|梅子綠|酸梅湯|楊桃/],
-  ['drink.water', /礦泉水|純水|蒸餾水|鹼性水|海洋深層水|^.{0,6}水\s*\d/],
-  ['noodle.instant', /泡麵|拉麵|麵\s*\d+g|碗麵|杯麵|袋麵|速食麵|科學麵|王子麵|雞絲麵|拌麵|乾麵|冬粉|米粉|意麵|來一客|滿漢|大補帖|阿Q|一度贊|小廚師/],
-  ['noodle.cereal', /麥片|燕麥|穀片|玉米片|麥粉|沖泡|即溶|三合一|堅果飲|穀物飲|麵茶|芝麻糊|杏仁茶|穀粉|五穀粉|完膳/],
-  ['noodle.ready', /即食|調理包|咖哩|粥|湯品|濃湯|雞湯|燉|微波|罐頭/],
-  ['biscuit.eggroll', /蛋捲|捲心酥|雞蛋捲|蛋酥捲/],
+  ['drink.sport', /運動飲料|電解質|能量|機能|維他命飲|寶礦力|舒跑|補給|蠻牛|提神|雞精|蜆精|人蔘|精華飲|四物/],
+  ['drink.water', /礦泉水|純水|蒸餾水|鹼性水|海洋深層水|^.{0,6}水s*d/],
+  ['noodle.ready', /即食|調理包|咖哩|粥|湯品|濃湯|雞湯|燉|微波|罐頭|菜心|脆瓜|花瓜|麵筋|筍|蔭瓜|豆腐乳|泡菜|武林菜|玉筍|小菜/],
   ['biscuit.sandwich', /夾心|威化|wafer|三明治餅/i],
-  ['biscuit.cake', /蛋糕|麵包|吐司|蛋黃派|派$|派\s|銅鑼燒|瑞士捲|鬆糕|小西點|泡芙|蛋酥|鳳梨酥|月餅|牛舌餅|太陽餅/],
-  ['biscuit.cookie', /餅乾|餅|酥|蘇打餅|薄餅|曲奇|消化餅|口糧|小饅頭|蛋酥|奶酥|喜年來/],
-  ['snack.chips', /洋芋片|薯片|薯條|卡迪那|卡廸那|波卡|樂事|多力多滋|玉米片|薯格/],
-  ['snack.puffed', /乖乖|可樂果|浪味仙|蝦味先|玉米脆|脆條|脆棒|圈圈|米果|仙貝|雪餅|米菓|膨化|旺旺|豆塔|元氣|爆米花|鍋巴/],
-  ['snack.nuts', /堅果|花生|腰果|杏仁果|核桃|開心果|夏威夷豆|瓜子|葵瓜子|南瓜子|豌豆|蠶豆|青豆|毛豆|黑豆|綜合果仁|萬歲牌|堅果日記/],
+  ['biscuit.cake', /蛋糕|麵包|吐司|蛋黃派|派$|派s|銅鑼燒|瑞士捲|鬆糕|小西點|泡芙|蛋酥|鳳梨酥|月餅|牛舌餅|太陽餅/],
+  ['snack.nuts', /堅果|花生|腰果|杏仁果|杏仁小魚|小魚杏仁|核桃|開心果|夏威夷豆|瓜子|南瓜子|豌豆|蠶豆|青豆|毛豆|綜合果|甘栗|栗子|三果|雙果|纖果|八寶(?!粥)|萬歲牌/],
   ['snack.chocolate', /巧克力|可可(?!粉)/],
-  ['snack.candy', /糖果|軟糖|喉糖|口香糖|棒棒糖|牛軋糖|麥芽糖|硬糖|QQ糖|果凍|蒟蒻|晶球/],
-  ['snack.dried', /果乾|蜜餞|梅|芒果乾|葡萄乾|蔓越莓乾|龍眼乾|地瓜|番薯/],
+  ['snack.candy', /果凍|蒟蒻|晶球|麥芽糖/],
+  ['snack.dried', /果乾|蜜餞|芒果乾|葡萄乾|蔓越莓乾|龍眼乾|地瓜|番薯|梅(?!子綠)/],
   ['snack.seaweed', /海苔|紫菜|元本山/],
+  ['biscuit.cookie', /餅乾|餅|酥|曲奇|消化餅|口糧|小饅頭|奶酥|喜年來/],
 ];
 const BREAD_DEFAULT = [
-  [/飲料|茶|咖啡/, 'drink.other'],
-  [/零食|餅乾|糖果/, 'snack.other'],
-  [/冰品|冰淇淋/, 'ice.cream'],
-  [/肉/, 'meat.other'],
+  [/咖啡/, 'drink.coffee'], [/茶/, 'drink.tea'], [/飲料/, 'drink.other'],
+  [/零食|餅乾|糖果/, 'snack.other'], [/冰品|冰淇淋/, 'ice.cream'], [/肉/, 'meat.other'],
 ];
 function categorize(title, bread) {
-  const s = `${title} ${bread.join(' ')}`;
-  for (const [id, re] of CAT_RULES) if (re.test(id === 'EXCLUDE' ? title : s)) return id;
-  if (/酒/.test(bread.join(' '))) return 'EXCLUDE';
-  for (const [re, id] of BREAD_DEFAULT) if (re.test(bread.join(' '))) return id;
+  if (EXCLUDE_RE.test(title)) return 'EXCLUDE';
+  const b = bread.join(' ');
+  if (/酒|美妝|個人清潔|保健/.test(b)) return 'EXCLUDE';
+  for (const [id, re] of CAT_RULES) if (re.test(title)) return id;
+  for (const [id, re] of CAT_RULES) if (re.test(`${title} ${b}`)) return id;
+  for (const [re, id] of BREAD_DEFAULT) if (re.test(b)) return id;
   return null;
 }
 
@@ -71,7 +70,7 @@ function categorize(title, bread) {
 const SIZE_RE = /(\d+(?:\.\d+)?)\s*(公克|克|g|G|kg|KG|公斤|毫升|ml|mL|ML|cc|CC|公升|L)(?![a-z])/;
 const PACK_RE = /[x×X*＊]\s*(\d+)\s*(入|包|罐|瓶|盒|袋|杯|支|條|片|組)?|(\d+)\s*(入|包入|罐入|瓶入|盒入|袋入|杯入|支入)/;
 function splitTitle(title, brand) {
-  let t = title.normalize('NFKC').replace(/[(（][^()（）]*(入|包|支|片|罐|瓶|\dg|公克|毫升|ml)[^()（）]*[)）]/gi, ' ').replace(/【[^】]*】|\[[^\]]*\]|（[^）]*箱[^）]*）|\([^)]*箱[^)]*\)/g, ' ').trim();
+  let t = title.normalize('NFKC').replace(/※.*$/, '').replace(/[(（][^()（）]*(入|包|支|片|罐|瓶|\dg|公克|毫升|ml)[^()（）]*[)）]/gi, ' ').replace(/【[^】]*】|\[[^\]]*\]|（[^）]*箱[^）]*）|\([^)]*箱[^)]*\)/g, ' ').trim();
   const size = t.match(SIZE_RE);
   const pack = t.match(PACK_RE);
   let name = t;
@@ -278,6 +277,18 @@ for (const g of [...groups.values(), ...fromSupp.values()]) {
   if (unmatchedFunctions.length) issues.push({ field: 'substances', type: 'unmatched', note: '下列添加物沒有對應到成分資料庫', candidates: unmatchedFunctions });
   const nutrition = pickNutrition(r.nutrition, issues, g.cat);
   if (!nutrition) issues.push({ field: 'nutrition', type: 'missing', note: '找不到營養標示' });
+  else {
+    // 合理性檢查：熱量 ≈ 蛋白質×4 + 脂肪×9 + 碳水×4；每100數值不可超過物理上限
+    const v = nutrition.per100 || {};
+    const est = (v.protein ?? 0) * 4 + (v.fat ?? 0) * 9 + (v.carb ?? 0) * 4;
+    const bad = [];
+    if (v.kcal != null && est > 20 && Math.abs(v.kcal - est) / Math.max(v.kcal, est) > 0.25) bad.push(`熱量 ${v.kcal} 與三大營養素推算的 ${Math.round(est)} 差距大`);
+    if ((v.kcal ?? 0) > 900) bad.push('每100熱量超過900大卡');
+    if ((v.protein ?? 0) + (v.fat ?? 0) + (v.carb ?? 0) > 105) bad.push('每100的蛋白質＋脂肪＋碳水超過100公克');
+    if ((v.sugar ?? 0) > (v.carb ?? Infinity) + 0.5) bad.push('糖大於碳水化合物');
+    if ((v.satFat ?? 0) > (v.fat ?? Infinity) + 0.5) bad.push('飽和脂肪大於脂肪');
+    if (bad.length) issues.push({ field: 'nutrition', type: 'verify', note: `營養標示可能判讀錯誤：${bad.join('；')}` });
+  }
   const gmo = gmoOf(r.gmoLines, ingRaw);
   const labels = labelsOf(r.certLines, gmo);
   if (labels.length) issues.push({ field: 'labels', type: 'verify', note: '自動偵測到標籤，請確認是認證而非宣稱', candidates: labels.map((l) => `${l.id}：${l.evidence || ''}`) });

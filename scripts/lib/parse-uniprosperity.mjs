@@ -74,7 +74,7 @@ export function parseNutrition(lines) {
       const p = part.trim().replace(/^[˙•·●\-\s]+/, '');
       const key = NUTRI_KEYS.find(([, re]) => re.test(p));
       if (!key) continue;
-      const n = nums(p.replace(/^[^\d]*/, ''));
+      const n = nums(p.replace(/每\s*100\s*(公克|克|g|毫升|ml)/gi, ' ').replace(/每\s*[一1]?\s*份量?/g, ' ').replace(/^[^\d]*/, ''));
       if (!n.length) continue;
       if (!cur.mode) cur.assumedPer100 = true;
       const mode = cur.mode || 'per100';
@@ -100,7 +100,7 @@ export function parseNutritionBlob(lines) {
   const pk = blob.match(/本包裝含\s*[:：]?\s*(\d+(?:\.\d+)?)\s*份/);
   const iServ = blob.search(/每\s*份(?!\s*量)/), i100 = blob.search(/每\s*100/);
   const vals = {}; let key = null;
-  const toks = [...blob.matchAll(TOKEN_RE)].map((m) => (m[1] ? { k: TOKEN_KEY.find(([, re]) => re.test(m[1]))?.[0] } : { v: +m[2] }));
+  const toks = [...blob.replace(/每\s*100\s*(公克|克|g|毫升|ml)/gi, ' ').replace(/每\s*[一1]?\s*(?:份|瓶|罐|包|盒|杯|條|片)?\s*份?\s*量\s*[:：]?\s*\d+(?:\.\d+)?\s*(公克|克|g|毫升|ml)/gi, ' ').matchAll(TOKEN_RE)].map((m) => (m[1] ? { k: TOKEN_KEY.find(([, re]) => re.test(m[1]))?.[0] } : { v: +m[2] }));
   // 欄式表格：先連續列出 5 個以上營養素名稱，再列數值（一欄接一欄）
   let runStart = -1, run = 0;
   for (let i = 0; i < toks.length; i++) { let j = i; while (j < toks.length && toks[j].k) j++; if (j - i >= 5) { runStart = i; run = j - i; break; } }
