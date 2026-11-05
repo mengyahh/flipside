@@ -78,12 +78,18 @@ function search(q, list = DB.products) {
 }
 
 // ---------- 篩選 ----------
-const emptyFilter = () => ({ stores: [], cats: [], excludeSubs: [], excludeAllergens: [], labels: [], diets: [] });
-let filter = store.get('filter', emptyFilter());
+const emptyFilter = () => ({ cats: [], origins: [], excludeSubs: [], excludeAllergens: [], labels: [], diets: [] });
+const NO_ORIGIN = '未標示';
+const originOf = (p) => p.origin?.country || NO_ORIGIN;
+let filter = (() => { const f = { ...emptyFilter(), ...store.get('filter', {}) }; delete f.stores; return f; })();
+// 所在通路：使用者已經在店裡，直接切換，不放在篩選裡
+let here = STORES[store.get('here', '')] ? store.get('here', '') : '';
+const setHere = (k) => { here = STORES[k] ? k : ''; store.set('here', here); };
 function applyFilter(list, f = filter) {
   return list.filter((p) => {
     if (f.cats.length && !f.cats.some((c) => p.category === c || catRoot(p.category) === c)) return false;
-    if (f.stores.length && !f.stores.some((s) => p.stores?.[s]?.status === 'yes')) return false;
+    if (here && p.stores?.[here]?.status !== 'yes') return false;
+    if (f.origins.length && !f.origins.includes(originOf(p))) return false;
     if (f.excludeSubs.some((s) => p._subs.has(s))) return false;
     if (f.excludeAllergens.some((a) => p.allergens?.contains?.includes(a))) return false;
     if (f.labels.length && !f.labels.every((l) => p.labels?.some((x) => x.id === l))) return false;
@@ -91,7 +97,7 @@ function applyFilter(list, f = filter) {
     return true;
   });
 }
-const filterCount = (f = filter) => f.stores.length + f.cats.length + f.excludeSubs.length + f.excludeAllergens.length + f.labels.length + f.diets.length;
+const filterCount = (f = filter) => f.origins.length + f.cats.length + f.excludeSubs.length + f.excludeAllergens.length + f.labels.length + f.diets.length;
 
 // ---------- 收藏與最近 ----------
 let favs = new Set(store.get('favs', []));
@@ -177,8 +183,8 @@ function viewHome() {
     <section><h2>分類</h2><div class="grid-cats">
       ${DB.categories.map((c) => `<a class="cat" href="#/browse?cat=${c.id}"><span class="emo" aria-hidden="true">${c.emoji || ''}</span><span class="nm">${esc(c.name)}</span><span class="n" aria-label="${counts[c.id] || 0} 項">${counts[c.id] || 0}</span></a>`).join('')}
     </div></section>
-    <section><h2>依通路</h2><div class="chips">
-      ${Object.entries(STORES).map(([k, n]) => `<a class="chip" href="#/browse?store=${k}">${n}</a>`).join('')}
+    <section><h2>我在哪家店</h2><div class="chips">
+      ${Object.entries(STORES).map(([k, n]) => `<a class="chip" href="#/browse?store=${k}"${here === k ? ' aria-current="true"' : ''}>${n}</a>`).join('')}
     </div></section>
     ${recent.length ? `<section><h2>最近看過</h2>${listHTML(recent)}</section>` : ''}
     <footer class="site">收錄 ${DB.products.length} 項商品 · 資料更新 ${esc(DB.meta.updatedAt || '')}<br><a href="#/about">關於與資料來源</a></footer>
@@ -189,11 +195,12 @@ function viewHome() {
 function viewBrowse(params, mode = 'browse') {
   const q = params.get('q') || '';
   if (params.get('cat')) filter = { ...emptyFilter(), cats: [params.get('cat')] };
-  if (params.get('store')) filter = { ...emptyFilter(), stores: [params.get('store')] };
+  if (params.get('store')) setHere(params.get('store'));
   if (params.get('cat') || params.get('store')) { store.set('filter', filter); history.replaceState(null, '', mode === 'search' ? `#/search?q=${encodeURIComponent(q)}` : '#/browse'); }
   const render = (qq) => {
     const list = applyFilter(search(qq));
-    $('#results').innerHTML = `<p class="muted small" aria-live="polite">${list.length} 項商品</p>` +
+    $('#results').innerHTML = `<p class="muted small" aria-live="polite">${here ? STORES[here] + '有販售的 ' : ''}${list.length} 項商品</p>` +
+      (here ? '<p class="notice small">只列出已確認在這家店販售的商品。通路資料還在補，沒列出的不代表沒賣，可以切到「全部通路」找。</p>' : '') +
       (list.length ? listHTML(list) : `<div class="empty"><p>找不到符合的商品。</p>
         ${filterCount() ? '<p><button class="btn" data-reset>清除篩選</button></p>' : ''}
         <p><a class="btn" target="_blank" rel="noopener" href="${esc(reportURL(null, { type: '查無此商品', name: qq, barcode: /^\d{8,14}$/.test(qq) ? qq : '' }))}">回報缺少這項商品</a></p></div>`);
@@ -202,14 +209,17 @@ function viewBrowse(params, mode = 'browse') {
   const activeChips = () => {
     const chips = [];
     for (const c of filter.cats) chips.push(['cats', c, catName(c) || DB.categories.find((x) => x.id === c)?.name]);
-    for (const s of filter.stores) chips.push(['stores', s, STORES[s]]);
+    for (const o of filter.origins) chips.push(['origins', o, '產地：' + o]);
     for (const s of filter.excludeSubs) chips.push(['excludeSubs', s, '不含' + (DB.substances.get(s)?.name || s)]);
     for (const a of filter.excludeAllergens) chips.push(['excludeAllergens', a, '不含' + ALLERGENS[a]]);
     for (const l of filter.labels) chips.push(['labels', l, DB.labels.get(l)?.short || l]);
     for (const d of filter.diets) chips.push(['diets', d, DIETS[d]]);
     return chips.map(([g, v, n]) => `<button class="chip" aria-pressed="true" data-rm="${g}:${esc(v)}" aria-label="移除篩選：${esc(n)}">${esc(n)} ${icon.x}</button>`).join('');
   };
+  const storeBar = `<div class="seg" role="group" aria-label="所在通路">${[['', '全部通路'], ...Object.entries(STORES)].map(([k, n]) =>
+    `<button type="button" data-here="${k}" aria-pressed="${here === k}">${n}</button>`).join('')}</div>`;
   main.innerHTML = `${searchBox(q)}
+    ${storeBar}
     <div class="toolbar"><button class="chip" data-open-filter aria-haspopup="dialog">${icon.filter.replace('<svg', '<svg width="18" height="18" style="fill:none;stroke:currentColor;stroke-width:2"')}篩選${filterCount() ? ' ' + filterCount() : ''}</button>${activeChips()}</div>
     <div id="results"></div>`;
   bindSearch(mode === 'search' ? null : render);
@@ -217,6 +227,8 @@ function viewBrowse(params, mode = 'browse') {
   main.onclick = (e) => {
     const rm = e.target.closest('[data-rm]');
     if (rm) { const [g, v] = rm.dataset.rm.split(':'); filter[g] = filter[g].filter((x) => x !== v); store.set('filter', filter); route(); }
+    const h = e.target.closest('[data-here]');
+    if (h) { setHere(h.dataset.here); route(); return; }
     if (e.target.closest('[data-reset]')) { filter = emptyFilter(); store.set('filter', filter); route(); }
     if (e.target.closest('[data-open-filter]')) openFilterSheet(() => route());
   };
@@ -224,6 +236,8 @@ function viewBrowse(params, mode = 'browse') {
 
 function openFilterSheet(onApply) {
   const draft = JSON.parse(JSON.stringify(filter));
+  const oc = {}; for (const p of DB.products) oc[originOf(p)] = (oc[originOf(p)] || 0) + 1;
+  const origins = Object.entries(oc).sort((a, b) => (a[0] === NO_ORIGIN) - (b[0] === NO_ORIGIN) || b[1] - a[1]).map(([o, n]) => [o, `${o} ${n}`]);
   const subs = [...DB.substances.values()].filter((s) => s.filterable).sort((a, b) => (b.common || 0) - (a.common || 0));
   const group = (key, entries, legend) => `<fieldset><legend>${legend}</legend><div class="chips">
     ${entries.map(([v, n]) => `<button type="button" class="chip" data-g="${key}" data-v="${esc(v)}" aria-pressed="${draft[key].includes(v)}">${esc(n)}</button>`).join('')}</div></fieldset>`;
@@ -232,7 +246,7 @@ function openFilterSheet(onApply) {
   <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle"><div class="grab" aria-hidden="true"></div>
     <h2 id="sheetTitle">篩選</h2>
     ${group('cats', DB.categories.map((c) => [c.id, c.name]), '分類')}
-    ${group('stores', Object.entries(STORES), '販售通路')}
+    ${group('origins', origins, '產地')}
     ${group('excludeSubs', subs.slice(0, 16).map((s) => [s.id, s.name]), '排除含有這些成分')}
     <label class="small muted" for="subFind">找其他成分</label>
     <input id="subFind" list="subList" placeholder="輸入成分名稱，例如：蔗糖素" style="width:100%;min-height:44px;margin:4px 0 16px;padding:8px 12px;border:1px solid var(--border);border-radius:10px;background:var(--surface)">

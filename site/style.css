@@ -158,3 +158,8 @@ details.more summary { cursor: pointer; min-height: var(--tap); display: flex; a
 footer.site { margin-top: 32px; color: var(--text-3); font-size: .8em; text-align: center; }
 
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+.seg { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4px; margin-top: 12px; padding: 4px; border-radius: 999px; background: var(--surface-2); }
+.seg button { min-height: 40px; border: 0; border-radius: 999px; background: transparent; color: var(--text-2); cursor: pointer; font-size: .9em; padding: 0 4px; white-space: nowrap; }
+.seg button[aria-pressed="true"] { background: var(--surface); color: var(--accent-text); font-weight: 600; box-shadow: 0 1px 3px rgb(0 0 0 / .15); }
+.chip[aria-current="true"] { background: var(--accent-soft); border-color: var(--accent); color: var(--accent-text); font-weight: 600; }
