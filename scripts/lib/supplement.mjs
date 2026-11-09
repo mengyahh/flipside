@@ -59,5 +59,5 @@ export function similarity(a, b) {
 }
 export function brandMatches(brand, text) {
   const t = (text || '').toLowerCase();
-  return [brand.name, ...brand.aliases, ...brand.slugs, ...(brand.en || [])].some((w) => w && t.includes(w.toLowerCase()));
+  return [brand.name, ...brand.aliases, ...(brand.sub || []), ...brand.slugs, ...(brand.en || [])].some((w) => w && t.includes(w.toLowerCase()));
 }

@@ -60,4 +60,12 @@ if (review.aliases?.length) {
   await writeJson(subsUrl, subs);
   await writeJson(new URL('data/ignored-terms.json', ROOT), ignore);
 }
+// 俗稱（隱藏搜尋詞）
+if (review.aka && Object.keys(review.aka).length) {
+  const akaUrl = new URL('data/aka.json', ROOT);
+  const aka = await readJson(akaUrl, {});
+  aka.products ||= {};
+  for (const [id, words] of Object.entries(review.aka)) { if (words.length) aka.products[id] = words; else delete aka.products[id]; }
+  await writeJson(akaUrl, aka);
+}
 console.log(`merged: ${Object.keys(ov).length} products in overrides`);

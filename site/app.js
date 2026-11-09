@@ -41,7 +41,9 @@ async function loadData() {
     DB.byId.set(x.id, x);
     for (const v of x.variants || []) for (const code of v.barcodes || []) DB.byBarcode.set(code, x);
     x._subs = new Set(collectSubs(x.ingredients?.items || []));
-    x._search = norm([x.name, x.flavor, brandName(x.brand), ...(DB.brands.get(x.brand)?.aliases || []), catName(x.category), ...(x.keywords || [])].join(' '));
+    // keywords：隱藏搜尋詞（俗稱、同義詞、子品牌），只用來搜尋，不顯示
+    x._title = norm(`${brandName(x.brand)}${x.name}${x.flavor || ''}`);
+    x._search = [x._title, ...[...(DB.brands.get(x.brand)?.aliases || []), catName(x.category), ...(x.keywords || [])].map(norm)].join('|');
   }
 }
 function collectSubs(items, out = []) {
@@ -69,7 +71,7 @@ function search(q, list = DB.products) {
   const scored = [];
   for (const p of list) {
     let score = 0;
-    if (p._search.includes(nq)) score += 100 + (norm(p.name).startsWith(nq) ? 20 : 0);
+    if (p._search.includes(nq)) score += 100 + (p._title.includes(nq) ? 30 : 0) + (norm(p.name).startsWith(nq) ? 20 : 0);
     else if (nq.length > 1) { let hit = 0; for (const g of grams) if (p._search.includes(g)) hit++; if (hit / grams.size >= 0.6) score += hit * 10; }
     else if (p._search.includes(nq)) score += 50;
     if (score) scored.push([score, p]);

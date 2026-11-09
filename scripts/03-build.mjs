@@ -11,6 +11,19 @@ const today = new Date().toISOString().slice(0, 10);
 const substances = await readJson(new URL('site/data/substances.json', ROOT), []);
 const match = buildMatcher(substances);
 const overrides = await readJson(new URL('data/overrides.json', ROOT), {});
+const AKA = await readJson(new URL('data/aka.json', ROOT), {});
+const akaRules = (AKA.rules || []).map((r) => ({ ...r, re: new RegExp(r.match, 'i') }));
+// 隱藏搜尋詞（俗稱、同義詞、子品牌），只給搜尋用，網站不顯示
+function keywordsOf(p, brand, prefixes = []) {
+  const name = `${p.name} ${p.flavor || ''}`.normalize('NFKC');
+  const full = [brand.name, ...prefixes, p.name].join(' ').normalize('NFKC');
+  const out = [...prefixes];
+  for (const group of AKA.synonyms || []) if (group.some((w) => name.includes(w))) out.push(...group);
+  for (const r of akaRules) if ((!r.brand || r.brand === brand.id) && r.re.test(full)) out.push(...r.aka);
+  out.push(...(AKA.categories?.[p.category] || []), ...(AKA.products?.[p.id] || []));
+  const seen = new Set();
+  return out.map((w) => w.trim()).filter((w) => w && w !== brand.name && !name.includes(w) && !seen.has(w) && seen.add(w));
+}
 const ignored = new Set(await readJson(new URL('data/ignored-terms.json', ROOT), []));
 
 // ---------- 分類規則 ----------
@@ -74,8 +87,9 @@ function splitTitle(title, brand) {
   const size = t.match(SIZE_RE);
   const pack = t.match(PACK_RE);
   let name = t;
-  for (const prefix of [brand.name, ...brand.slugs, ...brand.aliases]) {
-    if (name.startsWith(prefix)) { name = name.slice(prefix.length); break; }
+  let prefix = null;
+  for (const pre of [brand.name, ...brand.slugs, ...brand.aliases, ...brand.sub]) {
+    if (name.startsWith(pre)) { name = name.slice(pre.length); prefix = pre; break; }
   }
   name = name
     .replace(new RegExp(SIZE_RE.source, 'g'), ' ')
@@ -90,7 +104,7 @@ function splitTitle(title, brand) {
     .trim();
   const sizeStr = size ? `${size[1]}${normUnit(size[2])}` : null;
   const packN = pack ? +(pack[1] || pack[3]) : null;
-  return { name: name || title, size: sizeStr ? (packN && packN > 1 ? `${sizeStr}×${packN}` : sizeStr) : null, unitSize: sizeStr };
+  return { name: name || title, prefix, size: sizeStr ? (packN && packN > 1 ? `${sizeStr}×${packN}` : sizeStr) : null, unitSize: sizeStr };
 }
 function normUnit(u) {
   u = u.toLowerCase();
@@ -176,15 +190,16 @@ for (const f of files) {
   const cat = categorize(r.title, r.breadcrumb || []);
   if (cat === 'EXCLUDE') { stats.excluded++; continue; }
   if (!cat) { stats.uncategorized++; uncategorized.push(`${r.title} | ${(r.breadcrumb || []).join('>')}`); continue; }
-  const { name, size } = splitTitle(r.title, brand);
+  const { name, size, prefix } = splitTitle(r.title, brand);
   const key = `${brand.id}|${name.normalize('NFKC').replace(/\s/g, '').toLowerCase()}`;
-  if (!groups.has(key)) groups.set(key, { raws: [], brand, name, cat });
+  if (!groups.has(key)) groups.set(key, { raws: [], brand, name, cat, prefixes: new Set() });
   groups.get(key).raws.push({ ...r, size });
+  if (prefix && prefix !== brand.name) groups.get(key).prefixes.add(prefix);
 }
 
 // ---------- 其他來源補資料 ----------
 const supplements = await loadSupplements();
-const brandWords = (b) => [b.name, ...b.aliases, ...b.slugs];
+const brandWords = (b) => [b.name, ...b.aliases, ...b.sub, ...b.slugs];
 for (const s of supplements) {
   s.brand = s.brandId ? BRANDS.find((b) => b.id === s.brandId) : BRANDS.find((b) => brandMatches(b, s.brandText) || brandMatches(b, s.title.slice(0, 6)));
   if (s.brand) s.key = nameKey(s.title, brandWords(s.brand));
@@ -220,6 +235,7 @@ for (const s of usable) {
 }
 
 const products = [];
+const usedIds = new Set();
 const pending = [];
 const noData = [];
 const usedSupp = new Set();
@@ -266,7 +282,10 @@ for (const g of [...groups.values(), ...fromSupp.values()]) {
     noData.push({ title: r.title, brand: g.brand.name, category: g.cat, url: r.url });
     continue;
   }
-  const id = `${idPrefix}${r.sku}`;
+  let id = `${idPrefix}${r.sku}`;
+  // 同一條碼被品牌官網用在不同商品上時（例如限定款），用來源頁編號區分
+  if (usedIds.has(id)) id += `-${(r.url || '').match(/(\d+)\D*$/)?.[1] || usedIds.size}`;
+  usedIds.add(id);
   const issues = [...supIssues];
   const ingRaw = r.ingredients[0] || null;
   if (r.ingredients.length > 1) issues.push({ field: 'ingredients', type: 'conflict', note: `頁面上有 ${r.ingredients.length} 份成分寫法`, candidates: r.ingredients });
@@ -338,6 +357,8 @@ for (const g of [...groups.values(), ...fromSupp.values()]) {
     const storesDone = Object.values(p.stores).every((s) => s.verified);
     if (storesDone && !p.review.issues.length) p.review.status = 'verified';
   }
+  const kw = keywordsOf(p, g.brand, [...(g.prefixes || [])]);
+  if (kw.length) p.keywords = kw;
   products.push(p);
   pending.push({ id, title: `${g.brand.name} ${g.name}`, category: g.cat, image: p.images[0]?.file, url: r.url, issues: p.review.issues });
 }

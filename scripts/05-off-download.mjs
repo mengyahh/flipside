@@ -19,7 +19,7 @@ for (let page = firstPage; page <= 10; page++) {
 }
 // 依品牌補抓（OFF 搜尋 API 超過第 10 頁會被拒絕，所以改用品牌標籤縮小範圍）
 const { BRANDS } = await import('./brands.mjs');
-const tags = [...new Set(BRANDS.flatMap((b) => [b.name, ...b.aliases, ...b.en]).map((t) => t.toLowerCase().replace(/\s+/g, '-')))];
+const tags = [...new Set(BRANDS.flatMap((b) => [b.name, ...b.aliases, ...b.sub, ...b.en]).map((t) => t.toLowerCase().replace(/\s+/g, '-')))];
 for (const tag of tags) {
   for (let page = 1; page <= 10; page++) {
     const url = `https://world.openfoodfacts.org/api/v2/search?brands_tags=${encodeURIComponent(tag)}&page_size=100&page=${page}&fields=${FIELDS}`;
