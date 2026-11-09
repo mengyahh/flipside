@@ -44948,6 +44948,10 @@
         "issues": []
       },
       "updatedAt": "2026-11-09",
+      "unit": {
+        "grams": 32,
+        "verified": false
+      },
       "keywords": [
         "蛋卷"
       ]
@@ -45457,6 +45461,10 @@
         "issues": []
       },
       "updatedAt": "2026-11-09",
+      "unit": {
+        "grams": 36,
+        "verified": false
+      },
       "keywords": [
         "蛋卷"
       ]
@@ -48937,7 +48945,11 @@
         "status": "needs-review",
         "issues": []
       },
-      "updatedAt": "2026-11-09"
+      "updatedAt": "2026-11-09",
+      "unit": {
+        "grams": 20,
+        "verified": false
+      }
     },
     {
       "id": "serena-4710304300190",
@@ -49115,7 +49127,11 @@
         "status": "needs-review",
         "issues": []
       },
-      "updatedAt": "2026-11-09"
+      "updatedAt": "2026-11-09",
+      "unit": {
+        "grams": 20,
+        "verified": false
+      }
     },
     {
       "id": "serena-4710304300176",
@@ -49294,7 +49310,11 @@
         "status": "needs-review",
         "issues": []
       },
-      "updatedAt": "2026-11-09"
+      "updatedAt": "2026-11-09",
+      "unit": {
+        "grams": 20,
+        "verified": false
+      }
     },
     {
       "id": "serena-4710304100660",
@@ -50794,6 +50814,10 @@
         "issues": []
       },
       "updatedAt": "2026-11-09",
+      "unit": {
+        "grams": 32,
+        "verified": false
+      },
       "keywords": [
         "蛋卷"
       ]
@@ -51073,6 +51097,10 @@
         "issues": []
       },
       "updatedAt": "2026-11-09",
+      "unit": {
+        "grams": 40,
+        "verified": false
+      },
       "keywords": [
         "蛋卷"
       ]
@@ -51841,7 +51869,11 @@
         "status": "needs-review",
         "issues": []
       },
-      "updatedAt": "2026-11-09"
+      "updatedAt": "2026-11-09",
+      "unit": {
+        "grams": 40,
+        "verified": false
+      }
     },
     {
       "id": "serena-4710304120217",
@@ -52231,7 +52263,11 @@
         "status": "needs-review",
         "issues": []
       },
-      "updatedAt": "2026-11-09"
+      "updatedAt": "2026-11-09",
+      "unit": {
+        "grams": 20,
+        "verified": false
+      }
     },
     {
       "id": "serena-4710304300930",
@@ -53257,7 +53293,11 @@
         "status": "needs-review",
         "issues": []
       },
-      "updatedAt": "2026-11-09"
+      "updatedAt": "2026-11-09",
+      "unit": {
+        "grams": 20,
+        "verified": false
+      }
     },
     {
       "id": "taisun-1480400700106",

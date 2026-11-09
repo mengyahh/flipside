@@ -165,10 +165,20 @@ function storeChips(p) {
 function labelChips(p) {
   return (p.labels || []).map((l) => `<span class="chip static good">${esc(DB.labels.get(l.id)?.short || l.id)}</span>`).join('');
 }
+// 列表的熱量：一小包（有填）> 包裝的每份（多份裝）> 整包；飲料直接寫「容量 熱量」
+function unitKcal(p) { const k = p.nutrition?.per100?.kcal; return p.unit?.grams && k != null ? Math.round(k * p.unit.grams / 100) : null; }
 function packKcalLine(p) {
+  const n = p.nutrition; if (!n) return '';
+  const line = (t) => `<div class="s kcal">${t}</div>`;
+  // 沒有容量資料時退回每100
+  const per100Line = () => (n.per100?.kcal != null ? line(`每100${n.basis === 'liquid' ? 'ml' : 'g'} ${Math.round(n.per100.kcal)} 大卡`) : '');
   const sizes = sizesOf(p); const z = sizes[0]; const pv = packValues(p, z);
-  if (!pv || pv.vals.kcal == null) return '';
-  return `<div class="s kcal">${sizes.length > 1 ? esc(z.label) + ' ' : ''}${packWord(z)}${pv.approx ? '約 ' : ' '}${pv.vals.kcal} 大卡</div>`;
+  if (n.basis === 'liquid' || z?.liquid) return pv?.vals.kcal != null ? line(`${esc(z.label)} ${pv.approx ? '約 ' : ''}${pv.vals.kcal} 大卡`) : per100Line();
+  const uk = unitKcal(p);
+  if (uk != null) return line(`一小包 ${p.unit.grams}g ${uk} 大卡`);
+  if (n.servingsPerPack > 1 && n.perServing?.kcal != null) return line(`每份${n.serving?.size ? ' ' + n.serving.size + 'g' : ''} ${Math.round(n.perServing.kcal)} 大卡`);
+  if (pv?.vals.kcal != null) return line(`${sizes.length > 1 ? esc(z.label) + ' ' : ''}整包${pv.approx ? '約 ' : ' '}${pv.vals.kcal} 大卡`);
+  return per100Line();
 }
 function itemHTML(p) {
   const img = p.images?.[0]?.file;
@@ -334,10 +344,15 @@ function nutritionHTML(p, size, sizes) {
   const pv = packValues(p, size);
   const servingAmt = n.serving?.size;
   // 每份和整包幾乎一樣時不重複顯示
-  const showServing = has(n.perServing) && !(pv && servingAmt && Math.abs(servingAmt - size.amount) / size.amount < 0.03);
+  const near = (a, b) => a && b && Math.abs(a - b) / b < 0.03;
+  const showServing = has(n.perServing) && !(pv && near(servingAmt, size.amount)) && !near(servingAmt, p.unit?.grams);
   const u = n.basis === 'liquid' ? '毫升' : '公克';
   const cols = [];
-  if (pv) cols.push([`${packWord(size)}<br><span class="small">${pv.approx ? '約 ' : ''}${esc(size.label)}</span>`, pv.vals, true]);
+  if (pv) cols.push([size.liquid ? `${pv.approx ? '約 ' : ''}${esc(size.label)}` : `整包<br><span class="small">${pv.approx ? '約 ' : ''}${esc(size.label)}</span>`, pv.vals, true]);
+  if (p.unit?.grams && has(n.per100) && n.basis !== 'liquid') {
+    const uv = {}; for (const [k, v] of Object.entries(n.per100)) if (typeof v === 'number') uv[k] = roundN(k, v * p.unit.grams / 100);
+    cols.push([`一小包<br><span class="small">${p.unit.grams}公克</span>`, uv]);
+  }
   if (showServing) cols.push([`每份<br><span class="small">${servingAmt ? servingAmt + u : ''}</span>`, n.perServing]);
   if (has(n.per100)) cols.push([`每100<br><span class="small">${u}</span>`, n.per100]);
   const rows = NUTRIENTS.filter(([k]) => cols.some(([, v]) => v?.[k] != null)).map(([k, label, unit, sub]) =>
@@ -347,6 +362,7 @@ function nutritionHTML(p, size, sizes) {
     n.servingsPerPack && servingAmt ? `包裝標示：每份 ${servingAmt}${u}，本包裝含 ${n.servingsPerPack} 份。` : '',
     pv?.approx ? '原始標示的單位和容量單位不同，整包數值為約略換算。' : '',
     pv && sizes.length > 1 ? '各容量成分相同，整包數值依選的容量換算。' : '',
+    p.unit?.grams && size && !size.liquid ? `這包約 ${Math.round(size.amount / p.unit.grams)} 小包${p.unit.verified ? '' : '（小包重量尚未人工核對）'}。` : '',
   ].filter(Boolean);
   return `<h2>營養標示</h2>${picker}
     <table class="nut"><thead><tr><th scope="col"><span class="sr">項目</span></th>${cols.map(([h, , pk]) => `<th scope="col" class="${pk ? 'pack' : ''}">${h}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table>

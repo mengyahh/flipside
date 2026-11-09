@@ -357,6 +357,14 @@ for (const g of [...groups.values(), ...fromSupp.values()]) {
     const storesDone = Object.values(p.stores).every((s) => s.verified);
     if (storesDone && !p.review.issues.length) p.review.status = 'verified';
   }
+  // 一小包幾公克（獨立包裝的零食）：與外包裝尺寸無關，家庭號只是多裝幾包。
+  // 人工填寫優先；品名寫「N入／N小包」且包裝標示的份數也是 N 時自動帶入每份重量，標為待確認。
+  if (o?.unit) { if (o.unit.grams) p.unit = { grams: o.unit.grams, verified: true }; }
+  else if (p.nutrition?.basis !== 'liquid' && p.nutrition?.serving?.size) {
+    const titles = [g.name, ...g.raws.map((x) => x.title || '')].join(' ').normalize('NFKC');
+    const m = titles.match(/(\d+)\s*(?:入|小包|包入)/);
+    if (m && +m[1] > 1 && +m[1] === p.nutrition.servingsPerPack) { p.unit = { grams: p.nutrition.serving.size, verified: false }; stats.unitAuto = (stats.unitAuto || 0) + 1; }
+  }
   const kw = keywordsOf(p, g.brand, [...(g.prefixes || [])]);
   if (kw.length) p.keywords = kw;
   products.push(p);

@@ -44,6 +44,8 @@ for (const [id, v] of Object.entries(review.verify || {})) {
 }
 for (const id of Object.keys(review.hide || {})) touch(id).hidden = true;
 for (const [id, codes] of Object.entries(review.barcodes || {})) touch(id).barcodes = codes;
+// 一小包幾公克；0 表示確認沒有小包
+for (const [id, g] of Object.entries(review.units || {})) touch(id).unit = { grams: g > 0 ? g : null, checkedAt: today };
 
 await writeJson(new URL('data/overrides.json', ROOT), ov);
 

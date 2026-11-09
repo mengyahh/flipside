@@ -56,6 +56,7 @@ kbd { border:1px solid var(--b); border-bottom-width:2px; border-radius:4px; pad
     <button data-tab="barcodes">條碼</button>
     <button data-tab="cats">分類</button>
     <button data-tab="aka">俗稱</button>
+    <button data-tab="units">小包</button>
     <button data-tab="nodata">查無資料</button>
   </nav>
   <div class="right"><span id="changed" class="small">0 項變更</span><button class="btn" id="importBtn">匯入</button><button class="btn primary" id="exportBtn">匯出 review.json</button><input type="file" id="importFile" accept=".json" hidden></div>
@@ -68,12 +69,12 @@ const STORES = { pxmart: '全聯', seven: '7-11', family: '全家' };
 const CYCLE = ['yes', 'no', 'unknown'], SYM = { yes: '✓', no: '✗', unknown: '?' };
 const KEY = 'flipside.review';
 let R; try { R = JSON.parse(localStorage.getItem(KEY)) } catch {}
-R = Object.assign({ stores: {}, choices: {}, labels: {}, barcodes: {}, aliases: [], verified: [], missing: {}, cats: {}, hide: {}, verify: {}, aka: {} }, R || {});
+R = Object.assign({ stores: {}, choices: {}, labels: {}, barcodes: {}, aliases: [], verified: [], missing: {}, cats: {}, hide: {}, verify: {}, aka: {}, units: {} }, R || {});
 const save = () => { try { localStorage.setItem(KEY, JSON.stringify(R)); } catch {} updateCount(); };
 const toast = (m) => { const t = $('#toast'); t.textContent = m; t.classList.add('show'); setTimeout(() => t.classList.remove('show'), 1500); };
 const esc = (s) => String(s ?? '').replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 function updateCount() {
-  const n = Object.keys(R.stores).length + Object.keys(R.choices).length + Object.keys(R.labels).length + Object.keys(R.barcodes).length + R.aliases.length + Object.keys(R.missing).length + Object.keys(R.cats).length + Object.keys(R.hide).length + Object.keys(R.verify).length + Object.keys(R.aka).length;
+  const n = Object.keys(R.stores).length + Object.keys(R.choices).length + Object.keys(R.labels).length + Object.keys(R.barcodes).length + R.aliases.length + Object.keys(R.missing).length + Object.keys(R.cats).length + Object.keys(R.hide).length + Object.keys(R.verify).length + Object.keys(R.aka).length + Object.keys(R.units).length;
   $('#changed').textContent = `${n} 項變更`;
 }
 let AKA = { products: {} };
@@ -122,7 +123,7 @@ const isStoreDone = (p) => Object.keys(STORES).every((s) => R.stores[p.id]?.[s] 
 function render() {
   const m = $('#main');
   const keepFocus = document.activeElement?.id === 'fq';
-  ({ stores: renderStores, conflicts: renderConflicts, missing: renderMissing, aliases: renderAliases, labels: renderLabels, barcodes: renderBarcodes, cats: renderCats, aka: renderAka, nodata: renderNoData, verify: renderVerify })[view.tab](m);
+  ({ stores: renderStores, conflicts: renderConflicts, missing: renderMissing, aliases: renderAliases, labels: renderLabels, barcodes: renderBarcodes, cats: renderCats, aka: renderAka, units: renderUnits, nodata: renderNoData, verify: renderVerify })[view.tab](m);
   if (keepFocus) { const f = $('#fq'); f.focus(); f.setSelectionRange(f.value.length, f.value.length); }
 }
 
@@ -309,6 +310,30 @@ function renderAka(m) {
     });
     inp.addEventListener('keydown', (e) => { if (e.key === 'Enter') { inp.dispatchEvent(new Event('change')); inputs[i + 1]?.focus(); } });
   });
+}
+
+function renderUnits(m) {
+  const list = filtered().filter((p) => p.nutrition && p.nutrition.basis !== 'liquid' && !/^drink/.test(p.category));
+  const cur = (p) => (p.id in R.units ? R.units[p.id] : p.unit?.grams ?? '');
+  m.innerHTML = filterBar(`<span class="small">${list.length} 項 · 裡面有獨立小包裝的，填一小包幾公克（和外包裝尺寸無關）。沒有小包就留空。黃底是自動帶入、還沒確認的，對了按「確認」。按 <kbd>Enter</kbd> 跳下一格。</span>`) +
+    `<table><thead><tr><th style="width:56px"></th><th>商品</th><th style="width:150px">包裝標示</th><th style="width:130px">一小包（公克）</th><th class="c" style="width:70px"></th></tr></thead><tbody>
+    ${list.slice(0, 300).map((p) => { const n = p.nutrition; const auto = p.unit && !p.unit.verified && !(p.id in R.units);
+      return `<tr data-id="${p.id}"><td>${p.images?.[0] ? `<img class="th" loading="lazy" src="${esc(p.images[0].file)}">` : ''}</td><td>${esc(title(p))}<br><span class="small">${esc((p.variants || []).map((v) => v.size).filter(Boolean).join('／'))}</span></td>
+      <td class="small">${n.serving?.size ? `每份 ${n.serving.size}g` : ''}${n.servingsPerPack ? ` × ${n.servingsPerPack} 份` : ''}</td>
+      <td><input data-unit inputmode="decimal" style="width:100%;font:inherit;padding:6px;border:1px solid var(--b);border-radius:6px;${auto ? 'background:#fff6d6' : ''}" value="${esc(cur(p))}"></td>
+      <td class="c">${auto ? '<button data-ok>確認</button>' : ''}</td></tr>`; }).join('')}
+    </tbody></table>${list.length > 300 ? '<p class="small">只顯示前 300 項，請用篩選縮小範圍。</p>' : ''}`;
+  bindFilter();
+  const inputs = [...m.querySelectorAll('[data-unit]')];
+  const setVal = (inp) => {
+    const id = inp.closest('tr').dataset.id; const v = parseFloat(inp.value);
+    R.units[id] = v > 0 ? v : 0; inp.style.background = ''; inp.closest('tr').querySelector('[data-ok]')?.remove(); save();
+  };
+  inputs.forEach((inp, i) => {
+    inp.addEventListener('change', () => setVal(inp));
+    inp.addEventListener('keydown', (e) => { if (e.key === 'Enter') { setVal(inp); inputs[i + 1]?.focus(); } });
+  });
+  m.querySelector('tbody').addEventListener('click', (e) => { const b = e.target.closest('[data-ok]'); if (b) setVal(b.closest('tr').querySelector('[data-unit]')); });
 }
 
 $('#exportBtn').addEventListener('click', () => {
