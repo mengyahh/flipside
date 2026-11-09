@@ -57,6 +57,39 @@ function catName(id) {
 }
 function catRoot(id) { return (id || '').split('.')[0]; }
 
+// ---------- 尺寸與整包換算 ----------
+// 單一容器的容量（箱購 330ml×24 → 330ml），回傳 { label, amount(ml 或 g), liquid }
+function parseSize(str) {
+  const m = (str || '').match(/^(\d+(?:\.\d+)?)(g|kg|ml|L)/); if (!m) return null;
+  const k = { g: 1, kg: 1000, ml: 1, L: 1000 }[m[2]];
+  return { label: m[1] + m[2], amount: +m[1] * k, liquid: m[2] === 'ml' || m[2] === 'L' };
+}
+function sizesOf(p) {
+  if (p._sizes) return p._sizes;
+  const seen = new Map();
+  for (const v of p.variants || []) {
+    const z = parseSize(v.size); if (!z) continue;
+    if (!seen.has(z.label)) seen.set(z.label, { ...z, barcodes: [] });
+    seen.get(z.label).barcodes.push(...(v.barcodes || []));
+  }
+  return (p._sizes = [...seen.values()].sort((a, b) => a.amount - b.amount));
+}
+function defaultSize(p, sizes) {
+  const n = p.nutrition; if (!sizes.length) return null;
+  const pack = n?.serving?.size ? n.serving.size * (n.servingsPerPack || 1) : null;
+  if (!pack) return sizes[0];
+  return sizes.reduce((a, b) => (Math.abs(b.amount - pack) < Math.abs(a.amount - pack) ? b : a));
+}
+const roundN = (k, v) => (v == null ? null : ['kcal', 'sodium', 'cholesterol'].includes(k) ? Math.round(v) : Math.round(v * 10) / 10);
+// 整包數值：每100 × 容量/100；單位對不上（飲料卻標每100公克）時視為約略值
+function packValues(p, size) {
+  const n = p.nutrition; if (!n?.per100 || !size) return null;
+  const approx = (n.basis === 'liquid') !== size.liquid;
+  const vals = {}; for (const [k, v] of Object.entries(n.per100)) if (typeof v === 'number') vals[k] = roundN(k, v * size.amount / 100);
+  return { vals, approx };
+}
+const packWord = (size) => (size?.liquid ? '整瓶' : '整包');
+
 // ---------- 搜尋 ----------
 function norm(s) {
   return (s || '')
@@ -132,13 +165,18 @@ function storeChips(p) {
 function labelChips(p) {
   return (p.labels || []).map((l) => `<span class="chip static good">${esc(DB.labels.get(l.id)?.short || l.id)}</span>`).join('');
 }
+function packKcalLine(p) {
+  const sizes = sizesOf(p); const z = sizes[0]; const pv = packValues(p, z);
+  if (!pv || pv.vals.kcal == null) return '';
+  return `<div class="s kcal">${sizes.length > 1 ? esc(z.label) + ' ' : ''}${packWord(z)}${pv.approx ? '約 ' : ' '}${pv.vals.kcal} 大卡</div>`;
+}
 function itemHTML(p) {
   const img = p.images?.[0]?.file;
-  const size = p.variants?.map((v) => v.size).filter(Boolean).join('／');
+  const size = sizesOf(p).map((z) => z.label).join('／');
   return `<li><a class="item" href="#/p/${encodeURIComponent(p.id)}">
     ${img ? `<img class="thumb" src="${esc(img)}" alt="" loading="lazy">` : '<div class="thumb" aria-hidden="true"></div>'}
     <div><div class="t">${esc(brandName(p.brand))} ${esc(p.name)}</div>
-    <div class="s">${esc(catName(p.category))}${size ? ' · ' + esc(size) : ''}</div>
+    <div class="s">${esc(catName(p.category))}${size ? ' · ' + esc(size) : ''}</div>${packKcalLine(p)}
     <div class="chips">${storeChips(p)}${labelChips(p)}</div></div></a></li>`;
 }
 function listHTML(list, limit = 60) {
@@ -289,18 +327,42 @@ function ingredientHTML(items) {
   return render(items);
 }
 
-function viewProduct(id) {
+function nutritionHTML(p, size, sizes) {
+  const n = p.nutrition;
+  const has = (o) => o && Object.keys(o).length;
+  if (!n || !(has(n.per100) || has(n.perServing))) return '<h2>營養標示</h2><p class="muted">尚無營養標示資料。</p>';
+  const pv = packValues(p, size);
+  const servingAmt = n.serving?.size;
+  // 每份和整包幾乎一樣時不重複顯示
+  const showServing = has(n.perServing) && !(pv && servingAmt && Math.abs(servingAmt - size.amount) / size.amount < 0.03);
+  const u = n.basis === 'liquid' ? '毫升' : '公克';
+  const cols = [];
+  if (pv) cols.push([`${packWord(size)}<br><span class="small">${pv.approx ? '約 ' : ''}${esc(size.label)}</span>`, pv.vals, true]);
+  if (showServing) cols.push([`每份<br><span class="small">${servingAmt ? servingAmt + u : ''}</span>`, n.perServing]);
+  if (has(n.per100)) cols.push([`每100<br><span class="small">${u}</span>`, n.per100]);
+  const rows = NUTRIENTS.filter(([k]) => cols.some(([, v]) => v?.[k] != null)).map(([k, label, unit, sub]) =>
+    `<tr class="${sub ? 'sub' : ''}"><th scope="row">${label}<span class="unit">${unit}</span></th>${cols.map(([, v, pk]) => `<td class="${pk ? 'pack' : ''}">${v?.[k] ?? '—'}</td>`).join('')}</tr>`).join('');
+  const picker = sizes.length > 1 ? `<div class="chips sizes" role="group" aria-label="選擇容量">${sizes.map((z) => `<button type="button" class="chip" data-size="${esc(z.label)}" aria-pressed="${z.label === size?.label}">${esc(z.label)}</button>`).join('')}</div>` : '';
+  const notes = [
+    n.servingsPerPack && servingAmt ? `包裝標示：每份 ${servingAmt}${u}，本包裝含 ${n.servingsPerPack} 份。` : '',
+    pv?.approx ? '原始標示的單位和容量單位不同，整包數值為約略換算。' : '',
+    pv && sizes.length > 1 ? '各容量成分相同，整包數值依選的容量換算。' : '',
+  ].filter(Boolean);
+  return `<h2>營養標示</h2>${picker}
+    <table class="nut"><thead><tr><th scope="col"><span class="sr">項目</span></th>${cols.map(([h, , pk]) => `<th scope="col" class="${pk ? 'pack' : ''}">${h}</th>`).join('')}</tr></thead><tbody>${rows}</tbody></table>
+    ${notes.length ? `<p class="small muted">${notes.join('<br>')}</p>` : ''}`;
+}
+
+function viewProduct(id, params = new URLSearchParams()) {
   const p = DB.byId.get(id);
   if (!p) { main.innerHTML = `<div class="empty"><p>找不到這項商品。</p><a class="btn" href="#/">回首頁</a></div>`; return; }
   pushRecent(p.id);
   document.title = `${brandName(p.brand)} ${p.name}｜翻背面`;
-  const n = p.nutrition;
-  const hasServing = n && Object.keys(n.perServing || {}).length;
-  const unit100 = n?.basis === 'liquid' ? '每100毫升' : '每100公克';
-  const nutRows = n ? NUTRIENTS.filter(([k]) => n.per100?.[k] != null || n.perServing?.[k] != null).map(([k, label, u, sub]) =>
-    `<tr class="${sub ? 'sub' : ''}"><td>${label}</td>${hasServing ? `<td>${n.perServing?.[k] ?? '—'}</td>` : ''}<td>${n.per100?.[k] ?? '—'}</td><td class="muted small">${u}</td></tr>`).join('') : '';
+  const sizes = sizesOf(p);
+  const want = params.get('s'), code = params.get('code');
+  let size = sizes.find((z) => z.label === want) || (code && sizes.find((z) => z.barcodes.includes(code))) || defaultSize(p, sizes);
   const allergen = p.allergens || {};
-  const variants = (p.variants || []).map((v) => v.size).filter(Boolean);
+  const variants = sizes.map((z) => z.label);
   const reviewNote = p.review?.status !== 'verified' ? `<p class="notice">這筆資料尚未人工核對，請以實際包裝標示為準。</p>` : '';
   main.innerHTML = `<article class="stack">
     <div class="toolbar" style="margin:0;justify-content:space-between">
@@ -317,9 +379,7 @@ function viewProduct(id) {
     <section class="card"><h2>成分</h2>
       ${p.ingredients?.items?.length ? `<p class="ing">${ingredientHTML(p.ingredients.items)}</p><p class="small muted">標色的是食品添加物，點一下可以看說明。</p>` : p.ingredients?.raw ? `<p class="ing">${esc(p.ingredients.raw)}</p>` : '<p class="muted">尚無成分資料。</p>'}
     </section>
-    <section class="card"><h2>營養標示 <span class="small muted">${n?.serving ? `每份 ${n.serving.size}${n.serving.unit === 'ml' ? '毫升' : '公克'}${n.servingsPerPack ? `，本包裝含 ${n.servingsPerPack} 份` : ''}` : ''}</span></h2>
-      ${nutRows ? `<table class="nut"><thead><tr><th scope="col">項目</th>${hasServing ? '<th scope="col">每份</th>' : ''}<th scope="col">${unit100}</th><th scope="col"><span class="sr">單位</span></th></tr></thead><tbody>${nutRows}</tbody></table>` : '<p class="muted">尚無營養標示資料。</p>'}
-    </section>
+    <section class="card" id="nut">${nutritionHTML(p, size, sizes)}</section>
     <section class="card"><h2>過敏原</h2>
       ${allergen.contains?.length ? `<p>含有：${allergen.contains.map((a) => ALLERGENS[a] || a).join('、')}</p>` : ''}
       ${allergen.sharedLine?.length ? `<p class="muted">同產線：${allergen.sharedLine.map((a) => ALLERGENS[a] || a).join('、')}</p>` : ''}
@@ -338,6 +398,14 @@ function viewProduct(id) {
     <a class="btn block" target="_blank" rel="noopener" href="${esc(reportURL(p))}">回報資料有誤</a>
   </article>`;
   main.onclick = (e) => {
+    const sz = e.target.closest('[data-size]');
+    if (sz) {
+      size = sizes.find((z) => z.label === sz.dataset.size) || size;
+      $('#nut').innerHTML = nutritionHTML(p, size, sizes);
+      $(`#nut [data-size="${CSS.escape(size.label)}"]`)?.focus();
+      history.replaceState(null, '', `#/p/${encodeURIComponent(p.id)}?s=${encodeURIComponent(size.label)}`);
+      return;
+    }
     if (e.target.closest('[data-back]')) history.length > 1 ? history.back() : (location.hash = '#/');
     const f = e.target.closest('[data-fav]'); if (f) f.setAttribute('aria-pressed', toggleFav(p.id));
     if (e.target.closest('[data-share]')) {
@@ -393,7 +461,7 @@ async function viewScan() {
     if (!code) return;
     scanStop?.();
     const p = DB.byBarcode.get(code);
-    if (p) { location.hash = `#/p/${encodeURIComponent(p.id)}`; return; }
+    if (p) { location.hash = `#/p/${encodeURIComponent(p.id)}?code=${code}`; return; }
     main.insertAdjacentHTML('beforeend', `<div class="card" style="margin-top:16px"><h2>找不到條碼 ${esc(code)}</h2>
       <p class="muted">這項商品還沒有收錄，或我們還沒有它的條碼。可以試試用品名搜尋。</p>
       <div class="toolbar"><a class="btn" href="#/browse">用品名搜尋</a>
@@ -468,7 +536,7 @@ function route() {
   if (!seg.length) viewHome();
   else if (seg[0] === 'browse') viewBrowse(params);
   else if (seg[0] === 'search') viewBrowse(params, 'search');
-  else if (seg[0] === 'p') viewProduct(decodeURIComponent(seg[1] || ''));
+  else if (seg[0] === 'p') viewProduct(decodeURIComponent(seg[1] || ''), params);
   else if (seg[0] === 'fav') viewFav();
   else if (seg[0] === 'scan') viewScan();
   else if (seg[0] === 'about') viewAbout();
