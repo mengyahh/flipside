@@ -10,7 +10,7 @@
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icons/icon-192.png">
-<link rel="stylesheet" href="style.css?v=7">
+<link rel="stylesheet" href="style.css?v=8">
 </head>
 <body>
 <a class="skip" href="#main">跳到主要內容</a>
@@ -19,9 +19,10 @@
     <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22"><path d="M5 3h10l4 4v14H5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M15 3v4h4M8 11h8M8 14h8M8 17h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
     <span>翻背面</span>
   </a>
+  <span class="top-actions"><a class="icon-btn" href="#/settings" aria-label="偏好設定" title="偏好設定"><svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22" style="fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg></a>
   <button class="icon-btn" id="textSizeBtn" aria-label="調整字級" title="調整字級">
     <span aria-hidden="true" style="font-weight:600">A<small>A</small></span>
-  </button>
+  </button></span>
 </header>
 
 <main id="main" tabindex="-1"></main>
@@ -36,7 +37,7 @@
 <div id="toast" role="status" aria-live="polite"></div>
 
 <script src="config.js?v=2"></script>
-<script type="module" src="app.js?v=7"></script>
+<script type="module" src="app.js?v=8"></script>
 <script>
   if (window.FLIPSIDE_CONFIG && FLIPSIDE_CONFIG.goatcounter) {
     var s = document.createElement('script');

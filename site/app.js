@@ -122,6 +122,7 @@ let here = STORES[store.get('here', '')] ? store.get('here', '') : '';
 const setHere = (k) => { here = STORES[k] ? k : ''; store.set('here', here); };
 function applyFilter(list, f = filter) {
   return list.filter((p) => {
+    if (isHiddenByPrefs(p)) return false;
     if (f.cats.length && !f.cats.some((c) => p.category === c || catRoot(p.category) === c)) return false;
     if (here && p.stores?.[here]?.status !== 'yes') return false;
     if (f.origins.length && !f.origins.includes(originOf(p))) return false;
@@ -133,6 +134,44 @@ function applyFilter(list, f = filter) {
   });
 }
 const filterCount = (f = filter) => f.origins.length + f.cats.length + f.excludeSubs.length + f.excludeAllergens.length + f.labels.length + f.diets.length;
+
+// ---------- 偏好設定 ----------
+// 順序依 docs/audience-priorities.md：熱量 > 糖 > 鈉 > 蛋白質
+const FOCUS = [['kcal', '熱量', '控制體重'], ['sugar', '糖', '控糖、血糖'], ['sodium', '鈉', '血壓、腎臟'], ['protein', '蛋白質', '健身、增肌']];
+const USER_DIETS = [['vegan', '全素'], ['ovo-lacto', '蛋奶素'], ['lacto', '奶素'], ['ovo', '蛋素'], ['five-pungent', '植物五辛素']];
+// 使用者吃的素食類別 → 可以吃的商品標示
+const DIET_OK = { vegan: ['vegan'], 'ovo-lacto': ['vegan', 'ovo-lacto', 'lacto', 'ovo'], lacto: ['vegan', 'lacto'], ovo: ['vegan', 'ovo'], 'five-pungent': ['vegan', 'five-pungent'] };
+const SECTIONS = [['ingredients', '成分'], ['nutrition', '營養標示'], ['allergens', '過敏原'], ['gmo', '基改原料與產地'], ['labels', '認證標籤'], ['sources', '資料來源']];
+const NUTCOLS = [['pack', '整包／整瓶'], ['unit', '一小包'], ['serving', '每份（包裝標示）'], ['per100', '每100（比較用）']];
+const defaultPrefs = () => ({ focus: [], diet: '', allergens: [], avoidSubs: [], hideMismatch: false, listBasis: 'portion', sections: {}, nutCols: {}, onboarded: false });
+let prefs = { ...defaultPrefs(), ...store.get('prefs', {}) };
+const savePrefs = () => store.set('prefs', prefs);
+const showSection = (k) => prefs.sections[k] !== false;
+const showCol = (k) => prefs.nutCols[k] !== false;
+// 跟偏好不符的地方；soft 是「不確定」，只在商品頁提醒
+function mismatches(p) {
+  const out = [];
+  if (prefs.diet) {
+    if (!p.diet) out.push({ soft: true, text: '包裝資料沒有素食標示' });
+    else if (!DIET_OK[prefs.diet].includes(p.diet)) out.push({ text: p.diet === 'meat' ? '葷食' : `標示為${DIETS[p.diet]}`, short: '非' + USER_DIETS.find(([k]) => k === prefs.diet)[1] });
+  }
+  const has = prefs.allergens.filter((a) => p.allergens?.contains?.includes(a));
+  if (has.length) out.push({ text: '含有' + has.map((a) => ALLERGENS[a]).join('、'), short: '含' + has.map((a) => ALLERGENS[a]).join('、') });
+  const shared = prefs.allergens.filter((a) => !has.includes(a) && p.allergens?.sharedLine?.includes(a));
+  if (shared.length) out.push({ soft: true, text: '同一產線也處理' + shared.map((a) => ALLERGENS[a]).join('、') });
+  if (prefs.allergens.length && !p.allergens?.contains?.length && !p.allergens?.raw) out.push({ soft: true, text: '沒有過敏原資料' });
+  const subs = prefs.avoidSubs.filter((x) => p._subs.has(x));
+  if (subs.length) { const names = subs.map((x) => DB.substances.get(x)?.name || x).join('、'); out.push({ text: '含有' + names, short: '含' + names }); }
+  return out;
+}
+const isHiddenByPrefs = (p) => prefs.hideMismatch && mismatches(p).some((m) => !m.soft);
+function prefSummary() {
+  const parts = [];
+  if (prefs.diet) parts.push(USER_DIETS.find(([k]) => k === prefs.diet)[1]);
+  if (prefs.allergens.length) parts.push('不含' + prefs.allergens.map((a) => ALLERGENS[a]).join('、'));
+  if (prefs.avoidSubs.length) parts.push('不含' + prefs.avoidSubs.map((x) => DB.substances.get(x)?.name || x).join('、'));
+  return parts.join('；');
+}
 
 // ---------- 收藏與最近 ----------
 let favs = new Set(store.get('favs', []));
@@ -165,20 +204,36 @@ function storeChips(p) {
 function labelChips(p) {
   return (p.labels || []).map((l) => `<span class="chip static good">${esc(DB.labels.get(l.id)?.short || l.id)}</span>`).join('');
 }
-// 列表的熱量：一小包（有填）> 包裝的每份（多份裝）> 整包；飲料直接寫「容量 熱量」
-function unitKcal(p) { const k = p.nutrition?.per100?.kcal; return p.unit?.grams && k != null ? Math.round(k * p.unit.grams / 100) : null; }
-function packKcalLine(p) {
-  const n = p.nutrition; if (!n) return '';
-  const line = (t) => `<div class="s kcal">${t}</div>`;
-  // 沒有容量資料時退回每100
-  const per100Line = () => (n.per100?.kcal != null ? line(`每100${n.basis === 'liquid' ? 'ml' : 'g'} ${Math.round(n.per100.kcal)} 大卡`) : '');
+// 列表的份量基準：飲料用最小容量；固體依序用一小包 > 包裝的每份（多份裝）> 整包；偏好選「每100」則一律每100
+function portionOf(p) {
+  const n = p.nutrition; if (!n) return null;
+  const has = (o) => o && Object.keys(o).length;
+  const per100 = has(n.per100) ? { label: `每100${n.basis === 'liquid' ? 'ml' : 'g'}`, vals: n.per100 } : null;
+  if (prefs.listBasis === 'per100') return per100;
   const sizes = sizesOf(p); const z = sizes[0]; const pv = packValues(p, z);
-  if (n.basis === 'liquid' || z?.liquid) return pv?.vals.kcal != null ? line(`${esc(z.label)} ${pv.approx ? '約 ' : ''}${pv.vals.kcal} 大卡`) : per100Line();
-  const uk = unitKcal(p);
-  if (uk != null) return line(`一小包 ${p.unit.grams}g ${uk} 大卡`);
-  if (n.servingsPerPack > 1 && n.perServing?.kcal != null) return line(`每份${n.serving?.size ? ' ' + n.serving.size + 'g' : ''} ${Math.round(n.perServing.kcal)} 大卡`);
-  if (pv?.vals.kcal != null) return line(`${sizes.length > 1 ? esc(z.label) + ' ' : ''}整包${pv.approx ? '約 ' : ' '}${pv.vals.kcal} 大卡`);
-  return per100Line();
+  if (n.basis === 'liquid' || z?.liquid) return pv ? { label: `${esc(z.label)}${pv.approx ? ' 約' : ''}`, vals: pv.vals } : per100;
+  if (p.unit?.grams && has(n.per100)) {
+    const vals = {}; for (const [k, v] of Object.entries(n.per100)) if (typeof v === 'number') vals[k] = roundN(k, v * p.unit.grams / 100);
+    return { label: `一小包 ${p.unit.grams}g`, vals };
+  }
+  if (n.servingsPerPack > 1 && has(n.perServing)) return { label: `每份${n.serving?.size ? ' ' + n.serving.size + 'g' : ''}`, vals: n.perServing };
+  if (pv) return { label: `${sizes.length > 1 ? esc(z.label) + ' ' : ''}整包${pv.approx ? ' 約' : ''}`, vals: pv.vals };
+  return per100;
+}
+const fmtNut = (k, v) => {
+  if (v == null) return null;
+  if (k === 'kcal') return `${Math.round(v)} 大卡`;
+  const name = FOCUS.find(([x]) => x === k)?.[1] || k;
+  return k === 'sodium' ? `${name} ${Math.round(v)}mg` : `${name} ${roundN(k, v)}g`;
+};
+function packKcalLine(p) {
+  const por = portionOf(p); if (!por) return '';
+  const keys = prefs.focus.length ? prefs.focus : ['kcal'];
+  const vals = keys.map((k) => fmtNut(k, por.vals[k])).filter(Boolean);
+  return vals.length ? `<div class="s kcal">${por.label} · ${vals.join(' · ')}</div>` : '';
+}
+function warnChips(p) {
+  return mismatches(p).filter((m) => !m.soft).map((m) => `<span class="chip static warn">⚠ ${esc(m.short || m.text)}</span>`).join('');
 }
 function itemHTML(p) {
   const img = p.images?.[0]?.file;
@@ -187,7 +242,7 @@ function itemHTML(p) {
     ${img ? `<img class="thumb" src="${esc(img)}" alt="" loading="lazy">` : '<div class="thumb" aria-hidden="true"></div>'}
     <div><div class="t">${esc(brandName(p.brand))} ${esc(p.name)}</div>
     <div class="s">${esc(catName(p.category))}${size ? ' · ' + esc(size) : ''}</div>${packKcalLine(p)}
-    <div class="chips">${storeChips(p)}${labelChips(p)}</div></div></a></li>`;
+    <div class="chips">${warnChips(p)}${storeChips(p)}${labelChips(p)}</div></div></a></li>`;
 }
 function listHTML(list, limit = 60) {
   if (!list.length) return '';
@@ -249,7 +304,8 @@ function viewBrowse(params, mode = 'browse') {
   if (params.get('cat') || params.get('store')) { store.set('filter', filter); history.replaceState(null, '', mode === 'search' ? `#/search?q=${encodeURIComponent(q)}` : '#/browse'); }
   const render = (qq) => {
     const list = applyFilter(search(qq));
-    $('#results').innerHTML = `<p class="muted small" aria-live="polite">${here ? STORES[here] + '有販售的 ' : ''}${list.length} 項商品</p>` +
+    const hiddenN = prefs.hideMismatch ? search(qq).filter(isHiddenByPrefs).length : 0;
+    $('#results').innerHTML = `<p class="muted small" aria-live="polite">${here ? STORES[here] + '有販售的 ' : ''}${list.length} 項商品${hiddenN ? `（已依偏好隱藏 ${hiddenN} 項，<a href="#/settings">調整</a>）` : ''}</p>` +
       (here ? '<p class="notice small">只列出已確認在這家店販售的商品。通路資料還在補，沒列出的不代表沒賣，可以切到「全部通路」找。</p>' : '') +
       (list.length ? listHTML(list) : `<div class="empty"><p>找不到符合的商品。</p>
         ${filterCount() ? '<p><button class="btn" data-reset>清除篩選</button></p>' : ''}
@@ -295,6 +351,7 @@ function openFilterSheet(onApply) {
   wrap.innerHTML = `<div class="sheet-backdrop" data-close></div>
   <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="sheetTitle"><div class="grab" aria-hidden="true"></div>
     <h2 id="sheetTitle">篩選</h2>
+    ${prefs.hideMismatch && prefSummary() ? `<p class="notice small">已依你的偏好隱藏不符合的商品（${esc(prefSummary())}）。<a href="#/settings" data-close>調整</a></p>` : ''}
     ${group('cats', DB.categories.map((c) => [c.id, c.name]), '分類')}
     ${group('origins', origins, '產地')}
     ${group('excludeSubs', subs.slice(0, 16).map((s) => [s.id, s.name]), '排除含有這些成分')}
@@ -348,15 +405,18 @@ function nutritionHTML(p, size, sizes) {
   const showServing = has(n.perServing) && !(pv && near(servingAmt, size.amount)) && !near(servingAmt, p.unit?.grams);
   const u = n.basis === 'liquid' ? '毫升' : '公克';
   const cols = [];
-  if (pv) cols.push([size.liquid ? `${pv.approx ? '約 ' : ''}${esc(size.label)}` : `整包<br><span class="small">${pv.approx ? '約 ' : ''}${esc(size.label)}</span>`, pv.vals, true]);
+  if (pv) cols.push([size.liquid ? `${pv.approx ? '約 ' : ''}${esc(size.label)}` : `整包<br><span class="small">${pv.approx ? '約 ' : ''}${esc(size.label)}</span>`, pv.vals, true, 'pack']);
   if (p.unit?.grams && has(n.per100) && n.basis !== 'liquid') {
     const uv = {}; for (const [k, v] of Object.entries(n.per100)) if (typeof v === 'number') uv[k] = roundN(k, v * p.unit.grams / 100);
-    cols.push([`一小包<br><span class="small">${p.unit.grams}公克</span>`, uv]);
+    cols.push([`一小包<br><span class="small">${p.unit.grams}公克</span>`, uv, false, 'unit']);
   }
-  if (showServing) cols.push([`每份<br><span class="small">${servingAmt ? servingAmt + u : ''}</span>`, n.perServing]);
-  if (has(n.per100)) cols.push([`每100<br><span class="small">${u}</span>`, n.per100]);
+  if (showServing) cols.push([`每份<br><span class="small">${servingAmt ? servingAmt + u : ''}</span>`, n.perServing, false, 'serving']);
+  if (has(n.per100)) cols.push([`每100<br><span class="small">${u}</span>`, n.per100, false, 'per100']);
+  // 偏好設定關掉的欄位（全部關掉時仍保留，免得表格消失）
+  const kept = cols.filter((c) => showCol(c[3]));
+  if (kept.length) cols.splice(0, cols.length, ...kept);
   const rows = NUTRIENTS.filter(([k]) => cols.some(([, v]) => v?.[k] != null)).map(([k, label, unit, sub]) =>
-    `<tr class="${sub ? 'sub' : ''}"><th scope="row">${label}<span class="unit">${unit}</span></th>${cols.map(([, v, pk]) => `<td class="${pk ? 'pack' : ''}">${v?.[k] ?? '—'}</td>`).join('')}</tr>`).join('');
+    `<tr class="${sub ? 'sub' : ''}${prefs.focus.includes(k) ? ' focus' : ''}"><th scope="row">${label}<span class="unit">${unit}</span></th>${cols.map(([, v, pk]) => `<td class="${pk ? 'pack' : ''}">${v?.[k] ?? '—'}</td>`).join('')}</tr>`).join('');
   const picker = sizes.length > 1 ? `<div class="chips sizes" role="group" aria-label="選擇容量">${sizes.map((z) => `<button type="button" class="chip" data-size="${esc(z.label)}" aria-pressed="${z.label === size?.label}">${esc(z.label)}</button>`).join('')}</div>` : '';
   const notes = [
     n.servingsPerPack && servingAmt ? `包裝標示：每份 ${servingAmt}${u}，本包裝含 ${n.servingsPerPack} 份。` : '',
@@ -379,6 +439,8 @@ function viewProduct(id, params = new URLSearchParams()) {
   let size = sizes.find((z) => z.label === want) || (code && sizes.find((z) => z.barcodes.includes(code))) || defaultSize(p, sizes);
   const allergen = p.allergens || {};
   const variants = sizes.map((z) => z.label);
+  const mm = mismatches(p);
+  const alert = mm.length ? `<div class="alert${mm.some((m) => !m.soft) ? '' : ' soft'}" role="note"><strong>${mm.some((m) => !m.soft) ? '⚠ 和你的偏好不符' : '請留意'}</strong><ul>${mm.map((m) => `<li>${esc(m.text)}</li>`).join('')}</ul><a class="small" href="#/settings">調整偏好設定</a></div>` : '';
   const reviewNote = p.review?.status !== 'verified' ? `<p class="notice">這筆資料尚未人工核對，請以實際包裝標示為準。</p>` : '';
   main.innerHTML = `<article class="stack">
     <div class="toolbar" style="margin:0;justify-content:space-between">
@@ -391,23 +453,24 @@ function viewProduct(id, params = new URLSearchParams()) {
       <p class="muted">${[catName(p.category), variants.join('／'), p.origin?.country].filter(Boolean).map(esc).join(' · ')}</p>
       <div class="chips">${storeChips(p)}${labelChips(p)}${p.diet ? `<span class="chip static">${DIETS[p.diet]}</span>` : ''}</div>
     </header>
+    ${alert}
     ${reviewNote}
-    <section class="card"><h2>成分</h2>
+    ${showSection('ingredients') ? `<section class="card"><h2>成分</h2>
       ${p.ingredients?.items?.length ? `<p class="ing">${ingredientHTML(p.ingredients.items)}</p><p class="small muted">標色的是食品添加物，點一下可以看說明。</p>` : p.ingredients?.raw ? `<p class="ing">${esc(p.ingredients.raw)}</p>` : '<p class="muted">尚無成分資料。</p>'}
-    </section>
-    <section class="card" id="nut">${nutritionHTML(p, size, sizes)}</section>
-    <section class="card"><h2>過敏原</h2>
+    </section>` : ''}
+    ${showSection('nutrition') ? `<section class="card" id="nut">${nutritionHTML(p, size, sizes)}</section>` : ''}
+    ${showSection('allergens') ? `<section class="card"><h2>過敏原</h2>
       ${allergen.contains?.length ? `<p>含有：${allergen.contains.map((a) => ALLERGENS[a] || a).join('、')}</p>` : ''}
       ${allergen.sharedLine?.length ? `<p class="muted">同產線：${allergen.sharedLine.map((a) => ALLERGENS[a] || a).join('、')}</p>` : ''}
       ${allergen.raw ? `<p class="small muted">${esc(allergen.raw)}</p>` : ''}
       ${!allergen.contains?.length && !allergen.raw ? '<p class="muted">未標示或尚無資料。</p>' : ''}
-    </section>
-    <section class="card"><h2>基改原料與產地</h2>
+    </section>` : ''}
+    ${showSection('gmo') ? `<section class="card"><h2>基改原料與產地</h2>
       <p>基改原料：${esc(GMO[p.gmo?.status] || '未標示')}${p.gmo?.raw ? `<br><span class="small muted">${esc(p.gmo.raw)}</span>` : ''}</p>
       <p>產地：${esc(p.origin?.country || '未標示')}</p>
-    </section>
-    ${p.labels?.length ? `<section class="card"><h2>認證標籤</h2><ul>${p.labels.map((l) => `<li>${esc(DB.labels.get(l.id)?.name || l.id)}${l.evidence ? `<br><span class="small muted">${esc(l.evidence)}</span>` : ''}</li>`).join('')}</ul></section>` : ''}
-    <section class="small muted">
+    </section>` : ''}
+    ${p.labels?.length && showSection('labels') ? `<section class="card"><h2>認證標籤</h2><ul>${p.labels.map((l) => `<li>${esc(DB.labels.get(l.id)?.name || l.id)}${l.evidence ? `<br><span class="small muted">${esc(l.evidence)}</span>` : ''}</li>`).join('')}</ul></section>` : ''}
+    <section class="small muted"${showSection('sources') ? '' : ' hidden'}>
       <p>資料來源：${(p.sources || []).map((s) => esc(s.label || s.type)).join('、')}${p.updatedAt ? `（${esc(p.updatedAt)}）` : ''}<br>
       ${p.images?.[0]?.credit ? `圖片來源：${esc(p.images[0].credit)}` : ''}</p>
     </section>
@@ -430,6 +493,121 @@ function viewProduct(id, params = new URLSearchParams()) {
       else navigator.clipboard?.writeText(location.href).then(() => toast('已複製連結'));
     }
     const s = e.target.closest('[data-sub]'); if (s) openSubstance(s.dataset.sub);
+  };
+  if (!prefs.onboarded) setTimeout(openQuickSetup, 400);
+}
+
+// ---------- 偏好設定的共用元件 ----------
+const chipGroup = (key, entries, cur, legend, extra = '') => `<fieldset${extra}><legend>${legend}</legend><div class="chips">${entries.map(([v, n, d]) =>
+  `<button type="button" class="chip${d ? ' tall' : ''}" data-pf="${key}" data-v="${esc(v)}" aria-pressed="${Array.isArray(cur) ? cur.includes(v) : cur === v}">${esc(n)}${d ? `<span class="desc">${esc(d)}</span>` : ''}</button>`).join('')}</div></fieldset>`;
+const SIZE_NAMES = [['m', '標準'], ['l', '大'], ['xl', '特大']];
+function setTextSize(v) { document.documentElement.dataset.size = v; store.set('size', v); }
+// 點選偏好 chip：focus／allergens 多選，diet／size 單選（再點一次取消）
+function onPrefChip(btn) {
+  const k = btn.dataset.pf, v = btn.dataset.v, root = btn.closest('fieldset');
+  if (k === 'focus' || k === 'allergens') {
+    const arr = prefs[k]; const i = arr.indexOf(v);
+    if (i >= 0) arr.splice(i, 1);
+    else { if (k === 'focus' && arr.length >= 3) { toast('最多選 3 項'); return; } arr.push(v); }
+    btn.setAttribute('aria-pressed', i < 0);
+  } else if (k === 'diet') {
+    prefs.diet = prefs.diet === v ? '' : v;
+    root.querySelectorAll('[data-pf="diet"]').forEach((b) => b.setAttribute('aria-pressed', b.dataset.v === prefs.diet));
+  } else if (k === 'size') {
+    setTextSize(v);
+    root.querySelectorAll('[data-pf="size"]').forEach((b) => b.setAttribute('aria-pressed', b.dataset.v === v));
+  }
+  savePrefs();
+}
+
+// 第一次進商品頁時跳出：只問最重要的幾項，其餘到偏好設定頁
+function openQuickSetup() {
+  if (prefs.onboarded || $('.sheet')) return;
+  const wrap = document.createElement('div');
+  const before = JSON.parse(JSON.stringify(prefs));
+  const dietOpen = !!prefs.diet, alOpen = prefs.allergens.length > 0;
+  wrap.innerHTML = `<div class="sheet-backdrop" data-skip></div>
+  <div class="sheet" role="dialog" aria-modal="true" aria-labelledby="qsTitle"><div class="grab" aria-hidden="true"></div>
+    <h2 id="qsTitle">想優先看到什麼？</h2>
+    <p class="small muted">選了之後，列表和營養表會優先標出這幾項。不選也沒關係，所有內容都看得到。</p>
+    ${chipGroup('focus', FOCUS, prefs.focus, '你最在意的（可複選）')}
+    <fieldset><legend>飲食限制</legend><div class="chips">
+      <button type="button" class="chip" data-toggle="qsDiet" aria-expanded="${dietOpen}">我吃素</button>
+      <button type="button" class="chip" data-toggle="qsAl" aria-expanded="${alOpen}">我有食物過敏</button></div></fieldset>
+    ${chipGroup('diet', USER_DIETS, prefs.diet, '吃哪一種素？', ` id="qsDiet"${dietOpen ? '' : ' hidden'}`)}
+    ${chipGroup('allergens', Object.entries(ALLERGENS), prefs.allergens, '對哪些過敏？', ` id="qsAl"${alOpen ? '' : ' hidden'}`)}
+    ${chipGroup('size', SIZE_NAMES, document.documentElement.dataset.size || 'm', '字的大小')}
+    <p class="small muted">不符合的商品會標出提醒，不會藏起來。之後可以在右上角「偏好設定」調整更多。</p>
+    <div class="actions"><button class="btn" data-skip>先不用，全部顯示</button><button class="btn primary" data-done>完成</button></div>
+  </div>`;
+  document.body.appendChild(wrap);
+  const prev = document.activeElement;
+  $('[data-pf]', wrap).focus();
+  const close = (done) => {
+    prefs.onboarded = true; savePrefs();
+    wrap.remove(); document.removeEventListener('keydown', onKey); prev?.focus?.();
+    if (done) { toast('已儲存偏好'); route(); }
+  };
+  const onKey = (e) => { if (e.key === 'Escape') close(false); };
+  document.addEventListener('keydown', onKey);
+  wrap.addEventListener('click', (e) => {
+    const c = e.target.closest('[data-pf]'); if (c) return onPrefChip(c);
+    const t = e.target.closest('[data-toggle]');
+    if (t) { const open = t.getAttribute('aria-expanded') !== 'true'; t.setAttribute('aria-expanded', open); $('#' + t.dataset.toggle, wrap).hidden = !open; return; }
+    if (e.target.closest('[data-done]')) return close(true);
+    if (e.target.closest('[data-skip]')) {
+      // 「先不用」：不套用剛剛點的選項
+      if (e.target.closest('.btn')) prefs = before;
+      close(false);
+    }
+  });
+}
+
+// 完整的偏好設定頁
+function viewSettings() {
+  document.title = '偏好設定｜翻背面';
+  const subs = [...DB.substances.values()].filter((x) => x.filterable).sort((a, b) => (b.common || 0) - (a.common || 0));
+  const check = (key, entries, store) => `<div class="checks">${entries.map(([v, n]) => `<label><input type="checkbox" data-${key}="${v}" ${store[v] !== false ? 'checked' : ''}> ${esc(n)}</label>`).join('')}</div>`;
+  const radio = (name, entries, cur) => `<div class="checks">${entries.map(([v, n]) => `<label><input type="radio" name="${name}" value="${v}" ${cur === v ? 'checked' : ''}> ${esc(n)}</label>`).join('')}</div>`;
+  main.innerHTML = `<div class="stack settings"><h1>偏好設定</h1>
+    <p class="muted small">只會改變顯示方式，不影響資料。設定存在這支手機的瀏覽器裡。</p>
+    <section class="card">${chipGroup('focus', FOCUS, prefs.focus, '我在意的營養素（最多 3 項）')}
+      <p class="small muted">列表會顯示這幾項的數值，營養表裡會標色。沒選的話列表只顯示熱量。</p></section>
+    <section class="card">${chipGroup('diet', USER_DIETS, prefs.diet, '我吃素')}
+      ${chipGroup('allergens', Object.entries(ALLERGENS), prefs.allergens, '我對這些過敏')}
+      <fieldset><legend>不想吃的成分</legend>
+        <div class="chips" id="avoidList">${prefs.avoidSubs.map((x) => `<button type="button" class="chip" aria-pressed="true" data-rmsub="${esc(x)}" aria-label="移除：${esc(DB.substances.get(x)?.name || x)}">${esc(DB.substances.get(x)?.name || x)} ${icon.x}</button>`).join('') || '<span class="small muted">還沒有設定</span>'}</div>
+        <label class="small muted" for="avoidFind">加入成分</label>
+        <input id="avoidFind" list="avoidSubsList" class="field" placeholder="例如：阿斯巴甜">
+        <datalist id="avoidSubsList">${subs.map((x) => `<option value="${esc(x.name)}">`).join('')}</datalist></fieldset>
+      <fieldset><legend>遇到不符合的商品</legend>${radio('hideMismatch', [['warn', '標出提醒（建議）'], ['hide', '直接從列表隱藏']], prefs.hideMismatch ? 'hide' : 'warn')}
+        <p class="small muted">資料還沒全部人工核對，直接隱藏可能把其實能吃的也藏起來。</p></fieldset></section>
+    <section class="card"><fieldset><legend>列表顯示的份量</legend>${radio('listBasis', [['portion', '一小包／每份／一瓶（建議）'], ['per100', '每100公克或毫升（方便比較不同商品）']], prefs.listBasis)}</fieldset></section>
+    <section class="card"><fieldset><legend>商品頁顯示的區塊</legend>${check('sec', SECTIONS, prefs.sections)}</fieldset>
+      <fieldset><legend>營養表的欄位</legend>${check('col', NUTCOLS, prefs.nutCols)}</fieldset></section>
+    <section class="card">${chipGroup('size', SIZE_NAMES, document.documentElement.dataset.size || 'm', '字的大小')}</section>
+    <div class="toolbar"><button class="btn" data-rerun>重新做快速設定</button><button class="btn" data-reset>全部恢復預設</button></div>
+  </div>`;
+  const saved = () => { savePrefs(); toast('已儲存'); };
+  main.onclick = (e) => {
+    const c = e.target.closest('[data-pf]'); if (c) { onPrefChip(c); if (c.dataset.pf !== 'size') toast('已儲存'); return; }
+    const rm = e.target.closest('[data-rmsub]'); if (rm) { prefs.avoidSubs = prefs.avoidSubs.filter((x) => x !== rm.dataset.rmsub); saved(); viewSettings(); return; }
+    if (e.target.closest('[data-reset]')) { if (confirm('把所有偏好恢復成預設值？')) { prefs = { ...defaultPrefs(), onboarded: true }; setTextSize('m'); saved(); viewSettings(); } return; }
+    if (e.target.closest('[data-rerun]')) { prefs.onboarded = false; savePrefs(); openQuickSetup(); }
+  };
+  main.onchange = (e) => {
+    const t = e.target;
+    if (t.id === 'avoidFind') {
+      const x = subs.find((y) => y.name === t.value.trim()); if (!x) return;
+      if (!prefs.avoidSubs.includes(x.id)) prefs.avoidSubs.push(x.id);
+      saved(); viewSettings(); $('#avoidFind')?.focus(); return;
+    }
+    if (t.name === 'hideMismatch') prefs.hideMismatch = t.value === 'hide';
+    else if (t.name === 'listBasis') prefs.listBasis = t.value;
+    else if (t.dataset.sec) prefs.sections[t.dataset.sec] = t.checked;
+    else if (t.dataset.col) prefs.nutCols[t.dataset.col] = t.checked;
+    else return;
+    saved();
   };
 }
 
@@ -540,7 +718,7 @@ function viewAbout() {
 // ---------- 路由 ----------
 function route() {
   scanStop?.();
-  main.onclick = null;
+  main.onclick = null; main.onchange = null;
   const [path, qs] = location.hash.slice(1).split('?');
   const params = new URLSearchParams(qs || '');
   const seg = (path || '/').split('/').filter(Boolean);
@@ -556,6 +734,7 @@ function route() {
   else if (seg[0] === 'fav') viewFav();
   else if (seg[0] === 'scan') viewScan();
   else if (seg[0] === 'about') viewAbout();
+  else if (seg[0] === 'settings') viewSettings();
   else viewHome();
   window.scrollTo(0, 0);
   if (window.goatcounter?.count) window.goatcounter.count({ path: location.pathname + location.hash });
@@ -566,7 +745,7 @@ const SIZES = ['m', 'l', 'xl'];
 document.documentElement.dataset.size = store.get('size', 'm');
 $('#textSizeBtn').addEventListener('click', () => {
   const next = SIZES[(SIZES.indexOf(document.documentElement.dataset.size) + 1) % SIZES.length];
-  document.documentElement.dataset.size = next; store.set('size', next);
+  setTextSize(next);
   toast({ m: '標準字級', l: '大字級', xl: '特大字級' }[next]);
 });
 
